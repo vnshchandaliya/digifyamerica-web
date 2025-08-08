@@ -25,15 +25,15 @@ function Home() {
   <div className="absolute top-0 left-0 w-full h-full  bg-opacity-40"></div>
 
   {/* Hero Content */}
-  <div className="relative z-10 flex flex-col justify-center items-center h-full px-4 text-center text-white">
-    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-4xl">
+  <div className="relative z-10 flex flex-col justify-center items-center h-full px-4 pt-50 text-center text-white">
+    <h1 className="text-3xl pt-4 sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-4xl">
       Digital Marketing Solutions for <br className="hidden sm:block" />
       Vacation Rental Professionals
     </h1>
     <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl font-light max-w-xl">
       eCommerce Platforms and Strategies to Grow Your Online Business
     </p>
-    <button className="mt-8 px-6 py-2 border border-white text-white font-semibold uppercase tracking-wide hover:bg-white hover:text-black transition duration-300">
+    <button className="mt-40 px-6  py-2 border border-white text-white font-semibold uppercase tracking-wide hover:bg-white hover:text-black transition duration-300">
       Watch & Learn
     </button>
   </div>
@@ -89,7 +89,86 @@ function Home() {
         </div>
       </div>
     </section>
-<Footer />
+
+     <section className="bg-white py-16 px-4">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        {/* Left: Image */}
+       
+
+        {/* Right: Text Content */}
+        <div className="w-full md:w-1/2 text-center md:text-left px-35">
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#1174c3]">
+            Direct Booking Websites
+          </h2>
+          <div className="w-35 h-2   bg-gray-300  my-13 mx-auto md:mx-49" />
+          <p className="text-gray-600 text-base font-lg md:text-lg leading-relaxed">
+            Increase revenue with our Rezfusion suite of high performance, 
+            beautiful, direct booking websites that are built to address the needs 
+            of vacation rental companies of all sizes.
+          </p>
+        </div>
+         <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
+          <img
+            src={stimg}
+            alt="Device Mockup"
+            className="max-w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
+     <section className="bg-white py-16 px-4">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        {/* Left: Image */}
+        <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
+          <img
+            src={stimg}
+            alt="Device Mockup"
+            className="max-w-full h-auto"
+          />
+        </div>
+
+        {/* Right: Text Content */}
+        <div className="w-full md:w-1/2 text-center md:text-left px-35">
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#1174c3]">
+            Direct Booking Websites
+          </h2>
+          <div className="w-35 h-2   bg-gray-300  my-13 mx-auto md:mx-49" />
+          <p className="text-gray-600 text-base font-lg md:text-lg leading-relaxed">
+            Increase revenue with our Rezfusion suite of high performance, 
+            beautiful, direct booking websites that are built to address the needs 
+            of vacation rental companies of all sizes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+     <section className="bg-white py-16 px-4">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        {/* Left: Image */}
+       
+
+        {/* Right: Text Content */}
+        <div className="w-full md:w-1/2 text-center md:text-left px-35">
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#1174c3]">
+            Direct Booking Websites
+          </h2>
+          <div className="w-35 h-2   bg-gray-300  my-13 mx-auto md:mx-49" />
+          <p className="text-gray-600 text-base font-lg md:text-lg leading-relaxed">
+            Increase revenue with our Rezfusion suite of high performance, 
+            beautiful, direct booking websites that are built to address the needs 
+            of vacation rental companies of all sizes.
+          </p>
+        </div>
+         <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
+          <img
+            src={stimg}
+            alt="Device Mockup"
+            className="max-w-full h-auto"
+          />
+        </div>
+      </div>
+    </section>
+
     </>
   );
 }
