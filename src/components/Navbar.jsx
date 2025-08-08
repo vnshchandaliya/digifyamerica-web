@@ -62,18 +62,18 @@ export default function Navbar() {
 
             <Link to="/blogs/" className="flex items-center gap-1 font-semibold text-[18px] font-exo2">Blog</Link>
 
-            <div className="relative group">
+            {/* <div className="relative group">
               <button className="flex items-center gap-1 font-semibold text-[18px] font-exo2">
                 Our Team <ChevronDown className="w-4 h-4" />
               </button>
               <div className="absolute top-14 border-1 border-t-white-500 left-0 bg-[#3f4a4f] text-[#c0baba] w-72 mt-1 shadow-lg rounded-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
-                {/* <a href="#" className="block px-5 py- text-xs mt-3 font-normal hover:bg-[#4e5a61] hover:text-[#60beec]">Meet the team</a> */}
+                <a href="#" className="block px-5 py- text-xs mt-3 font-normal hover:bg-[#4e5a61] hover:text-[#60beec]">Meet the team</a>
                 <a href="#" className="block px-5 py-0 text-xs mt-3 font-normal hover:bg-[#4e5a61] hover:text-[#60beec]"> join team</a>
                 <a href="#" className="block px-5 py-0 text-xs mt-3 font-normal hover:bg-[#4e5a61] hover:text-[#60beec]">Why Digifymerica ?</a>
-                {/* <a href="#" className="block px-5 py-0   text-xs mt-3 font-normal hover:bg-[#4e5a61] hover:text-[#60beec]"></a> */}
+                <a href="#" className="block px-5 py-0   text-xs mt-3 font-normal hover:bg-[#4e5a61] hover:text-[#60beec]"></a>
                 <br />
               </div>
-            </div>
+            </div> */}
 
             <Link to="/client-center/" className="flex items-center gap-1 font-semibold text-[18px] font-exo2">Client Center</Link>
             <Link to="/connect-with-us/" className="bg-[#1c75bc] text-white px-7 py-1 hover:bg-[#1c74bcbb] font-bold text-lg font-exo2">
