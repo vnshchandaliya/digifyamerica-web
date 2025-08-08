@@ -1,13 +1,10 @@
-// src/ContactPage.jsx
-// This is a complete, self-contained component for a contact page,
-// including a hero section, a detailed form, and a footer.
+
 
 import React from 'react';
 
-const ContactPage = () => {
+const Connect = () => {
 
-  // SVG icons for social media links. These are defined as
-  // components to be easily reusable.
+ 
   const LinkedInIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin">
       <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
@@ -33,11 +30,7 @@ const ContactPage = () => {
     // Main container for the entire page, with a light gray background and responsive padding.
     <div className="bg-gray-100 min-h-screen font-sans antialiased text-gray-800">
       
-      {/* Hero Section for the "Let's connect!" banner.
-        - Uses a placeholder image for the background.
-        - The `bg-cover` and `bg-center` classes ensure the image scales nicely.
-        - The semi-transparent overlay makes the text readable on all devices.
-      */}
+    
       <section 
         className="relative h-96 lg:h-[70vh] bg-cover bg-center flex items-center justify-center text-white text-center"
         style={{
@@ -66,16 +59,11 @@ const ContactPage = () => {
           </p>
         </div>
 
-        {/* The main white card containing the form fields.
-          - `max-w-3xl` for a wider form layout on larger screens.
-        */}
+      
         <div className="bg-white mx-auto rounded-xl shadow-md overflow-hidden max-w-3xl p-6 sm:p-8">
           <h2 className="text-lg font-semibold mb-6">How can we help you?</h2>
           
-          {/* Form with input fields.
-            - `grid grid-cols-1 md:grid-cols-2` makes the layout responsive.
-            - `md:gap-x-8` adds horizontal space between columns on medium screens.
-          */}
+        
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-8">
               
@@ -239,9 +227,6 @@ const ContactPage = () => {
   );
 };
 
-// Main App component to render the ContactPage.
-const App = () => {
-  return <ContactPage />;
-};
 
-export default App;
+
+export default Connect;
