@@ -204,7 +204,7 @@ function Pricing() {
       case 3:
         return (
           <div className="form-group w-full max-w-xl mx-auto text-center">
-            <label htmlFor="pageRange" className="text-xl font-semibold text-indigo-900">
+            <label htmlFor="pageRange" className="text-xl font-semibold text-indigo-900 ">
               Select number of pages (Max 30):
             </label>
             <input
@@ -214,7 +214,7 @@ function Pricing() {
               max="30"
               value={pageCount}
               onChange={handlePageRangeChange}
-              className="mt-5 w-full"
+              className="mt-5 w-full "
             />
             <div className="range-info text-lg mt-2">{pageCount} Page{pageCount > 1 || pageCount === 0 ? 's' : ''} (${pageCount * 100})</div>
           </div>
