@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react';
 import ProgressBar from './ProgressBar';
 import StepCard from './StepCard';
 import NavigationButtons from './NavigationButtons';
-// ... baaki ka saara code jo maine pichle response mein diya tha
-// ... App.jsx se App() function ke andar ka saara logic aur return statement yaha copy paste karein.
 
 const stepHeadings = [
   'Website Package',
@@ -16,7 +14,7 @@ const stepHeadings = [
   'Delivery Timeline',
   'Final cost',
 ];
-// ... baaki saara data (stepSubheadings, stepsData) bhi yaha paste karein.
+
 
 const MyPriceCalculator = () => {
     // useState aur useEffect hooks yaha daalein

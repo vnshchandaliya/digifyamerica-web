@@ -1,5 +1,6 @@
 import React from 'react';
 import { Eye, Target } from 'lucide-react';
+import planImage from "../assets/images/BusinessPlan.png"; 
 import founderImage from "../assets/Owner/Image.jpeg"; 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -50,12 +51,54 @@ const About = () => {
           const [activeIndex, setActiveIndex] = useState(0);
   return (
           <>
-        
+     <section className="bg-white px-4 md:px-8 pt-20">
+  <div className="container mx-auto max-w-7xl pt-16 pb-24">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+      
+      {/* This is the image div. 
+        It now has the order-1 class for all screens and lg:order-1 to keep it on the left. 
+      */}
+      <div className="order-1 lg:order-1 relative w-full lg:w-auto">
+        <img
+          src={planImage}
+          alt=""
+          className="w-[70vh] h-auto rounded-lg  object-cover"
+        />
+      </div>
+      
+      {/* This is the text div.
+        It now has the order-2 class for all screens and lg:order-2 to keep it on the right.
+      */}
+      <div className="order-2 lg:order-2 text-center lg:text-left">
+        <h1 className="text-4xl md:text-5xl font-[600] text-gray-900 leading-tight mb-6">
+         Your digital growth partner
+        </h1>
+        <strong>Our Story</strong>
+
+        <p className="text-lg text-gray-700 mb-1">
+        Headquartered in sunny Florida but digitally present everywhere, Digify America have built reputation by treating clients' growth as primary mission. What drives us is seeing businesses transform through strategic digital presence. Our leadership team built Digify America because we saw too many companies getting generic solutions that looked pretty but failed to deliver results.    </p>
+       <strong>Our Team</strong>
+        <p className='text-lg text-gray-700 mb-4'>
+        Behind every successful Digify project stands a diverse team of specialists who combine deep technical knowledge with creative vision:    </p>
+        <ul>
+          <li><strong>Digital Strategists: </strong>The big-picture thinkers who map your journey from where you are to where you want to be</li>
+          <li><strong>UX/UI Designers: </strong>Experience architects who create intuitive, engaging digital environments</li>
+          <li><strong>Full-Stack Developers: </strong>Code craftspeople who build robust, scalable technical solutions</li>
+          <li><strong>Content Creators:</strong>Storytellers who understand that words and images need to work as hard as your website</li>
+          <li><strong>SEO Specialists: </strong>Search experts, who know how to make it easy to find your brand.</li>
+          <li><strong>Analytics Pros:</strong>Data interpreters who translate numbers into actionable insights
+What unites us is a shared passion for solving problems. We are the people who get excited about conversion rates, user flows, and elegant code and these elements translate directly to your business success.</li>
+        </ul>
+      </div>
+     
+    </div>
+  </div>
+</section>
  <section className="bg-white px-4 md:px-8 pt-20">
       <div className="container mx-auto max-w-7xl pt-16 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           
-          {/* मेन कंटेंट एरिया */}
+          
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl font-[600] text-gray-900 leading-tight mb-6">
               Meet Our Founder
@@ -74,11 +117,10 @@ const About = () => {
               Explore More
             </a>
             
-            {/* Vision and Mission Icons */}
+          
            
           </div>
           
-          {/* इमेज और ओवरलैपिंग कोटेशन बॉक्स */}
           <div className="order-1 lg:order-2 relative w-full lg:w-auto">
             <img
               src={founderImage}

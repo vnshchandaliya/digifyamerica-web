@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import ProgressBar from '../components/ProgressBar';
 import StepCard from '../components/StepCard';
 import NavigationButtons from '../components/NavigationButtons';
-// import './index.css';
 
 const stepHeadings = [
   'Website Package',
@@ -20,30 +19,27 @@ const stepSubheadings = [
   'Select Basic or eCommerce options.',
   'Select the type of web design service needed.',
   'How many non-product, non-blog pages do you estimate you will need.',
-  '',
-  '',
+  'Select the features you would like to include.',
+  'Select the integrations you would like to include.',
   'Any final tweaks or enhancements?',
   'Option for fast delivery.',
-  '',
+  'Confirm your project and contact details.',
 ];
 
 const stepsData = {
   1: [
-    { img: 'https://img.icons8.com/ios-filled/100/000000/news.png', title: 'Basic Website', price: 300, desc: 'Starts at $1,500...' },
+    { img: 'https://img.icons8.com/ios-filled/100/000000/news.png', title: 'Basic Website', price: 300, desc: 'Includes Home, About, Services, Contact, and Blog.' },
     { img: 'https://img.icons8.com/ios-filled/100/000000/shopping-cart.png', title: 'eCommerce Website', price: 1400, desc: 'The basic fee for an eCommerce...' },
   ],
   2: [
     { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/new-website-icon-color.png', title: 'New Website Design', price: 800, desc: 'A new branded design...' },
     { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/redesign-icon.png', title: 'Website Re-Design', price: 400, desc: 'A revamp of your current website...' },
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/copy-site-icon.png', title: 'No Design', price: 200, desc: 'No design is needed...' },
   ],
   4: [
     { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/blog-icon.png', title: 'Blog', price: 200 },
     { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/portfolio-icon.png', title: 'Portfolio', price: 300 },
     { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/events-calendar-icon.png', title: 'Event', price: 501 },
     { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/booking-icon.png', title: 'Calendar Booking', price: 502 },
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/restaurant-menu-order.png', title: 'Restaurant Orders', price: 503 },
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/tickets-icon.png', title: 'Registration & Ticketing', price: 504 },
   ],
   5: [
     { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/analytics-icon.png', title: 'Google Analytics', price: 75 },
@@ -65,14 +61,13 @@ function Pricing() {
   const [currentStep, setCurrentStep] = useState(1);
   const [totalPrice, setTotalPrice] = useState(0);
   const [selectedOptions, setSelectedOptions] = useState({});
-  const [pageCount, setPageCount] = useState(0); // pageCount ab 0 se shuru hoga
+  const [pageCount, setPageCount] = useState(0);
   const [fastDelivery, setFastDelivery] = useState(false);
   const [contactInfo, setContactInfo] = useState({ email: '', phone: '' });
   const [errorMsg, setErrorMsg] = useState('');
 
   useEffect(() => {
     let newTotal = 0;
-    // Calculate price from step 1, 2, 4, 5, 6
     Object.keys(selectedOptions).forEach(step => {
       const selection = selectedOptions[step];
       if (Array.isArray(selection)) {
@@ -82,10 +77,8 @@ function Pricing() {
       }
     });
 
-    // Calculate price from step 3 (page range)
     newTotal += pageCount * 100;
 
-    // Calculate price from step 7 (fast delivery)
     if (fastDelivery) {
       newTotal += 550;
     }
@@ -144,10 +137,8 @@ function Pricing() {
     if (currentStep < totalSteps) {
       setCurrentStep(prev => prev + 1);
     } else {
-      // Data ko Google Sheet mein send karne ka logic yahan aayega
       console.log('Final data:', { ...selectedOptions, ...contactInfo, totalPrice });
-      // Call Google Sheets API function
-      sendDataToGoogleSheet({ ...selectedOptions, ...contactInfo, totalPrice });
+      alert('Form submitted successfully!');
     }
   };
 
@@ -163,13 +154,12 @@ function Pricing() {
     try {
       const response = await fetch(scriptUrl, {
         method: 'POST',
-        mode: 'no-cors', // Dhyan dein: 'no-cors' mode
+        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
       });
-      // Handle success or failure here
       console.log('Data sent to Google Sheet:', data);
       alert('Form submitted! We will contact you soon.');
     } catch (error) {
@@ -182,11 +172,68 @@ function Pricing() {
     switch (currentStep) {
       case 1:
       case 2:
-      case 4:
-      case 5:
-      case 6:
         return (
           <div className="flex flex-wrap justify-center gap-5 mt-5">
+            {stepsData[currentStep].map((card) => (
+              <StepCard
+                key={card.title}
+                {...card}
+                onClick={() => handleCardClick(currentStep, card.price)}
+                isActive={
+                  multiSelectSteps.includes(currentStep)
+                    ? (selectedOptions[currentStep] || []).includes(card.price)
+                    : selectedOptions[currentStep] === card.price
+                }
+              />
+            ))}
+          </div>
+        );
+      
+      // Step 4 (Features)
+      case 4:
+        return (
+          // lg:grid-cols-4 यह सुनिश्चित करता है कि बड़े स्क्रीन पर 4 कार्ड एक row में हों
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
+            {stepsData[currentStep].map((card) => (
+              <StepCard
+                key={card.title}
+                {...card}
+                onClick={() => handleCardClick(currentStep, card.price)}
+                isActive={
+                  multiSelectSteps.includes(currentStep)
+                    ? (selectedOptions[currentStep] || []).includes(card.price)
+                    : selectedOptions[currentStep] === card.price
+                }
+              />
+            ))}
+          </div>
+        );
+
+      // Step 5 (Integrations)
+      case 5:
+        return (
+          // lg:grid-cols-3 यह सुनिश्चित करता है कि बड़े स्क्रीन पर 3 कार्ड एक row में हों
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
+            {stepsData[currentStep].map((card) => (
+              <StepCard
+                key={card.title}
+                {...card}
+                onClick={() => handleCardClick(currentStep, card.price)}
+                isActive={
+                  multiSelectSteps.includes(currentStep)
+                    ? (selectedOptions[currentStep] || []).includes(card.price)
+                    : selectedOptions[currentStep] === card.price
+                }
+              />
+            ))}
+          </div>
+        );
+
+      // Step 6 (Additional Work)
+      case 6:
+        return (
+          // lg:grid-cols-3 यह सुनिश्चित करता है कि बड़े स्क्रीन पर 3 कार्ड एक row में हों
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5">
             {stepsData[currentStep].map((card) => (
               <StepCard
                 key={card.title}
@@ -210,7 +257,7 @@ function Pricing() {
             <input
               type="range"
               id="pageRange"
-              min="1" // ab range 0 se shuru hoga
+              min="0"
               max="30"
               value={pageCount}
               onChange={handlePageRangeChange}

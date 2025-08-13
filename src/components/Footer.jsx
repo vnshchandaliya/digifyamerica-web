@@ -1,5 +1,7 @@
 import { FaFacebook, FaVimeo, FaLinkedin, FaGoogle, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.6639184723094!2d-86.42497132497604!3d30.38889990216947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88914355b8e4facd%3A0x3ed931f656e0623d!2s34990%20Emerald%20Coast%20Pkwy%20%23300%2C%20Destin%2C%20FL%2032541%2C%20USA!5e0!3m2!1sen!2sin!4v1755020767237!5m2!1sen!2sin" ;
+
 
 export default function Footer() {
   return (
@@ -11,12 +13,12 @@ export default function Footer() {
       <h2 className="text-xl sm:text-4xl md:text-2xl font-semibold text-[#1c75bc]">
         Connect with Us!
       </h2>
-      <a
-        href="/Conect-with-us"
+      <Link
+        to="/connect-with-us/"
         className="bg-[#1c75bc] text-[12px] text-white font-semibold uppercase tracking-wide px-8 py-4 rounded-md hover:bg-[#1c74bcce] transition duration-300"
       >
         Contact Our Team
-      </a>
+      </Link>
     </div>
   </div>
 </section>
@@ -30,9 +32,18 @@ export default function Footer() {
             <button className="mb-4 px-6 py-2 border border-white font-semibold hover:bg-white hover:text-black transition">
               Give us a call: +1 786 224 2280!
             </button>
+            <p>contact@digifyamerica.com</p>
+            <br />
             <p>
               34990 Emerald Coast Pkwy, Suite 300,<br />Destin, FL 32541
             </p>
+            <div className="mt-4 flex  gap-5 text-[30px]">
+          <a href="https://www.facebook.com/people/Digify-America/61574315640630/"><FaFacebook className="hover:text-white cursor-pointer" /></a>
+            {/* <FaVimeo className="hover:text-white cursor-pointer" />
+            <FaLinkedin className="hover:text-white cursor-pointer" />
+            <FaGoogle className="hover:text-white cursor-pointer" /> */}
+            <a href="https://www.instagram.com/digifyamerica/"><FaInstagram className="hover:text-white cursor-pointer" /></a>
+          </div>
           </div>
 
           {/* Column 2 */}
@@ -40,10 +51,13 @@ export default function Footer() {
             {/* <button className="mb-4 px-6 py-2 border border-white font-semibold hover:bg-white hover:text-black transition">
               We're Hiring!
             </button> */}
-            <p>
-              Happy people make great things. We are always looking for the
-              work hard, play hard type to join our team.
-            </p>
+            <h2 className="text-[22px]">Information</h2>
+             <ul className="mt-4 space-y-1 text-sm underline text-white/90">
+              <li><Link to="/privacy-policy/">Privacy Policy</Link></li>
+              <li><Link to="/Terms-&-Conditions/">Terms & Conditions</Link></li>
+              <li><Link to="/24/7-Support/">24/7 Support</Link></li>
+              {/* <li><a href="#">Travel Partners</a></li> */}
+            </ul>
           </div>
 
           {/* Column 3 */}
@@ -51,15 +65,19 @@ export default function Footer() {
             {/* <button className="mb-4 px-6 py-2 border border-white font-semibold hover:bg-white hover:text-black transition">
               Sign Up
             </button> */}
-            <p>
-              Stay up-to-date on digital news and the latest happenings with our newsletter.
-            </p>
-            <ul className="mt-4 space-y-1 text-sm underline text-white/90">
-              <li><Link to="/privacy-policy/">Privacy Policy</Link></li>
-              <li><a href="#">Your California Privacy Choices</a></li>
-              <li><a href="#">Data Privacy Protection Statement</a></li>
-              <li><a href="#">Travel Partners</a></li>
-            </ul>
+           <div className="map-container">
+                 <iframe
+                   src={mapSrc}
+                   width="100%"
+                   height="100%"
+                   style={{ border: 0 }}
+                   allowFullScreen={true}
+                   loading="lazy"
+                   referrerPolicy="no-referrer-when-downgrade"
+                   title="Google Maps Location"
+                 ></iframe>
+               </div>
+          
           </div>
         </div>
 
@@ -68,13 +86,7 @@ export default function Footer() {
           <p>
            2025 Copyright © & Powered by Digify America
           </p>
-          <div className="mt-4 flex justify-center gap-5 text-xl">
-            <FaFacebook className="hover:text-white cursor-pointer" />
-            {/* <FaVimeo className="hover:text-white cursor-pointer" />
-            <FaLinkedin className="hover:text-white cursor-pointer" />
-            <FaGoogle className="hover:text-white cursor-pointer" /> */}
-            <FaInstagram className="hover:text-white cursor-pointer" />
-          </div>
+          
         </div>
       </footer>
     </>

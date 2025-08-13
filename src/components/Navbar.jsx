@@ -37,22 +37,22 @@ export default function Navbar() {
             {/* Desktop Solutions Dropdown */}
             <Link to="/about-us/" className="flex items-center gap-1 font-semibold text-[18px] font-exo2">About</Link>
             <div className="relative group">
-              <Link to="/Solution/" className="flex items-center gap-1 font-semibold text-[18px] font-exo2">
+              <div className="flex items-center gap-1 font-semibold text-[18px] font-exo2 cursor-pointer">
                 Services <ChevronDown className="w-4 h-4 transition-transform group-hover:rotate-180" />
-              </Link>
+              </div>
               <div className="absolute top-14 border-t border-white-500 left-0 bg-[#3f4a4f] text-[#c0baba] w-72 mt-1 shadow-lg rounded-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
                 <Link to="/web-designing/" className="block px-5 py-2 text-xs font-normal hover:bg-[#4e5a61] hover:text-[#60beec]">Websites Development</Link>
                 <Link to="/search-engine-optimization/" className="block px-5 py-2 text-xs font-normal hover:bg-[#4e5a61] hover:text-[#60beec]">Search Engine Optimization</Link>
                 <Link to="/graphic-design/" className="block px-5 py-2 text-xs font-normal hover:bg-[#4e5a61] hover:text-[#60beec]">Graphic Design</Link>
                 <Link to="/social-media-marketing/" className="block px-5 py-2 text-xs font-normal hover:bg-[#4e5a61] hover:text-[#60beec]">Social Media Marketing</Link>
-                <Link to="/branding/" className="block px-5 py-2 text-xs font-normal hover:bg-[#4e5a61] hover:text-[#60beec]">branding</Link>
+                <Link to="/branding/" className="block px-5 py-2 text-xs font-normal hover:bg-[#4e5a61] hover:text-[#60beec]">Branding</Link>
                 <Link to="/video-production/" className="block px-5 py-2 text-xs font-normal hover:bg-[#4e5a61] hover:text-[#60beec]">Video Production</Link>
               </div>
             </div>
             <Link to="/pricing/" className="flex items-center gap-1 font-semibold text-[18px] font-exo2">Pricing</Link>
             <Link to="/blogs/" className="flex items-center gap-1 font-semibold text-[18px] font-exo2">Blog</Link>
             {/* <Link to="/client-center/" className="flex items-center gap-1 font-semibold text-[18px] font-exo2">Client Center</Link> */}
-            <Link to="/connect-with-us/" className="bg-[#1c75bc] text-white px-7 py-1 hover:bg-[#1c74bcbb] font-bold text-lg font-exo2">Connect</Link>
+            <Link to="/connect-with-us/" className="bg-[#1c75bc] text-white px-7 py-1 hover:bg-[#1c74bcbb] font-bold text-lg font-exo2">Contact us</Link>
           
           </nav>
          

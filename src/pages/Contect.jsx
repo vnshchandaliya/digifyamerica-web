@@ -1,6 +1,8 @@
-
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 import React from 'react';
+const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.6639184723094!2d-86.42497132497604!3d30.38889990216947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88914355b8e4facd%3A0x3ed931f656e0623d!2s34990%20Emerald%20Coast%20Pkwy%20%23300%2C%20Destin%2C%20FL%2032541%2C%20USA!5e0!3m2!1sen!2sin!4v1755020767237!5m2!1sen!2sin" ;
+
 
 const Connect = () => {
 
@@ -41,10 +43,10 @@ const Connect = () => {
         
         <div className="relative z-20 max-w-2xl px-4">
           <h2 className="text-3xl md:text-4xl font-light mb-4">
-            let's connect!
+            Let's connect!
           </h2>
           <p className="text-lg md:text-xl font-light">
-            we want to find solutions that fit your business needs.
+            We want to find solutions that fit your business needs.
           </p>
         </div>
       </section>
@@ -55,7 +57,7 @@ const Connect = () => {
         {/* Form header text. */}
         <div className="max-w-3xl mx-auto text-center mb-12">
           <p className="text-xl sm:text-2xl font-light leading-relaxed">
-            tell us a little bit about your vacation rental business and one of our team of experts will be in touch shortly.
+            Tell us a little bit about your vacation rental business and one of our team of experts will be in touch shortly.
           </p>
         </div>
 
@@ -149,7 +151,7 @@ const Connect = () => {
             </div>
             
             {/* The radio button section from the previous request. */}
-            <div className="space-y-4 pt-6">
+            {/* <div className="space-y-4 pt-6">
               <label className="flex items-start">
                 <input 
                   type="radio" 
@@ -170,7 +172,7 @@ const Connect = () => {
                   I am an existing Property Manager looking for customer support.
                 </span>
               </label>
-            </div>
+            </div> */}
             
             {/* Submit button with responsive styling. */}
             <button
@@ -184,45 +186,7 @@ const Connect = () => {
       </div>
 
       {/* The footer section, identical to the previous version. */}
-      <footer className="bg-white py-12">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 text-center sm:text-left sm:grid-cols-2 lg:grid-cols-4 lg:gap-16">
-            
-            <div>
-              <p className="font-bold text-lg mb-2">970.704.3240</p>
-              <a href="mailto:info@bluetent.com" className="text-lg text-blue-600 hover:underline">info@bluetent.com</a>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-lg mb-2">Where we're located</h4>
-              <p className="text-sm">218 E Valley Rd, Suite 205<br/>Carbondale, CO 81623</p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-lg mb-2">Join our team</h4>
-              <p className="text-sm">Want to be a part of an innovative team looking to help vacation rental professionals? Head over to <a href="#" className="text-blue-600 hover:underline">careers</a> to see if we have any openings.</p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold text-lg mb-2">Need technical support?</h4>
-              <p className="text-sm">If you’re a Bluetent Insider looking for technical support, please submit a support ticket <a href="#" className="text-blue-600 hover:underline">here</a> so we can better assist you.</p>
-            </div>
-
-          </div>
-          
-          <div className="flex justify-center space-x-6 mt-12">
-            <a href="#" className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
-              <LinkedInIcon />
-            </a>
-            <a href="#" className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
-              <CameraIcon />
-            </a>
-            <a href="#" className="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition duration-300">
-              <FacebookIcon />
-            </a>
-          </div>
-        </div>
-      </footer>
+      
     </div>
   );
 };

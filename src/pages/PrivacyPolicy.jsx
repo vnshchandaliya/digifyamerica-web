@@ -2,15 +2,11 @@ import React from 'react';
 
 const PrivacyPolicy = () => {
   return (
-    <div className="bg-gray-100 text-gray-800 min-h-screen p-4 md:p-8 font-inter">
-      <style>
-        {`
-          @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-        `}
-      </style>
-      <div className="container mx-auto max-w-5xl">
+    <div className="bg-gray-100 text-gray-800 min-h-screen p-4 md:p-8 font-sans">
+      
+      <div className="container mx-auto max-w-5xl pt-40">
         <header className="text-center mb-8 md:mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">Privacy Policy: Protecting Your Data</h1>
+          <h1 className="text-3xl md:text-4xl font-[300] text-gray-900 mb-2">Privacy Policy: Protecting Your Data</h1>
           <p className="text-md md:text-lg text-gray-600">At Digify America, we take your privacy seriously not because regulations require it, but because trust is the foundation of every successful partnership.</p>
           <p className="text-sm text-gray-500 mt-2">Last updated: May 1, 2025</p>
         </header>
@@ -18,9 +14,9 @@ const PrivacyPolicy = () => {
         <main className="bg-white p-6 md:p-8 rounded-2xl shadow-lg space-y-8">
           {/* Information We Collect Section */}
           <section>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Information We Collect</h2>
+            <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-4">Information We Collect</h2>
             
-            <h3 className="font-bold text-xl text-gray-800 mb-2">Client Information</h3>
+            <h3 className="text-xl text-gray-800 mb-2">Client Information</h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
               <li><strong>Contact Information:</strong> Names, email addresses, phone numbers, physical business addresses</li>
               <li><strong>Business Information:</strong> Industry details, business size, target markets, competitors</li>
@@ -29,7 +25,7 @@ const PrivacyPolicy = () => {
               <li><strong>Communication Records:</strong> Emails, project management notes, meeting records</li>
             </ul>
 
-            <h3 className="font-bold text-xl text-gray-800 mt-6 mb-2">Website Visitor Information</h3>
+            <h3 className="text-xl text-gray-800 mt-6 mb-2">Website Visitor Information</h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
               <li><strong>Technical Data:</strong> IP addresses, browser types, device information</li>
               <li><strong>Usage Data:</strong> Pages visited, time spent, interaction patterns</li>
@@ -37,7 +33,7 @@ const PrivacyPolicy = () => {
               <li><strong>Marketing Response:</strong> Email opens, link clicks, campaign engagement</li>
             </ul>
 
-            <h3 className="font-bold text-xl text-gray-800 mt-6 mb-2">Information Collection Methods</h3>
+            <h3 className="text-xl text-gray-800 mt-6 mb-2">Information Collection Methods</h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
               <li>Direct submission through our website forms</li>
               <li>Client intake questionnaires and discovery sessions</li>
@@ -49,9 +45,9 @@ const PrivacyPolicy = () => {
 
           {/* How We Use Your Information Section */}
           <section>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">How We Use Your Information</h2>
+            <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-4">How We Use Your Information</h2>
 
-            <h3 className="font-bold text-xl text-gray-800 mb-2">Core Business Operations</h3>
+            <h3 className="text-xl text-gray-800 mb-2">Core Business Operations</h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
               <li>Delivering contracted services and projects</li>
               <li>Communicating about project status and requirements</li>
@@ -60,7 +56,7 @@ const PrivacyPolicy = () => {
               <li>Improving our service quality and operations</li>
             </ul>
 
-            <h3 className="font-bold text-xl text-gray-800 mt-6 mb-2">Marketing and Outreach</h3>
+            <h3 className="text-xl text-gray-800 mt-6 mb-2">Marketing and Outreach</h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
               <li>Sharing relevant industry insights and company updates</li>
               <li>Inviting you to events or webinars of professional interest</li>
@@ -68,7 +64,7 @@ const PrivacyPolicy = () => {
               <li>Requesting testimonials or case study participation (with explicit permission)</li>
             </ul>
 
-            <h3 className="font-bold text-xl text-gray-800 mt-6 mb-2">Analysis and Improvement</h3>
+            <h3 className="text-xl text-gray-800 mt-6 mb-2">Analysis and Improvement</h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
               <li>Evaluating website performance and user experience</li>
               <li>Researching industry trends to enhance our offerings</li>
@@ -79,9 +75,9 @@ const PrivacyPolicy = () => {
 
           {/* Data Protection Measures Section */}
           <section>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Data Protection Measures</h2>
+            <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-4">Data Protection Measures</h2>
 
-            <h3 className="font-bold text-xl text-gray-800 mb-2">Technical Safeguards</h3>
+            <h3 className="text-xl text-gray-800 mb-2">Technical Safeguards</h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
               <li>Industry-standard encryption for data transmission and storage</li>
               <li>Secure cloud infrastructure with regular security updates</li>
@@ -90,7 +86,7 @@ const PrivacyPolicy = () => {
               <li>Automated threat detection and prevention systems</li>
             </ul>
 
-            <h3 className="font-bold text-xl text-gray-800 mt-6 mb-2">Organizational Controls</h3>
+            <h3 className="text-xl text-gray-800 mt-6 mb-2">Organizational Controls</h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
               <li>Employee training on data protection best practices</li>
               <li>Access controls based on role and necessity</li>
@@ -99,7 +95,7 @@ const PrivacyPolicy = () => {
               <li>Vendor security assessments for third-party tools</li>
             </ul>
 
-            <h3 className="font-bold text-xl text-gray-800 mt-6 mb-2">Data Retention</h3>
+            <h3 className="text-xl text-gray-800 mt-6 mb-2">Data Retention</h3>
             <p className="text-gray-700 ml-4">
               Client project data retained for the duration of our relationship plus three years. Website visitor data anonymized after 26 months. Financial records maintained according to legal requirements. Inactive account information archived with enhanced security.
             </p>
@@ -107,9 +103,9 @@ const PrivacyPolicy = () => {
 
           {/* Information Sharing Section */}
           <section>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Information Sharing</h2>
+            <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-4">Information Sharing</h2>
 
-            <h3 className="font-bold text-xl text-gray-800 mb-2">Service Providers</h3>
+            <h3 className="text-xl text-gray-800 mb-2">Service Providers</h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
               <li>Cloud hosting and infrastructure providers</li>
               <li>Project management and collaboration tools</li>
@@ -118,7 +114,7 @@ const PrivacyPolicy = () => {
               <li>All vendors bound by confidentiality agreements</li>
             </ul>
             
-            <h3 className="font-bold text-xl text-gray-800 mt-6 mb-2">Legal Requirements</h3>
+            <h3 className="text-xl text-gray-800 mt-6 mb-2">Legal Requirements</h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
               <li>When required by valid legal process (subpoenas, court orders)</li>
               <li>To protect our legal rights or defend against claims</li>
@@ -127,7 +123,7 @@ const PrivacyPolicy = () => {
               <li>Always limited to the minimum necessary information</li>
             </ul>
 
-            <h3 className="font-bold text-xl text-gray-800 mt-6 mb-2">Business Transfers</h3>
+            <h3 className="text-xl text-gray-800 mt-6 mb-2">Business Transfers</h3>
             <p className="text-gray-700 ml-4">
               In connection with a merger, acquisition, or sale of assets. With notice to affected clients whenever possible. Subject to continued protection under receiving entity's privacy policy.
             </p>
@@ -135,11 +131,11 @@ const PrivacyPolicy = () => {
 
           {/* Your Rights and Choices Section */}
           <section>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Your Rights and Choices</h2>
+            <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-4">Your Rights and Choices</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-4 bg-gray-50 rounded-lg shadow-sm">
-                <h3 className="font-bold text-lg text-gray-800 flex items-center mb-2">
-                  <span className="text-xl mr-2">🔒</span> Access and Control
+                <h3 className="text-lg text-gray-800 flex items-center mb-2">
+                  <i className="fa fa-lock text-xl mr-2"></i> Access and Control
                 </h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700">
                   <li>Request copies of your personal information</li>
@@ -150,8 +146,8 @@ const PrivacyPolicy = () => {
                 </ul>
               </div>
               <div className="p-4 bg-gray-50 rounded-lg shadow-sm">
-                <h3 className="font-bold text-lg text-gray-800 flex items-center mb-2">
-                  <span className="text-xl mr-2">🍪</span> Cookie Management
+                <h3 className="text-lg text-gray-800 flex items-center mb-2">
+                  <i className="fa fa-cookie-bite text-xl mr-2"></i> Cookie Management
                 </h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700">
                   <li>Essential cookies required for website functionality</li>
@@ -161,8 +157,8 @@ const PrivacyPolicy = () => {
                 </ul>
               </div>
               <div className="p-4 bg-gray-50 rounded-lg shadow-sm">
-                <h3 className="font-bold text-lg text-gray-800 flex items-center mb-2">
-                  <span className="text-xl mr-2">📧</span> Communication Preferences
+                <h3 className="text-lg text-gray-800 flex items-center mb-2">
+                  <i className="fa fa-envelope text-xl mr-2"></i> Communication Preferences
                 </h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700">
                   <li>Subscription management available in every email footer</li>
@@ -172,8 +168,8 @@ const PrivacyPolicy = () => {
                 </ul>
               </div>
               <div className="p-4 bg-gray-50 rounded-lg shadow-sm">
-                <h3 className="font-bold text-lg text-gray-800 flex items-center mb-2">
-                  <span className="text-xl mr-2">🌍</span> International Data
+                <h3 className="text-lg text-gray-800 flex items-center mb-2">
+                  <i className="fa fa-globe text-xl mr-2"></i> International Data
                 </h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700">
                   <li>Data primarily stored on US-based servers</li>
@@ -186,7 +182,7 @@ const PrivacyPolicy = () => {
 
           {/* Policy Updates Section */}
           <section>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Policy Updates</h2>
+            <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-4">Policy Updates</h2>
             <p className="text-gray-700">
               Privacy policy reviewed and updated annually. Material changes communicated via email to active clients. Update notifications posted on our website. Previous versions available upon request.
             </p>
@@ -194,16 +190,16 @@ const PrivacyPolicy = () => {
 
           {/* Contact Information Section */}
           <section>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">Contact Information</h2>
+            <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-4">Contact Information</h2>
             <p className="mb-2 text-gray-700">
               If you have questions or concerns about your privacy while working with us:
             </p>
             <div className="p-4 bg-gray-50 rounded-lg shadow-sm">
               <p className="mb-2 text-gray-700">
-                <strong>Phone:</strong> <span className="text-blue-600">[Phone Number]</span>
+                <strong>Phone:</strong> <span className="text-blue-600">[+1 786 224 2280]</span>
               </p>
               <p className="text-gray-700">
-                <strong>Email:</strong> <span className="text-blue-600">[Email Address]</span>
+                <strong>Email:</strong> <span className="text-blue-600">[contact@digifyamerica.com]</span>
               </p>
             </div>
             <p className="mt-6 text-gray-600">

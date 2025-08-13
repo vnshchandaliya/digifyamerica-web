@@ -22,12 +22,16 @@ import SocialMedia from './pages/Services/socialMedia.jsx';
 import BrandingSection from './pages/Services/brandingSection.jsx';
 import VideoProduction from './pages/Services/videoProduction.jsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
+import TermsConditions from './pages/Terms&Conditions.jsx';
+import Support from './pages/Support.jsx';
 
 
 
 const App = () => {
   return (
     <>
+    <ScrollToTop />
       <Navbar />
 
       <Routes>
@@ -51,6 +55,9 @@ const App = () => {
         <Route path="/client-center/" element={<ClientCenter />}/>
         <Route path="/connect-with-us/" element={<Connect />} />
         <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
+        <Route path="/Terms-&-Conditions/" element ={<TermsConditions />} />
+        <Route path="/24/7-Support/" element ={<Support />} />
+
 
       </Routes>
       <Footer />
