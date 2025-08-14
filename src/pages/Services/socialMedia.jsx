@@ -10,7 +10,7 @@ const SocialMedia = () => {
           
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-[600] text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl font-[300] text-black leading-tight mb-6">
               Social Media Marketing
             </h1>
             <p className="text-lg text-gray-700 mb-8">
@@ -35,7 +35,7 @@ const SocialMedia = () => {
       {/* What We Offer Section */}
       <div className="bg-gray-50 py-16 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-[300] text-black mb-6 text-center">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -47,7 +47,7 @@ const SocialMedia = () => {
                 <MessageSquare className="text-blue-600 h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Platform-Specific Strategy</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Platform-Specific Strategy</h3>
                 <p className="text-gray-700">Every channel is a different maze. What works on Instagram dies on LinkedIn. We tailor strategies for each platform—Facebook, Instagram, LinkedIn, TikTok, Pinterest, and beyond.</p>
               </div>
             </div>
@@ -56,7 +56,7 @@ const SocialMedia = () => {
                 <CalendarDays className="text-blue-600 h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Content Calendar Creation</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Content Calendar Creation</h3>
                 <p className="text-gray-700">Get rid of last-minute panic of “what should we post today?”. We build strategic, engaging, pre-approved content calendars that balance promos, personality, and performance.</p>
               </div>
             </div>
@@ -65,7 +65,7 @@ const SocialMedia = () => {
                 <Edit className="text-blue-600 h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Visual & Copy Creation</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Visual & Copy Creation</h3>
                 <p className="text-gray-700">To stand out in crowd you need scroll-stopping graphics with captions that sound like you. We build a brand tone that stays consistent post after post.</p>
               </div>
             </div>
@@ -74,7 +74,7 @@ const SocialMedia = () => {
                 <Users className="text-blue-600 h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Community Management</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Community Management</h3>
                 <p className="text-gray-700">Replying to comments, handling DMs, dealing with trolls or spams – we handle it all. Your followers want connection and not scripted responses.</p>
               </div>
             </div>
@@ -83,7 +83,7 @@ const SocialMedia = () => {
                 <TrendingUp className="text-blue-600 h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Social Media Advertising</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Social Media Advertising</h3>
                 <p className="text-gray-700">Boosted posts are not a strategy. We create paid campaigns that are targeted, data-backed, and optimized to drive clicks, leads, and conversions.</p>
               </div>
             </div>
@@ -92,7 +92,7 @@ const SocialMedia = () => {
                 <BarChart2 className="text-blue-600 h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Insights & Reporting that makes sense</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Insights & Reporting that makes sense</h3>
                 <p className="text-gray-700">We won’t spam you with complex reports. We share real numbers, what worked, what didn’t, and what will do next.</p>
               </div>
             </div>
@@ -103,7 +103,7 @@ const SocialMedia = () => {
       {/* Why Digify America? */}
       <div className="py-16 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl font-[300] text-black mb-6 text-center">
             Why Digify America?
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
@@ -132,7 +132,7 @@ const SocialMedia = () => {
             </div>
           </div>
            <div className="text-center bg-blue-600 text-white p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-[300] mb-4">
           Let’s Get Social—Strategically
         </h2>
         <p className="max-w-3xl mx-auto text-lg mb-6">

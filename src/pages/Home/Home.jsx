@@ -40,17 +40,17 @@ const services = [
   },
    {
     image: smmimg,
-    title: 'Graphic & Logo Design',
+    title: 'Social Media Marketing ',
     description: "Social Media Marketing boosts brand visibility, engagement, and sales through targeted strategies."
   },
    {
     image: bradingimg,
-    title: 'Graphic & Logo Design',
+    title: 'Branding',
     description: "Empowering brands with bold strategies, digital innovation, and creative storytelling that drives lasting impactYour visual identity speaks before you do. Our design team creates:"
   },
    {
     image: videoimg,
-    title: 'Graphic & Logo Design',
+    title: 'Video production',
     description: "Video production brings stories to life through creative filming, editing, and impactful visual storytelling techniques."
   },
   // Add more services here
@@ -174,18 +174,18 @@ function Home() {
               
               <div className="order-2 lg:order-1 text-center lg:text-left">
                 <p className='text-[18px]'>Why Choose Us</p>
-                <h1 className="text-4xl md:text-5xl font-[600] text-gray-900 leading-tight mb-6">
+                <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
                 Beyond regular marketing plan
 
                 </h1>
-                <p className='font-bold'>Customization at Our Core</p>
+                <p className='font-[400]'>Customization at Our Core</p>
                 <p className="text-lg text-gray-700 mb-8">
                  Every business has its own needs so why should the digital strategy be same? We reject the one-size-fits-all approach that plagues our industry. Instead:   </p>
                  <ul>
-                  <li className=''> <strong>We start from scratch:</strong> Every strategy begins with a blank canvas, not a template </li> 
-                  <li className=''><strong>We immerse ourselves:</strong> Understanding your business becomes our obsession</li>
-                  <li className=''><strong>We build for your audience:</strong> Solutions designed specifically for the people you need to reach</li>
-                  <li className=''><strong>We align with your goals:</strong> KPIs that match your actual business objectives, not vanity metrics
+                  <li className=''> <strong className='font-[500]'>We start from scratch:</strong> Every strategy begins with a blank canvas, not a template </li> 
+                  <li className=''><strong className='font-[500]'>We immerse ourselves:</strong> Understanding your business becomes our obsession</li>
+                  <li className=''><strong className='font-[500]'>We build for your audience:</strong> Solutions designed specifically for the people you need to reach</li>
+                  <li className=''><strong className='font-[500]'>We align with your goals:</strong> KPIs that match your actual business objectives, not vanity metrics
 We design solutions for your specific challenges and opportunities and not the recycled strategies from previous clients.</li>
                  </ul>
                

@@ -113,7 +113,7 @@ const DirectBookingwebsites = () => {
 
   return (
     <>
-      {/* <section
+      <section
         className="relative h-[90vh] bg-cover bg-center flex items-center justify-center text-white text-center px-40"
         style={{
           backgroundImage: `url(${img3})`,
@@ -133,14 +133,14 @@ const DirectBookingwebsites = () => {
             Chat with our team
           </a>
         </div>
-      </section> */}
+      </section>
 
-      {/* <h1 className="text-center pt-10 text-[28px] text-[#53b6e7] font-[600]">
+      <h1 className="text-center pt-10 text-[28px] text-[#53b6e7] font-[600]">
         Drive more direct bookings with our software-integrated website platforms built <br /> specifically for vacation rental professionals.
-      </h1> */}
+      </h1>
 
       {/* Section 1 */}
-      {/* <section className="bg-white py-16 px-20">
+      <section className="bg-white py-16 px-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <span className="text-[24px] font-semibold text-[#f09b2d]">
@@ -158,10 +158,10 @@ const DirectBookingwebsites = () => {
             />
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Section 2 */}
-      {/* <section className="bg-white py-1 px-20">
+      <section className="bg-white py-1 px-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 flex justify-center">
             <img
@@ -179,10 +179,10 @@ const DirectBookingwebsites = () => {
             </p>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Section 3 */}
-      {/* <section className="bg-white py-16 px-20">
+      <section className="bg-white py-16 px-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="w-full md:w-1/2 text-center md:text-left">
             <span className="text-[24px] font-semibold text-[#f09b2d]">
@@ -200,7 +200,7 @@ const DirectBookingwebsites = () => {
             />
           </div>
         </div>
-      </section> */}
+      </section>
 
      <section ref={sectionRef} className="features-section py-16 px-4 text-center">
       <h2 className="text-[28px] md:text-4xl font-[400]  text-[#53b6e7] mb-12">
@@ -216,7 +216,7 @@ const DirectBookingwebsites = () => {
         ))}
       </div>
     </section>
-     {/* <section className="bg-[#53b6e7] text-white py-19 px-4 mx-60">
+     <section className="bg-[#53b6e7] text-white py-19 px-4 mx-60">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-light mb-4">
           Three levels of Rezfusion web:
@@ -248,8 +248,8 @@ const DirectBookingwebsites = () => {
           Schedule a demo
         </button>
       </div>
-    </section> */}
-    {/* <section className="py-16 px-4 bg-white text-center">
+    </section>
+    <section className="py-16 px-4 bg-white text-center">
       <h2 className="text-3xl md:text-4xl font-[300] mb-10">
         Our software partners:
       </h2>
@@ -262,7 +262,7 @@ const DirectBookingwebsites = () => {
         <img src="https://www.bluetent.com/wp-content/uploads/2019/11/Escapia_Logo_Full_Color_on_Light.png" alt="Barefoot" className="mx-auto h-12 md:h-16 object-contain" />
         <img src="https://www.bluetent.com/wp-content/uploads/2020/06/track-e1593212345782.png" alt="RNS" className="mx-auto h-12 md:h-16 object-contain" />
       </div>
-    </section> */}
+    </section>
     
     </>
   );

@@ -1,33 +1,7 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
-
-import React from 'react';
-const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.6639184723094!2d-86.42497132497604!3d30.38889990216947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88914355b8e4facd%3A0x3ed931f656e0623d!2s34990%20Emerald%20Coast%20Pkwy%20%23300%2C%20Destin%2C%20FL%2032541%2C%20USA!5e0!3m2!1sen!2sin!4v1755020767237!5m2!1sen!2sin" ;
+import { useState } from "react";
 
 
-const Connect = () => {
-
- 
-  const LinkedInIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-linkedin">
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-      <rect width="4" height="12" x="2" y="9"/>
-      <circle cx="4" cy="4" r="2"/>
-    </svg>
-  );
-
-  const CameraIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-camera">
-      <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/>
-      <circle cx="12" cy="13" r="3"/>
-    </svg>
-  );
-
-  const FacebookIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-facebook">
-      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-    </svg>
-  );
-
+const Connect = () => { 
   return (
     // Main container for the entire page, with a light gray background and responsive padding.
     <div className="bg-gray-100 min-h-screen font-sans antialiased text-gray-800">
@@ -51,7 +25,7 @@ const Connect = () => {
         </div>
       </section>
 
-      {/* Main Form container, centered and responsive. */}
+      
       <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         
         {/* Form header text. */}
@@ -81,6 +55,7 @@ const Connect = () => {
                     name="firstName"
                     className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-3"
                     placeholder="Enter your first name"
+                    onChange={(e)=>setFirstName(e.target.value)}
                   />
                 </div>
               </div>
@@ -97,6 +72,7 @@ const Connect = () => {
                     name="lastName"
                     className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-3"
                     placeholder="Enter your last name"
+                     onChange={(e)=>setLastName(e.target.value)}
                   />
                 </div>
               </div>
@@ -113,6 +89,7 @@ const Connect = () => {
                     name="email"
                     className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-3"
                     placeholder="Enter your email"
+                     onChange={(e)=>setEmail(e.target.value)}
                   />
                 </div>
               </div>
@@ -125,10 +102,11 @@ const Connect = () => {
                 <div className="mt-1">
                   <input
                     type="tel"
-                    id="phoneNumber"
-                    name="phoneNumber"
+                    id="phone"
+                    name="phone"
                     className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-3"
                     placeholder="Enter your phone number"
+                     onChange={(e)=>setPhone(e.target.value)}
                   />
                 </div>
               </div>
@@ -145,6 +123,7 @@ const Connect = () => {
                     rows="4"
                     className="block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm p-3"
                     placeholder="Tell us about your project..."
+                     onChange={(e)=>setPhone(e.target.value)}
                   />
                 </div>
               </div>

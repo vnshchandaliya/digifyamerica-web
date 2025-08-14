@@ -8,6 +8,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { useState } from 'react';
+import PartnerSection from '../components/partnerSection';
 
 const testimonials = [
   {
@@ -70,23 +71,23 @@ const About = () => {
         It now has the order-2 class for all screens and lg:order-2 to keep it on the right.
       */}
       <div className="order-2 lg:order-2 text-center lg:text-left">
-        <h1 className="text-4xl md:text-5xl font-[600] text-gray-900 leading-tight mb-6">
+        <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
          Your digital growth partner
         </h1>
-        <strong>Our Story</strong>
+        <strong className='font-[500]'>Our Story</strong>
 
         <p className="text-lg text-gray-700 mb-1">
         Headquartered in sunny Florida but digitally present everywhere, Digify America have built reputation by treating clients' growth as primary mission. What drives us is seeing businesses transform through strategic digital presence. Our leadership team built Digify America because we saw too many companies getting generic solutions that looked pretty but failed to deliver results.    </p>
-       <strong>Our Team</strong>
+       <strong className='font-[500]'>Our Team</strong>
         <p className='text-lg text-gray-700 mb-4'>
         Behind every successful Digify project stands a diverse team of specialists who combine deep technical knowledge with creative vision:    </p>
         <ul>
-          <li><strong>Digital Strategists: </strong>The big-picture thinkers who map your journey from where you are to where you want to be</li>
-          <li><strong>UX/UI Designers: </strong>Experience architects who create intuitive, engaging digital environments</li>
-          <li><strong>Full-Stack Developers: </strong>Code craftspeople who build robust, scalable technical solutions</li>
-          <li><strong>Content Creators:</strong>Storytellers who understand that words and images need to work as hard as your website</li>
-          <li><strong>SEO Specialists: </strong>Search experts, who know how to make it easy to find your brand.</li>
-          <li><strong>Analytics Pros:</strong>Data interpreters who translate numbers into actionable insights
+          <li><strong className='font-[500]'>Digital Strategists: </strong>The big-picture thinkers who map your journey from where you are to where you want to be</li>
+          <li><strong className='font-[500]'>UX/UI Designers: </strong>Experience architects who create intuitive, engaging digital environments</li>
+          <li><strong className='font-[500]'>Full-Stack Developers: </strong>Code craftspeople who build robust, scalable technical solutions</li>
+          <li><strong className='font-[500]'>Content Creators:</strong>Storytellers who understand that words and images need to work as hard as your website</li>
+          <li><strong className='font-[500]'>SEO Specialists: </strong>Search experts, who know how to make it easy to find your brand.</li>
+          <li><strong className='font-[500]'>Analytics Pros:</strong>Data interpreters who translate numbers into actionable insights
 What unites us is a shared passion for solving problems. We are the people who get excited about conversion rates, user flows, and elegant code and these elements translate directly to your business success.</li>
         </ul>
       </div>
@@ -100,7 +101,7 @@ What unites us is a shared passion for solving problems. We are the people who g
           
           
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-[600] text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
               Meet Our Founder
             </h1>
             <p className="text-lg text-gray-700 mb-8">
@@ -218,6 +219,8 @@ Our mission is to craft innovative and data-driven digital strategies that conne
           {/* Pagination Dots */}
           <div className="swiper-pagination mt-6 text-center"></div>
         </div>
+        
+    <PartnerSection />
     </>
   );
 };

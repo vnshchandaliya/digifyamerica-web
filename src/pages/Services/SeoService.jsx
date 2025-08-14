@@ -10,7 +10,7 @@ const SeoService = () => {
           
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-[600] text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl font-[300] text-black leading-tight mb-6">
               Search Engine Optimization (SEO)
             </h1>
             <p className="text-lg text-gray-700 mb-8">
@@ -39,7 +39,7 @@ const SeoService = () => {
 
           {/* Why SEO is Important */}
           <div className="bg-white p-8 md:p-12 rounded-xl shadow-lg mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+            <h2 className="text-3xl font-[300] text-black mb-6 text-center">
               Why is SEO Important?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -64,7 +64,7 @@ const SeoService = () => {
           
           {/* What We Do Best */}
           <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-[300] text-gray-900 mb-6 text-center">
               What We Do Best
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -76,7 +76,7 @@ const SeoService = () => {
                   <BarChart2 className="text-[#1c75bc] h-6 w-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Technical SEO Excellence</h3>
+                  <h3 className="text-xl font-[400] text-gray-900">Technical SEO Excellence</h3>
                   <p className="text-gray-700">We fix it all - site speed, design, mobile responsiveness, and crawlability. Google loves clean, structured sites and we make your website shine in the crowd.</p>
                 </div>
               </div>
@@ -85,7 +85,7 @@ const SeoService = () => {
                   <MessageSquare className="text-[#1c75bc] h-6 w-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Content that Connects</h3>
+                  <h3 className="text-xl font-[400] text-gray-900">Content that Connects</h3>
                   <p className="text-gray-700">We create and optimize content that educates, inspires, and ranks. Think blogs that answer customer queries and product descriptions that do more than fill space.</p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const SeoService = () => {
                   <MapPin className="text-[#1c75bc] h-6 w-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Local SEO for Real-World Impact</h3>
+                  <h3 className="text-xl font-[400] text-gray-900">Local SEO for Real-World Impact</h3>
                   <p className="text-gray-700">We optimize your Google Business Profile, manage citations, and implement location-based strategies that bring in nearby customers. Own your neighborhood.</p>
                 </div>
               </div>
@@ -103,7 +103,7 @@ const SeoService = () => {
                   <Rocket className="text-[#1c75bc] h-6 w-6" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Real Metrics, Real Results</h3>
+                  <h3 className="text-xl font-[400] text-gray-900">Real Metrics, Real Results</h3>
                   <p className="text-gray-700">We track Organic traffic, conversion rates, keyword rankings, and revenue attribution to give you reports that show your SEO success and plan your next move.</p>
                 </div>
               </div>
@@ -112,7 +112,7 @@ const SeoService = () => {
 
           {/* Why SEO with Digify America? */}
           <div className="bg-white p-8 md:p-12 rounded-xl shadow-lg mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+            <h2 className="text-3xl font-[300] text-gray-900 mb-6 text-center">
               Why SEO with Digify America?
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
@@ -146,7 +146,7 @@ const SeoService = () => {
 
           {/* Case Studies */}
           <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-[300] text-gray-900 mb-6 text-center">
               Our Success Stories
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -161,7 +161,7 @@ const SeoService = () => {
 
           {/* Final CTA Section */}
           <div className="text-center bg-[#1c75bc] text-white p-8 md:p-12 rounded-xl shadow-2xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-[300] mb-4">
               Are you ready to be found by the right people?
             </h2>
             <p className="max-w-3xl mx-auto text-lg mb-6">

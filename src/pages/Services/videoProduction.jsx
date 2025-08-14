@@ -11,7 +11,7 @@ const VideoProduction = () => {
           
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-[600] text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
               In a world that won’t sit still, video gets you noticed.
             </h1>
             <p className="text-lg text-gray-700 mb-8">
@@ -36,7 +36,7 @@ const VideoProduction = () => {
       {/* What We Offer Section */}
       <div className="bg-gray-50 py-16 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-[300] text-gray-900 mb-6 text-center">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -48,7 +48,7 @@ const VideoProduction = () => {
                 <Film className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Brand Story Videos</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Brand Story Videos</h3>
                 <p className="text-gray-700">We script, shoot, and edit cinematic videos that make people connect and remember your name. Let’s tell your story the way it deserves to be told.</p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const VideoProduction = () => {
                 <Video className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Product Demos & Showcases</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Product Demos & Showcases</h3>
                 <p className="text-gray-700">We create videos that highlight features, benefits, and real-world experiences which are perfect for websites, landing pages, and digital ads. Don’t tell them, show them.</p>
               </div>
             </div>
@@ -66,7 +66,7 @@ const VideoProduction = () => {
                 <Star className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Testimonial & Case Study Videos</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Testimonial & Case Study Videos</h3>
                 <p className="text-gray-700">We capture authentic customer stories that turn “maybe” into “let’s do this.” Social proof is proven and better way to earn trust.</p>
               </div>
             </div>
@@ -75,7 +75,7 @@ const VideoProduction = () => {
                 <MonitorPlay className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Social Media Shorts & Reels</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Social Media Shorts & Reels</h3>
                 <p className="text-gray-700">Fast, scroll-stopping, thumb-stopping clips built for Instagram, TikTok, Facebook, and YouTube. Short-form, long impact.</p>
               </div>
             </div>
@@ -84,7 +84,7 @@ const VideoProduction = () => {
                 <Lightbulb className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Explainer Videos & How-Tos</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Explainer Videos & How-Tos</h3>
                 <p className="text-gray-700">Pushing for sale all the time can be repelling, but informational videos get immediate attention. Solve their queries to get their attention.</p>
               </div>
             </div>
@@ -93,7 +93,7 @@ const VideoProduction = () => {
                 <TrendingUp className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Video Ads & Campaign Creative</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Video Ads & Campaign Creative</h3>
                 <p className="text-gray-700">We craft polished video content for paid campaigns, from strategy to script to final export.</p>
               </div>
             </div>
@@ -104,10 +104,10 @@ const VideoProduction = () => {
       {/* Why Digify America? */}
       <div className="py-16 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl font-[300] text-gray-900 mb-6 text-center">
             Why Digify America?
           </h2>
-          <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
+          <p className="max-w-4xl mx-auto text-lg text-black text-center mb-8">
             Here’s how we are different:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -133,7 +133,7 @@ const VideoProduction = () => {
             </div>
           </div>
            <div className="text-center bg-[#1c75bc] text-white p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-[300] mb-4">
           Let’s Roll.
         </h2>
         <p className="max-w-3xl mx-auto text-lg mb-6">

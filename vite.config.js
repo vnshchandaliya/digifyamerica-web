@@ -6,8 +6,8 @@ export default defineConfig({
   // base: '/digifyamerica-web/', 
   plugins: [react(), tailwindcss()],
   server: {
-    // यहाँ port number को बदलें। 3000 एक आम विकल्प है।
-    port: 3019, 
+    
+    port: 3000, 
   },
      build: {
     rollupOptions: {
@@ -20,8 +20,7 @@ export default defineConfig({
         },
       },
     },
-    // You can also increase the warning limit if you've already optimized
-    // and the file size is acceptable for your use case.
+   
     chunkSizeWarningLimit: 1000, // 1000 kB
   },
 })

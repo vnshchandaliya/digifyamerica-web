@@ -11,7 +11,7 @@ const GraphicDesign = () => {
           
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-[600] text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl font-[300] text-black leading-tight mb-6">
               Good design doesn’t just look nice but also work hard.
             </h1>
             <p className="text-lg text-gray-700 mb-8">
@@ -36,7 +36,7 @@ const GraphicDesign = () => {
       {/* What We Offer Section */}
       <div className="bg-gray-50 py-16 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-[300] text-black mb-6 text-center">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -48,7 +48,7 @@ const GraphicDesign = () => {
                 <Star className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Holiday Rental & Travel Brand Visuals</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Holiday Rental & Travel Brand Visuals</h3>
                 <p className="text-gray-700">We specialize in visual packages for vacation rentals: property logos, branded welcome guides, booking graphics, and digital ads designed to convert clicks into guests.</p>
               </div>
             </div>
@@ -57,7 +57,7 @@ const GraphicDesign = () => {
                 <Brush className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Custom Logo Design</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Custom Logo Design</h3>
                 <p className="text-gray-700">We create logos that are memorable, meaningful, and flexible enough to live everywhere, from mobile app icon to website banner.</p>
               </div>
             </div>
@@ -66,7 +66,7 @@ const GraphicDesign = () => {
                 <Palette className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Brand Identity Systems</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Brand Identity Systems</h3>
                 <p className="text-gray-700">Be it colors, fonts, imagery or tone, everything is laid out in a brand book so your message stays clear and easy to recognize everywhere.</p>
               </div>
             </div>
@@ -75,7 +75,7 @@ const GraphicDesign = () => {
                 <FileText className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Marketing Collateral Design</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Marketing Collateral Design</h3>
                 <p className="text-gray-700">We design brochures, business cards, event signage, menus, posters—anything and everything with your business logo on it.</p>
               </div>
             </div>
@@ -84,7 +84,7 @@ const GraphicDesign = () => {
                 <Monitor className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Digital Graphics & Social Media Kits</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Digital Graphics & Social Media Kits</h3>
                 <p className="text-gray-700">From Instagram stories to website banners and email headers, we create consistent, clickable, and on-brand visuals. This helps build a strong online presence.</p>
               </div>
             </div>
@@ -95,7 +95,7 @@ const GraphicDesign = () => {
       {/* Why Digify America? */}
       <div className="py-16 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl font-[300] text-black mb-6 text-center">
             Why Digify America?
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
@@ -126,7 +126,7 @@ const GraphicDesign = () => {
 
            {/* Final CTA Section */}
           <div className="text-center bg-[#1c75bc] text-white p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
-           <h2 className="text-3xl md:text-4xl font-bold mb-4">
+           <h2 className="text-3xl md:text-4xl font-[300] mb-4">
           Ready to be a brand people remember?
         </h2>
         <p className="max-w-3xl mx-auto text-lg mb-6">

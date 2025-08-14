@@ -496,16 +496,16 @@ const Blogs = () => {
       >
         <div className="absolute inset-0 bg-[#000000c1] bg-opacity-60 z-10"></div>
         <div className="relative z-20 max-w-5xl px-4 md:px-8 lg:px-40">
-          <h3 className="text-lg md:text-xl font-semibold mb-2">Owner Acquisition</h3>
-          <h1 className="text-2xl md:text-3xl lg:text-[34px] font-light leading-tight mb-6">
-            Grow your vacation rental business
+          {/* <h3 className="text-lg md:text-xl font-semibold mb-2">Owner Acquisition</h3> */}
+          <h1 className="text-3xl md:text-4xl lg:text-[44px] font-light leading-tight mb-6">
+            Our Blogs
           </h1>
-          <a
+          {/* <a
             href="#"
             className="inline-block border-2 border-white text-white px-6 py-3 font-semibold hover:bg-white hover:text-black transition"
           >
             Chat with our team!
-          </a>
+          </a> */}
         </div>
       </section>
 
@@ -543,7 +543,7 @@ const Blogs = () => {
                 <h3 className="text-lg md:text-xl font-bold mb-2 text-gray-800">{post.title}</h3>
                 <p className="text-gray-600 text-sm flex-grow">{post.description}</p>
                 <div className="mt-4 text-xs text-gray-400">
-                  <p>By Author Name</p>
+                  {/* <p>By Author Name</p>  */}
                   <p>August 7, 2025</p>
                 </div>
               </div>

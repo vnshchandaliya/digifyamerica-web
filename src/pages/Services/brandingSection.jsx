@@ -10,7 +10,7 @@ const BrandingSection = () => {
           
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-[600] text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
               Your business is more than the logo, color palette, or the mission statement.
             </h1>
             <p className="text-lg text-gray-700 mb-8">
@@ -35,7 +35,7 @@ const BrandingSection = () => {
       {/* What We Offer Section */}
       <div className="bg-gray-50 py-16 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-[300] text-black mb-6 text-center">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -47,7 +47,7 @@ const BrandingSection = () => {
                 <Lightbulb className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Brand Strategy & Positioning</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Brand Strategy & Positioning</h3>
                 <p className="text-gray-700">We help you figure out your brand identity and how it is different from the sea of same services out there. This includes audience research, market positioning, and competitive analysis. In short: CLARITY.</p>
               </div>
             </div>
@@ -56,7 +56,7 @@ const BrandingSection = () => {
                 <MessageSquare className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Voice & Messaging Development</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Voice & Messaging Development</h3>
                 <p className="text-gray-700">What does your brand sound like? Is it bold or calm or conversational? We craft tone and messaging guidelines that give your brand a recognizable voice, no matter who is writing.</p>
               </div>
             </div>
@@ -65,7 +65,7 @@ const BrandingSection = () => {
                 <Palette className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Visual Identity Design</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Visual Identity Design</h3>
                 <p className="text-gray-700">Color palettes, typography, iconography, image style, all these tell your story without words. And yes, we will design you a knockout logo that is memorable.</p>
               </div>
             </div>
@@ -74,7 +74,7 @@ const BrandingSection = () => {
                 <FileText className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Brand Guidelines</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Brand Guidelines</h3>
                 <p className="text-gray-700">Your brand should be consistent everywhere—website, social, ads, packaging, the works. We create a full brand guide to keep everything aligned.</p>
               </div>
             </div>
@@ -83,7 +83,7 @@ const BrandingSection = () => {
                 <RefreshCw className="text-[#1c75bc] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900">Brand Refresh Packages</h3>
+                <h3 className="text-xl font-[400] text-gray-900">Brand Refresh Packages</h3>
                 <p className="text-[#1c75bc]">It’s time to get rid of old logo. We will evolve your brand without losing its roots, giving you a modern look that still feels like you.</p>
               </div>
             </div>
@@ -94,7 +94,7 @@ const BrandingSection = () => {
       {/* Why Digify America? */}
       <div className="py-16 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl font-[300] text-gray-900 mb-6 text-center">
             Why Digify America?
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
@@ -123,7 +123,7 @@ const BrandingSection = () => {
             </div>
           </div>
            <div className="text-center bg-[#1c75bc] text-white p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-[300] mb-4">
           Let’s build a Brand that means something
         </h2>
         <p className="max-w-3xl mx-auto text-lg mb-6">

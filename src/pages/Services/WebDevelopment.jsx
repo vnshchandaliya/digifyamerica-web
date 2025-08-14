@@ -11,7 +11,7 @@ const WebDevelopment = () => {
           
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-[600] text-gray-900 leading-tight mb-6">
+            <h1 className="text-4xl md:text-5xl font-[300] text-black leading-tight mb-6">
               Web Design & Application Development
             </h1>
             <p className="text-lg text-gray-700 mb-8">
@@ -39,7 +39,7 @@ const WebDevelopment = () => {
         <div className="container mx-auto max-w-7xl">
           {/* Fast, Functional & Built to Scale Section */}
           <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-[300] text-[#000] mb-6 text-center">
               Your website should be Fast, Functional & Built to Scale
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
@@ -52,7 +52,7 @@ const WebDevelopment = () => {
 
           {/* "What we build" and Feature List */}
           <div className="mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">What we build:</h3>
+            <h3 className="text-2xl font-[300] text-black mb-6">What we build:</h3>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 mb-8">
               <li className="flex items-start gap-2">
                 <Bolt className="text-[#1c75bc] h-6 w-6 flex-shrink-0" />
@@ -90,13 +90,13 @@ const WebDevelopment = () => {
 
           {/* Websites designed with the user in mind Section */}
           <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
+            <h2 className="text-3xl md:text-4xl font-[300] text-black mb-6 text-center">
               Websites designed with the user in mind.......Always
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
               People don’t read websites. They scan them, scroll them, and leave if they can’t figure out where to click. We make sure they don’t leave. Our UX/UI design philosophy is built on human behavior.
             </p>
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Our design approach includes:</h3>
+            <h3 className="text-2xl font-[300] text-black mb-4">Our design approach includes:</h3>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
               <li className="flex items-start gap-2">
                 <MousePointer2 className="text-[#1c75bc] h-6 w-6 flex-shrink-0" />
@@ -123,7 +123,7 @@ const WebDevelopment = () => {
           
           {/* Final CTA Section */}
           <div className="text-center bg-[#1c75bc] text-white p-8 md:p-12 rounded-xl shadow-2xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <h2 className="text-3xl md:text-4xl font-[300] mb-4">
               Are you ready to build something better?
             </h2>
             <p className="max-w-3xl mx-auto text-lg mb-6">

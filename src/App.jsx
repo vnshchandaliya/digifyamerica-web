@@ -31,32 +31,32 @@ import Support from './pages/Support.jsx';
 const App = () => {
   return (
     <>
-    <ScrollToTop />
+      <ScrollToTop />
       <Navbar />
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about-us" element={<About />} />
-       <Route path="/Solution/" element={ <Solutions />} />
-       <Route path="/web-designing/" element={<WebDevelopment />} />
-       <Route path ="/search-engine-optimization/" element ={<SeoService />} />
-       <Route path= "/graphic-design/" element={<GraphicDesign />}/>
-       <Route path="/social-media-marketing/" element={<SocialMedia />} />
-       <Route path= "/branding/" element ={<BrandingSection />} />
-       <Route path="/video-production/" element={<VideoProduction />} />
-       <Route path="/digital-marketing/" element={<DigitalMarketing /> } />
+        <Route path="/Solution/" element={<Solutions />} />
+        <Route path="/web-designing/" element={<WebDevelopment />} />
+        <Route path="/search-engine-optimization/" element={<SeoService />} />
+        <Route path="/graphic-design/" element={<GraphicDesign />} />
+        <Route path="/social-media-marketing/" element={<SocialMedia />} />
+        <Route path="/branding/" element={<BrandingSection />} />
+        <Route path="/video-production/" element={<VideoProduction />} />
+        <Route path="/digital-marketing/" element={<DigitalMarketing />} />
         <Route path="/direct-booking-websites/" element={<DirectBookingwebsites />} />
-        <Route path ="/email-marketing/" element ={<EmailMarketing />}/>
-        <Route path="/owner-acquisition-strategy/" element={<OwnerAcquisitionStrategy/>}/>
-        <Route path="/pricing/" element ={<Pricing />}/>
-        <Route path="/boost/" element={<Boost />}/>
-        <Route path="/blogs/" element= {<Blogs />}/>
-        <Route path="/blogs/:slug" element= {<BlogPostPage />}/>
-        <Route path="/client-center/" element={<ClientCenter />}/>
+        <Route path="/email-marketing/" element={<EmailMarketing />} />
+        <Route path="/owner-acquisition-strategy/" element={<OwnerAcquisitionStrategy />} />
+        <Route path="/pricing/" element={<Pricing />} />
+        <Route path="/boost/" element={<Boost />} />
+        <Route path="/blogs/" element={<Blogs />} />
+        <Route path="/blogs/:slug" element={<BlogPostPage />} />
+        <Route path="/client-center/" element={<ClientCenter />} />
         <Route path="/connect-with-us/" element={<Connect />} />
         <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
-        <Route path="/Terms-&-Conditions/" element ={<TermsConditions />} />
-        <Route path="/24/7-Support/" element ={<Support />} />
+        <Route path="/Terms-&-Conditions/" element={<TermsConditions />} />
+        <Route path="/24/7-Support/" element={<Support />} />
 
 
       </Routes>
