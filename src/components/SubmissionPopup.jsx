@@ -2,18 +2,15 @@ import React, { useEffect } from 'react';
 
 const SubmissionPopup = ({ isOpen, onClose, onReload }) => {
   useEffect(() => {
-    // This effect runs only when the popup becomes visible
     if (isOpen) {
-      // Set a timer to automatically close the popup and reload the page after 3 seconds
       const timer = setTimeout(() => {
-        onClose();   // Close the popup
-        onReload();  // Reload the page
-      }, 3000); // 3000 milliseconds = 3 seconds
+        onClose(); 
+        window.location.href = '/'; 
+      }, 2000); 
 
-      // Cleanup function to clear the timer if the component unmounts
       return () => clearTimeout(timer);
     }
-  }, [isOpen, onClose, onReload]); // Dependencies for useEffect
+  }, [isOpen, onClose]);
 
   if (!isOpen) {
     return null;
@@ -29,9 +26,8 @@ const SubmissionPopup = ({ isOpen, onClose, onReload }) => {
         <div className="flex justify-center mb-6">
           <div className="w-10 h-10 border-4 border-dashed rounded-full animate-spin border-indigo-500"></div>
         </div>
-        {/* You can remove the close button, or keep it as an option for the user */}
         <button
-          onClick={onReload} // This button will also trigger a reload
+          onClick={() => (window.location.href = '/')} // Button click par bhi home page par redirect karein
           className="bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700 transition-colors"
         >
           Close

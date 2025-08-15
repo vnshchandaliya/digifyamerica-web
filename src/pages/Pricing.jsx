@@ -138,7 +138,7 @@ function Pricing() {
 
   const handlePopupClose = () => {
     setIsPopupOpen(false);
-    window.location.reload();
+    // window.location.reload();
   };
 
   const handleNext = async () => {
