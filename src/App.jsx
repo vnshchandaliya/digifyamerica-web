@@ -12,7 +12,12 @@ import OwnerAcquisitionStrategy from './pages/Solutions/Owner-Acquisition-Strate
 import Boost from './pages/Solutions/Boost.jsx';
 import Pricing from './pages/Pricing.jsx';
 import Blogs from './pages/Blogs.jsx';
-import BlogPostPage from './pages/BlogPostPage.jsx';
+import BlogOne from './pages/modern-seo-best-practices.jsx';
+import BlogTwo from './pages/your-website-is-boring';
+import BlogThree from './pages/psychology-of-branding';
+import BlogFour from './pages/social-media-that-sells';
+import BlogFive from './pages/digital-first-impressions';
+// import BlogPostPage from './pages/BlogPostPage.jsx';
 import ClientCenter from './pages/clientCenter.jsx';
 import About from './pages/About.jsx';
 import WebDevelopment from './pages/Services/WebDevelopment.jsx';
@@ -25,7 +30,6 @@ import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
 import TermsConditions from './pages/Terms&Conditions.jsx';
 import Support from './pages/Support.jsx';
-
 
 
 const App = () => {
@@ -51,7 +55,12 @@ const App = () => {
         <Route path="/pricing/" element={<Pricing />} />
         <Route path="/boost/" element={<Boost />} />
         <Route path="/blogs/" element={<Blogs />} />
-        <Route path="/blogs/:slug" element={<BlogPostPage />} />
+        <Route path="/blogs/modern-seo-best-practices/" element={<BlogOne />} />
+        <Route path="/blogs/your-website-is-boring/" element={<BlogTwo/>}/>
+        <Route path="/blogs/psychology-of-branding/" element={<BlogThree />}/>
+        <Route path="/blogs/social-media-that-sells/" element={<BlogFour />}/>
+        <Route path="/blogs/digital-first-impressions/" element={<BlogFive />}/>
+        {/* <Route path="/blogs/:slug" element={<BlogPostPage />} /> */}
         <Route path="/client-center/" element={<ClientCenter />} />
         <Route path="/connect-with-us/" element={<Connect />} />
         <Route path="/privacy-policy/" element={<PrivacyPolicy />} />

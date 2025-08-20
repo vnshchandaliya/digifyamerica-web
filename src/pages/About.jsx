@@ -24,7 +24,7 @@ const testimonials = [
 //     image: "/images/person2.jpg",
   },
   {
-    text: "The team at DigifyAmerica is fantastic! They took over our social media channels, and the content they create is always on point. Our engagement has never been higher, and our brand feels so much more connected to our customers. If you need top-notch social media management, look no further.",
+    text: "Kevin has been amazing to work with. He didn’t just throw big marketing terms at us — he actually explained what needed to be done in simple language. We started seeing more calls and inquiries within weeks. Super reliable and easy to talk to.",
     author: "Maria R., New York, NY",
 //     role: "Harborview Realty",
 //     image: "/images/person3.jpg",
@@ -36,13 +36,13 @@ const testimonials = [
 //     image: "/images/person3.jpg",
   },
   {
-    text: " From the very first call, the DigifyAmerica team was a pleasure to work with. They took the time to understand our business and didn't just sell us a one-size-fits-all plan. They are proactive, constantly bringing new ideas to the table, and they communicate with us every step of the way. It's refreshing to work with a company that truly cares.",
+    text: "Roger really knows his stuff when it comes to SEO. He spotted things on our website we never noticed, fixed them, and our Google ranking went up in just a couple of months. He checks in regularly, which makes us feel like he actually cares about our business.",
     author: "Jessica L., Miami, FL",
 //     role: "Harborview Realty",
 //     image: "/images/person3.jpg",
   },
   {
-    text: "DigifyAmerica helped us build a powerful email marketing strategy from the ground up. Their creative campaigns have boosted our lead generation and nurtured our existing customer base. They are experts at what they do, and the results speak for themselves. Our sales pipeline is healthier than ever!",
+    text: "Mike really turned around our social media. He has a great eye for what works with our audience and our engagement has gone way up. He also checks in often so we always know what’s going on.",
     author: "Brian S., Seattle, WA",
 //     role: "Harborview Realty",
 //     image: "/images/person3.jpg",
@@ -102,7 +102,7 @@ What unites us is a shared passion for solving problems. We are the people who g
           
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
-              Meet Our Founder
+             Founder - Roger Brown
             </h1>
             <p className="text-lg text-gray-700 mb-8">
               Roger rides his bike the way others do yoga — as a form of meditation. When the wind rushes past him and the world gets loud, that’s exactly when he finds his peace.
