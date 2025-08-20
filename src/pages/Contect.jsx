@@ -21,7 +21,7 @@ const handleSubmit = async (e) => {
     e.preventDefault();
     try {
         // Double-check this URL. It should match your backend's address.
-       const response = await fetch("http://localhost:5000/send-email", {
+       const response = await fetch("https://digifyamerica-backend.onrender.com/send-email", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
