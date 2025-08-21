@@ -1,43 +1,45 @@
-import express from 'express';
-import cors from 'cors';
-import nodemailer from 'nodemailer';
+import express from "express";
+import cors from "cors";
+import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+
+dotenv.config(); // .env से credentials load करने के लिए
 
 const app = express();
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;
 
-// CORS origin ko conditionally set karein
+// Allowed origins
 const allowedOrigins = [
-  'http://localhost:3000', // Local frontend
-  'https://www.digifyameica.com' // Live frontend
+  "http://localhost:3000", // Local frontend
+  process.env.FRONTEND_URL // Live frontend domain from .env
 ];
 
 app.use(cors({
   origin: (origin, callback) => {
-    
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
-      callback(new Error('Not allowed by CORS'));
+      callback(new Error("Not allowed by CORS"));
     }
   },
-  methods: ['POST'],
-  allowedHeaders: ['Content-Type']
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
 }));
 
 app.use(express.json());
 
+// Nodemailer transporter
 const transporter = nodemailer.createTransport({
-    host: "smtp.hostinger.com", // yahi check karlo apne Hostinger cPanel me
-    port: 465,
-    secure: true,
-    auth: {
-        user: "info@jyotfoundation.in",
-        pass: "Jyotfoundation@123"
-    },
-    logger: true,   // debug ke liye
-    debug: true     // debug ke liye
+  host: process.env.SMTP_HOST || "smtp.gmail.com",
+  port: process.env.SMTP_PORT || 465,
+  secure: true,
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
+  }
 });
 
+// Verify SMTP connection
 transporter.verify((error, success) => {
   if (error) {
     console.error("SMTP Connection Error:", error);
@@ -45,27 +47,32 @@ transporter.verify((error, success) => {
     console.log("SMTP Server is ready to take messages");
   }
 });
-;
 
-
-
-app.post('/send-email', async (req, res) => {
-    try {
-        const { fname, lname, phone, email, message } = req.body;
-        const mailOptions = {
-            from: 'info@jyotfoundation.in',
-            to: 'info@digifyamerica.com',
-            subject: 'Digify America  ',
-            text: `First Name: ${fname}\nLast Name: ${lname}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`
-        };
-        await transporter.sendMail(mailOptions);
-        res.status(200).send('Success: Email sent!');
-    } catch (error) {
-        console.error('Error sending email:', error);
-        res.status(500).send('Error: Email could not be sent.');
-    }
+// Test root route
+app.get("/", (req, res) => {
+  res.send("Backend is running ✅");
 });
 
-app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+// Send email route
+app.post("/send-email", async (req, res) => {
+  try {
+    const { fname, lname, phone, email, message } = req.body;
+
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: process.env.TO_EMAIL || "info@digifyamerica.com",
+      subject: "Digify America Contact Form",
+      text: `First Name: ${fname}\nLast Name: ${lname}\nPhone: ${phone}\nEmail: ${email}\nMessage: ${message}`
+    };
+
+    await transporter.sendMail(mailOptions);
+    res.status(200).json({ success: true, msg: "Email sent successfully!" });
+  } catch (error) {
+    console.error("Error sending email:", error);
+    res.status(500).json({ success: false, msg: "Email could not be sent." });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
