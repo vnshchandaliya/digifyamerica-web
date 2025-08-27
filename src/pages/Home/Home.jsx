@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import headervideo from "../../assets/video/HeaderVideo.mp4";
+import herovideo from "../../assets/video/HeaderVideo.webm";
 import webdevimg from "../../assets/service-vector/webDev.png"
 import Seoimg from "../../assets/service-vector/seo.png"
 import graphicimg from "../../assets/service-vector/graphic.png"
@@ -19,6 +19,7 @@ import projectTwo from '../../assets/project-img/project2.png'
 import projectThree from '../../assets/project-img/project3.png'
 import projectFour from '../../assets/project-img/project4.png'
 import projectFive from '../../assets/project-img/project5.png'
+import projectsix from '../../assets/project-img/project6.png'
 
 
 
@@ -87,14 +88,21 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Final Project',
-    description: 'The description of my last project.',
+    title: 'Property Peoject',
+    description: 'Website',
     link: 'https://github.com/your-username/final-project',
     image: projectFive
   },
+  {
+    id: 6,
+    title: 'Property Peoject',
+    description: 'Website',
+    link: 'https://github.com/your-username/final-project',
+    image: projectsix
+  },
   // Add more projects here
 ];
-const projectsPerPage = 3;
+const projectsPerPage = 1;
 
 function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -113,16 +121,19 @@ function Home() {
       <Navbar />
       <section className="relative w-full h-screen overflow-hidden">
   {/* Background Video */}
-  <video
-    autoPlay
-    muted
-    loop
-    playsInline
-    className="absolute top-28 left-0 w-full h-full object-cover"
-  >
-    <source src={headervideo} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+ <video
+  autoPlay
+  muted
+  loop
+  playsInline
+  preload="auto"
+  poster="/images/hero-thumbnail.jpg"
+  className="absolute top-28 left-0 w-full h-full object-cover"
+>
+  <source  loading="lazy" src={headervideo} type="video/mp4" />
+  <source  loading="lazy" src={herovideo} type="video/webm" />
+</video>
+
 
   {/* Overlay (optional) */}
   <div className="absolute top-0 bg-[#00000092] left-0 w-full h-full  bg-opacity-40"></div>
@@ -196,6 +207,7 @@ We design solutions for your specific challenges and opportunities and not the r
                 <img
                   src={founderImage}
                   alt="Founder Roger Brown"
+                  loading="lazy"
                   className="w-[70vh] h-auto rounded-lg  object-cover"
                 />
               </div>
@@ -380,6 +392,7 @@ We design solutions for your specific challenges and opportunities and not the r
             >
               <div className="relative overflow-hidden rounded-lg shadow-lg group">
                 <img
+                loading="lazy"
                   src={project.image}
                   alt={project.title}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"

@@ -7,7 +7,7 @@ const ServiceCard = ({ image, title, description }) => {
     <div className="bg-white p-6 rounded-lg shadow-md   mx-10">
           
       <div className="flex justify-center transition-transform transform hover:scale-120 mb-4">
-        <img src={image} alt={title} className="w-54 h-54 object-contain" />
+        <img loading="lazy" src={image} alt={title} className="w-54 h-54 object-contain" />
       </div>
       <h3 className="text-xl font-[400] text-center mb-2">
         {title}

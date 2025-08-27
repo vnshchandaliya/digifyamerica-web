@@ -61,6 +61,7 @@ const About = () => {
       */}
       <div className="order-1 lg:order-1 relative w-full lg:w-auto">
         <img
+        loading="lazy"
           src={planImage}
           alt=""
           className="w-[70vh] h-auto rounded-lg  object-cover"
@@ -124,6 +125,7 @@ What unites us is a shared passion for solving problems. We are the people who g
           
           <div className="order-1 lg:order-2 relative w-full lg:w-auto">
             <img
+            loading="lazy"
               src={founderImage}
               alt="Founder Roger Brown"
               className="w-[70vh] h-auto rounded-lg shadow-xl object-cover"

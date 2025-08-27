@@ -30,7 +30,7 @@ export default function Footer() {
           {/* Column 1 */}
           <div>
             <button className="mb-4 px-6 py-2 border border-white font-semibold hover:bg-white hover:text-black transition">
-              Give us a call: +1 786 224 2280!
+              Give us a call: +1 786 224 2280
             </button>
             <p>contact@digifyamerica.com</p>
             <br />

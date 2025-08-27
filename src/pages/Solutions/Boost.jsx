@@ -253,7 +253,8 @@ Rezfusion Boost™ drives more bookings, but don’t take our word for it.
 
           <section ref={sectionRef} className="features-section py-16 px-4 mt-15 text-center">
        <div className="mb-10 text-center max-w-4x4 mx-auto">
-        <p className="text-[34px] font-[300] md:text-[34px] text-[#444444] mb-1">
+        <p className="
+         mb-1">
           Exclusive, high-performance tools & a team to back you up.
         </p>
         <p className="text-[28px] md:text-[28px] text-[#53b6e7] font-[400]  mx-60">
