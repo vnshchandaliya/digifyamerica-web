@@ -8,7 +8,7 @@ export default function Preloader() {
     // 5 sec ke baad preloader hide
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 6000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
