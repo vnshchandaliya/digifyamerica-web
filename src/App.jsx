@@ -40,8 +40,15 @@ function App() {
       once: true,     // Animate once per scroll
     });
   }, []);
+   useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "//code.tidio.co/ayacukfak1ovyii2w6chvtfm3tw51hgl.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
   return (
     <>
+
     <Preloader />
       <ScrollToTop />
       <Navbar />

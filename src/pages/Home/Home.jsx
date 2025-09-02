@@ -14,13 +14,13 @@ import { Link } from 'react-router-dom';
 import ServiceCard from "../../components/ServiceCard";
 import founderImage from "../../assets/images/img9.jpg"; 
 import DirectbookingIcons from '../../components/DirectbookingIcons';
-import projectOne from '../../assets/project-img/project1.png'
-import projectTwo from '../../assets/project-img/project2.png'
-import projectThree from '../../assets/project-img/project3.png'
-import projectFour from '../../assets/project-img/project4.png'
-import projectFive from '../../assets/project-img/project5.png'
-import projectsix from '../../assets/project-img/project6.png'
-import projectsevan from '../../assets/project-img/project7.png'
+import projectOne from '../../assets/project-img/project1.jpg'
+import projectTwo from '../../assets/project-img/project2.jpg'
+import projectThree from '../../assets/project-img/project3.jpg'
+import projectFour from '../../assets/project-img/project4.jpg'
+import projectFive from '../../assets/project-img/project5.jpg'
+import projectsix from '../../assets/project-img/project6.jpg'
+import projectsevan from '../../assets/project-img/project7.jpg'
 
 
 
