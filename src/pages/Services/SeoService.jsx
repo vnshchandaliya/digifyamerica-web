@@ -65,11 +65,11 @@ const SeoService = () => {
           {/* What We Do Best */}
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-[300] text-gray-900 mb-6 text-center">
-              What We Do Best
+              What We Offer 
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
-              At Digify America, our SEO services help businesses of all sizes rise. We use methods that are effective and lasting. We focus on what works, skip what doesn’t, and tailor every move to your goals.
-            </p>
+              At Digify America, our SEO services help businesses of all sizes rise. We use methods that are effective and lasting. We focus on what works, skip what doesn’t, and tailor every move to your goals. 
+                   </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex items-start gap-4">
                 <div className="bg-blue-100 p-3 rounded-full flex-shrink-0">
@@ -77,7 +77,7 @@ const SeoService = () => {
                 </div>
                 <div>
                   <h3 className="text-xl font-[400] text-gray-900">Technical SEO Excellence</h3>
-                  <p className="text-gray-700">We fix it all - site speed, design, mobile responsiveness, and crawlability. Google loves clean, structured sites and we make your website shine in the crowd.</p>
+                  <p className="text-gray-700">We fix it all - site speed, design, mobile responsiveness, and crawlability. Google loves clean, structured sites and we make your website shine in the crowd. </p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -113,10 +113,10 @@ const SeoService = () => {
           {/* Why SEO with Digify America? */}
           <div className="bg-white p-8 md:p-12 rounded-xl shadow-lg mb-16">
             <h2 className="text-3xl font-[300] text-gray-900 mb-6 text-center">
-              Why SEO with Digify America?
+              Why Digify America? 
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
-              We don’t sell rankings, we build sustainable growth. Here’s why clients pick us:
+              We don’t sell rankings, we build sustainable growth. Here’s why clients pick us: 
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-start gap-3">
@@ -137,7 +137,7 @@ const SeoService = () => {
               </div>
             </div>
             <p className="text-lg text-gray-700 mt-8">
-              **Lasting results:** Paid advertising stops working when you stop paying but SEO builds lasting value. The rankings and authority you build today continue working for your business months and years down the road. It's an investment in your company's future.
+              **Lasting Results:** Paid advertising stops working when you stop paying but SEO builds lasting value. The rankings and authority you build today continue working for your business months and years down the road. It's an investment in your company's future.
             </p>
             <p className="text-lg text-gray-700 mt-4">
               **Competitive Advantage:** By consistently appearing at the top of search results, your business becomes a recognized name. Customers trust businesses that show on top of search engines and this means more leads, bookings, and sales.

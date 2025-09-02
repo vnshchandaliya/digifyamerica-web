@@ -40,19 +40,19 @@ const WebDevelopment = () => {
           {/* Fast, Functional & Built to Scale Section */}
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-[300] text-[#000] mb-6 text-center">
-              Your website should be Fast, Functional & Built to Scale
+              What We Offer 
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
-              A beautiful website that loads like a snail is worse than no website. We focus on performance from day one. That means fast load times, clean code, intuitive navigation, and functionality that scales with your business. We also specialize in custom web applications tailored to your operations like calendar booking systems to user dashboards and client portals. If it lives online and solves a problem, we can build it.
+A beautiful website that loads like a snail is worse than no website. We focus on performance from day one. That means fast load times, clean code, intuitive navigation, and functionality that scales with your business. We also specialize in custom web applications tailored to your operations like calendar booking systems to user dashboards and client portals. If it lives online and solves a problem, we can build it. 
             </p>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center">
-              Our development process is collaborative and agile. We work with you to define goals, map user journeys, and build solutions that exceed expectations.
-            </p>
+              Our development process is collaborative and agile. We work with you to define goals, map user journeys, and build solutions that exceed expectations. 
+                   </p>
           </div>
 
           {/* "What we build" and Feature List */}
           <div className="mb-16">
-            <h3 className="text-2xl font-[300] text-black mb-6">What we build:</h3>
+            <h3 className="text-2xl font-[300] text-black mb-6">Your website should be Fast, Functional & Built to Scale. What we build:</h3>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 mb-8">
               <li className="flex items-start gap-2">
                 <Bolt className="text-[#1c75bc] h-6 w-6 flex-shrink-0" />
@@ -91,10 +91,10 @@ const WebDevelopment = () => {
           {/* Websites designed with the user in mind Section */}
           <div className="mb-16">
             <h2 className="text-3xl md:text-4xl font-[300] text-black mb-6 text-center">
-              Websites designed with the user in mind.......Always
+             Why Digify America?
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
-              People don’t read websites. They scan them, scroll them, and leave if they can’t figure out where to click. We make sure they don’t leave. Our UX/UI design philosophy is built on human behavior.
+People don’t read websites. They scan them, scroll them, and leave if they can’t figure out where to click. We make sure they don’t leave. Our UX/UI design philosophy is built on human behavior. We design websites with the user in mind.......always. 
             </p>
             <h3 className="text-2xl font-[300] text-black mb-4">Our design approach includes:</h3>
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">

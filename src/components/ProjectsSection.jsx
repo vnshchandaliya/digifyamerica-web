@@ -36,6 +36,7 @@ const Projects = [
     link: 'https://github.com/your-username/final-project',
     image: 'src/assets/project-img/project5.png'
   },
+  
   // Add more projects here
 ];
 const projectsPerPage = 3;

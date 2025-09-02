@@ -20,6 +20,7 @@ import projectThree from '../../assets/project-img/project3.png'
 import projectFour from '../../assets/project-img/project4.png'
 import projectFive from '../../assets/project-img/project5.png'
 import projectsix from '../../assets/project-img/project6.png'
+import projectsevan from '../../assets/project-img/project7.png'
 
 
 
@@ -90,19 +91,26 @@ const projects = [
     id: 5,
     title: 'Property Peoject',
     description: 'Website',
-    link: 'https://github.com/your-username/final-project',
+    link: 'https://mysawgrasspointe.com/',
     image: projectFive
   },
   {
     id: 6,
     title: 'Property Peoject',
     description: 'Website',
-    link: 'https://github.com/your-username/final-project',
+    link: 'https://template1.mycreativewebsite.com/',
     image: projectsix
+  },
+  {
+    id: 7,
+    title: 'Property Peoject',
+    description: 'Website',
+    link: 'https://template2.mycreativewebsite.com/',
+    image: projectsevan
   },
   // Add more projects here
 ];
-const projectsPerPage = 1;
+const projectsPerPage = 2;
 
 function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -140,7 +148,7 @@ function Home() {
 
   {/* Hero Content */}
   <div className="relative z-10 flex flex-col justify-center items-center h-full px-4 pt-50 text-center text-white">
-    <h1 className="text-3xl pt-4 sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-4xl">
+    <h1  className="text-3xl pt-4 sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-4xl">
       Fueling Digital Growth with <br className="hidden sm:block" />
       Bold Ideas & Smart Data
     </h1>

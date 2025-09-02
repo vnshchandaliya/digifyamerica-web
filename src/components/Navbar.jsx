@@ -65,36 +65,39 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden bg-sky-500 text-white space-y-2 py-4">
-            {/* Mobile Solutions Dropdown */}
-            <div>
-              <button
-                onClick={() => setSolutionsDropdownOpen(!solutionsDropdownOpen)}
-                className="flex items-center justify-between w-full px-4 py-2 font-semibold text-left"
-              >
-                Solutions
-                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${solutionsDropdownOpen ? 'rotate-180' : ''}`} />
-              </button>
-              <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${solutionsDropdownOpen ? 'max-h-96' : 'max-h-0'}`}
-              >
-                <div className="bg-[#3f4a4f] text-[#c0baba] py-2">
-                  <Link to="/direct-booking-websites/" className="block px-8 py-2 text-sm hover:bg-[#4e5a61] hover:text-[#60beec]">Direct Booking Websites</Link>
-                  <Link to="/digital-marketing/" className="block px-8 py-2 text-sm hover:bg-[#4e5a61] hover:text-[#60beec]">Digital Marketing</Link>
-                  <Link to="/email-marketing/" className="block px-8 py-2 text-sm hover:bg-[#4e5a61] hover:text-[#60beec]">Email Marketing</Link>
-                  <Link to="/owner-acquisition-strategy/" className="block px-8 py-2 text-sm hover:bg-[#4e5a61] hover:text-[#60beec]">Owner Acquisition Strategy</Link>
-                  <Link to="/boost/" className="block px-8 py-2 text-sm hover:bg-[#4e5a61] hover:text-[#60beec]">Channel Management</Link>
-                </div>
-              </div>
-            </div>
-            <Link to="/pricing/" className="block px-4 py-2">Pricing</Link>
-            <Link to="/blogs/" className="block px-4 py-2">Blog</Link>
-            <Link to="/client-center/" className="block px-4 py-2">Client Center</Link>
-            <Link to="/connect-with-us/" className="block mx-4 mt-2 bg-blue-900 py-2 rounded text-center">Connect</Link>
-          </div>
-        )}
-      </div>
-    </header>
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-sky-500 text-white space-y-2 py-4">
+            <Link to="/about-us/" className="block px-4 py-2">About</Link>
+            {/* Mobile Services Dropdown */}
+            <div>
+              <button
+                onClick={() => setSolutionsDropdownOpen(!solutionsDropdownOpen)}
+                className="flex items-center justify-between w-full px-4 py-2 font-semibold text-left"
+              >
+                Services {/* Changed from 'Solutions' */}
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${solutionsDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+              <div
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${solutionsDropdownOpen ? 'max-h-96' : 'max-h-0'}`}
+              >
+                <div className="bg-[#3f4a4f] text-[#c0baba] py-2">
+                  <Link to="/web-designing/" className="block px-8 py-2 text-sm hover:bg-[#4e5a61] hover:text-[#60beec]">Websites Development</Link>
+                  <Link to="/search-engine-optimization/" className="block px-8 py-2 text-sm hover:bg-[#4e5a61] hover:text-[#60beec]">Search Engine Optimization</Link>
+                  <Link to="/graphic-design/" className="block px-8 py-2 text-sm hover:bg-[#4e5a61] hover:text-[#60beec]">Graphic Design</Link>
+                  <Link to="/social-media-marketing/" className="block px-8 py-2 text-sm hover:bg-[#4e5a61] hover:text-[#60beec]">Social Media Marketing</Link>
+                  <Link to="/branding/" className="block px-8 py-2 text-sm hover:bg-[#4e5a61] hover:text-[#60beec]">Branding</Link>
+                  <Link to="/video-production/" className="block px-8 py-2 text-sm hover:bg-[#4e5a61] hover:text-[#60beec]">Video Production</Link>
+                </div>
+              </div>
+            </div>
+            <Link to="/pricing/" className="block px-4 py-2">Pricing</Link>
+            <Link to="/blogs/" className="block px-4 py-2">Blog</Link>
+            {/* Remove the Client Center link if you don't need it */}
+            <Link to="/connect-with-us/" className="block mx-4 mt-2 bg-blue-900 py-2 rounded text-center">Connect</Link>
+          </div>
+        )}
+      </div>
+    </header>
+
   );
 }

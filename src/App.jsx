@@ -1,9 +1,11 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy ,useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import Preloader from "./components/Preloader.jsx";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 // ✅ Lazy imports (only pages)
 const Home = lazy(() => import("./pages/Home/Home.jsx"));
@@ -32,6 +34,12 @@ const TermsConditions = lazy(() => import("./pages/Terms&Conditions.jsx"));
 const Support = lazy(() => import("./pages/Support.jsx"));
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Global animation duration
+      once: true,     // Animate once per scroll
+    });
+  }, []);
   return (
     <>
     <Preloader />
