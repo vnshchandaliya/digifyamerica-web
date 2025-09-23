@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Navbar from "../../components/Navbar";
-import headervideo from "../../assets/video/HeaderVideo.mp4";
+import headervideo from "../../assets/video/HeaderVideo - Made with Clipchamp.mp4";
 import herovideo from "../../assets/video/HeaderVideo.webm";
 import webdevimg from "../../assets/service-vector/webDev.png"
+// import ssimg from "../../assets/service-vector/5666022-removebg-preview"
 import Seoimg from "../../assets/service-vector/seo.png"
 import graphicimg from "../../assets/service-vector/graphic.png"
 import smmimg from "../../assets/service-vector/socialMedia.png"
@@ -12,7 +13,7 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import ServiceCard from "../../components/ServiceCard";
-import founderImage from "../../assets/images/img9.jpg"; 
+import founderImage from "../../assets/service-vector/3270759.jpg"; 
 import DirectbookingIcons from '../../components/DirectbookingIcons';
 import projectOne from '../../assets/project-img/project1.jpg'
 import projectTwo from '../../assets/project-img/project2.jpg'
@@ -21,6 +22,7 @@ import projectFour from '../../assets/project-img/project4.jpg'
 import projectFive from '../../assets/project-img/project5.jpg'
 import projectsix from '../../assets/project-img/project6.jpg'
 import projectsevan from '../../assets/project-img/project7.jpg'
+import Projects from '../Projects';
 
 
 
@@ -126,8 +128,8 @@ function Home() {
   };
   return (
     <>
-      <Navbar />
-      <section className="relative w-full h-screen overflow-hidden">
+
+      <section className="relative w-full h-screen  overflow-hidden">
   {/* Background Video */}
  <video
   autoPlay
@@ -144,15 +146,15 @@ function Home() {
 
 
   {/* Overlay (optional) */}
-  <div className="absolute top-0 bg-[#00000092] left-0 w-full h-full  bg-opacity-40"></div>
+  <div className="absolute top-0 bg-[#0000008d]  backdrop-blur-[2px] left-0 w-full h-full  bg-opacity-40"></div>
 
   {/* Hero Content */}
-  <div className="relative z-10 flex flex-col justify-center items-center h-full px-4 pt-50 text-center text-white">
-    <h1  className="text-3xl pt-4 sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-4xl">
-      Fueling Digital Growth with <br className="hidden sm:block" />
-      Bold Ideas & Smart Data
+  <div className="relative z-10 flex flex-col justify-center items-center h-full px-4 pt-50 text-center text-[#FFF5E1]">
+    <h1  className="text-3xl pt-4 fontplayfair sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-4xl">
+      Fueling <strong className='text-[#EF7722]'>Digital Growth</strong> with <br className="hidden sm:block" />
+     <strong className='text-[#EF7722]'>Bold Ideas</strong>  & Smart Data
     </h1>
-    <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl font-light max-w-xl">
+    <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl font-light max-w-xl text-[#] ">
       DigifyAmerica isn’t just another digital marketing agency—we’re your growth partner in a hyperconnected world.
     </p>
     {/* <button className="mt-40 px-6  py-2 border border-white text-white font-semibold uppercase tracking-wide hover:bg-white hover:text-black transition duration-300">
@@ -161,10 +163,10 @@ function Home() {
   </div>
 </section>
 
-    <section className="bg-[#1174c3] py-0 text-white text-center px-4">
+    <section className="bg-[#EF7722] py-0 text-white text-center px-4">
       {/* Text Content */}
       <div className="max-w-3x2 mx-auto mb-12 py-20">
-        <h2 className="text-[28px] font-semibold sm:text-3xl md:text-4xl  mb-4">
+        <h2 className="text-[28px] font-semibold sm:text-3xl md:text-4xl  mb-4 fontplayfair">
           Everything your business needs, all under one roof. <br />
           {/* <span className=" font-sans font-semibold sm:text-3xl md:text-4xl">(or inside one tent)</span> */}
         </h2>
@@ -172,39 +174,69 @@ function Home() {
           Reaching travelers at every stage of their journey takes more than<br/> an
           awesome website, it takes a complete digital ecosystem.
         </p>
-        <Link to="/connect-with-us/" className="border border-white text-white px-7 py-4 text-sm uppercase font-medium hover:bg-white hover:text-[#1174c3] transition">
-          Connect with our experts
+             <Link
+          to="/connect-with-us/"
+          className="bg-[#FAA533] text-white px-5 py-2 rounded-lg font-bold text-lg mr-20
+                     shadow-[0_4px_0px_#c97f25] 
+                     transform transition-all duration-200 
+                     hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#0B6FA6] 
+                     active:translate-y-[2px] active:shadow-none"
+        >
+           Connect with our experts
         </Link>
       </div>
 
       {/* Image */}
-      <div className="flex justify-center">
-        {/* <img
+      {/* <div className="flex justify-center">
+        <img
           src={ssimg}
           alt="Device showcase"
-          className="w-[1941]  h-[797] max-w-10xl px-4"
-        /> */}
-      </div>
+          className="w-[141]  h-[797] max-w-2xl "
+        />
+      </div> */}
     </section>
-    <section className="bg-white px-4 md:px-8 pt-20">
+                    <h1 className='
+  absolute 
+  text-gray-50 
+  font-bold 
+  uppercase 
+  // Mobile & Small Screens
+  text-[3rem] 
+  fontplayfair 
+ mt-40
+  left-1/2 
+  -translate-x-1/2 
+  -translate-y-1/2
+  whitespace-nowrap 
+  
+  // Medium Screens (md)
+  md:text-[10rem] 
+  
+  // Large Screens (lg)
+  lg:text-[10rem] 
+'>
+Why Choose Us
+</h1>
+    <section className="bg-white px-4 md:px-8 pt-50">
           <div className="container mx-auto max-w-7xl pt-16 pb-24">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
               
               
               <div className="order-2 lg:order-1 text-center lg:text-left">
-                <p className='text-[18px]'>Why Choose Us</p>
-                <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
-                Beyond regular marketing plan
-
-                </h1>
-                <p className='font-[400]'>Customization at Our Core</p>
-                <p className="text-lg text-gray-700 mb-8">
+                <p className="text-[35px] text-[#FAA533] fontplayfair">Why Choose Us : Beyond regular marketing plan</p>
+                {/* <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
+              
+                </h1> */}
+                <p>In a world where everyone claims to be "innovative" and "cutting-edge," what truly sets Digify America apart? It's not just what we do but how we do it. </p>
+                <br />
+                <p className='font-bold Poppins-font'>Customization at Our Core</p>
+                <p className=" ">
                  Every business has its own needs so why should the digital strategy be same? We reject the one-size-fits-all approach that plagues our industry. Instead:   </p>
-                 <ul>
-                  <li className=''> <strong className='font-[500]'>We start from scratch:</strong> Every strategy begins with a blank canvas, not a template </li> 
-                  <li className=''><strong className='font-[500]'>We immerse ourselves:</strong> Understanding your business becomes our obsession</li>
-                  <li className=''><strong className='font-[500]'>We build for your audience:</strong> Solutions designed specifically for the people you need to reach</li>
-                  <li className=''><strong className='font-[500]'>We align with your goals:</strong> KPIs that match your actual business objectives, not vanity metrics
+                 <ul className='list-disc ml-10'>
+                  <li className=''> <strong className='font-[500] Poppins-font'>We start from scratch:</strong> Every strategy begins with a blank canvas, not a template </li> 
+                  <li className=''><strong className='font-[500] Poppins-font'>We immerse ourselves:</strong> Understanding your business becomes our obsession</li>
+                  <li className=''><strong className='font-[500] Poppins-font'>We build for your audience:</strong> Solutions designed specifically for the people you need to reach</li>
+                  <li className=''><strong className='font-[500] Poppins-font'>We align with your goals:</strong> KPIs that match your actual business objectives, not vanity metrics
 We design solutions for your specific challenges and opportunities and not the recycled strategies from previous clients.</li>
                  </ul>
                
@@ -214,7 +246,7 @@ We design solutions for your specific challenges and opportunities and not the r
               <div className="order-1 lg:order-2 relative w-full lg:w-auto">
                 <img
                   src={founderImage}
-                  alt="Founder Roger Brown"
+                  alt=""
                   loading="lazy"
                   className="w-[70vh] h-auto rounded-lg  object-cover"
                 />
@@ -222,11 +254,57 @@ We design solutions for your specific challenges and opportunities and not the r
             </div>
           </div>
         </section>
+                  <h1 className='
+  absolute 
+  text-gray-50 
+  font-bold 
+  uppercase 
+  // Mobile & Small Screens
+  text-[2.8rem] 
+  fontplayfair 
+ mt-4
+  left-1/2 
+  -translate-x-1/2 
+  -translate-y-1/2
+  whitespace-nowrap 
+  
+  // Medium Screens (md)
+  md:text-[10rem] 
+  
+  // Large Screens (lg)
+  lg:text-[8rem] 
+'>
+ Website Features
+                 </h1>
         <DirectbookingIcons />
-     <h1 className="text-center pt-20 text-[40px] text-[#000] font-[300] mx-59">
+          <h1 className='
+  absolute 
+  text-gray-50 
+  font-bold 
+  uppercase 
+  // Mobile & Small Screens
+  text-[4rem] 
+  fontplayfair 
+ mt-33
+  left-1/2 
+  -translate-x-1/2 
+  -translate-y-1/2
+  whitespace-nowrap 
+  
+  // Medium Screens (md)
+  md:text-[10rem] 
+  
+  // Large Screens (lg)
+  lg:text-[11rem] 
+'>
+ Our Services
+</h1>
+   
+   <section className="py-12 px-4 pt-45">
+      <h1 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
         Our Services
         </h1>
-   <section className="py-12 px-4 ">
+        <br />
       <div className="container mx-auto">
         {/*
           This is the line you need to change.
@@ -384,63 +462,31 @@ We design solutions for your specific challenges and opportunities and not the r
         </div>
       </div>
     </section> */}
-    <section className="py-12 ">
-      <div className="container mx-auto px-4 relative overflow-hidden">
-        <h2 className="text-center mb-10 text-[34px] text-[#000] font-[300] mx-59">My Projects</h2>
-        
-        {/* Carousel Container */}
-        <div 
-          className="flex transition-transform duration-700 ease-in-out" 
-          style={{ transform: `translateX(-${currentIndex * (100 / projectsPerPage)}%)` }}
-        >
-          {projects.map((project) => (
-            <div 
-              key={project.id} 
-              className="flex-none w-full md:w-1/2 lg:w-1/3 p-4"
-            >
-              <div className="relative overflow-hidden rounded-lg shadow-lg group">
-                <img
-                loading="lazy"
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-[#000000ae] bg-opacity-70 flex flex-col items-center justify-center text-white p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <h3 className="text-2xl font-bold text-center">
-                    {project.title}
-                  </h3>
-                  <p className="mt-2 text-center">{project.description}</p>
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 bg-[#1c75bc] hover:bg-[#1c74bcfe] text-white font-semibold py-2 px-4 rounded-lg transition-colors"
-                  >
-                    View Project
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
 
-        {/* Navigation Buttons */}
-        <div className="flex justify-between absolute top-1/2 left-0 right-0 -translate-y-1/2 p-4 ">
-          <button
-            onClick={prevSlide}
-            className="p-5 bg-white rounded-full shadow-md z-10 hover:bg-gray-200"
-          >
-          <FaArrowLeft />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="p-5 bg-white rounded-full shadow-md z-10 hover:bg-gray-200"
-          >
-           <FaArrowRight />
-          </button>
-        </div>
-      </div>
-    </section>
+   <h1 className='
+  absolute 
+  text-gray-50 
+  font-bold 
+  uppercase 
+  // Mobile & Small Screens
+  text-[4rem] 
+  fontplayfair 
+ mt-33
+  left-1/2 
+  -translate-x-1/2 
+  -translate-y-1/2
+  whitespace-nowrap 
+  
+  // Medium Screens (md)
+  md:text-[10rem] 
+  
+  // Large Screens (lg)
+  lg:text-[11rem] 
+'>
+  My Projects
+</h1>
+    <Projects />
+   
     </>
   );
 }

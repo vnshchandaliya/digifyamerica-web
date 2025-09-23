@@ -7,6 +7,7 @@ import Preloader from "./components/Preloader.jsx";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
+
 // ✅ Lazy imports (only pages)
 const Home = lazy(() => import("./pages/Home/Home.jsx"));
 const About = lazy(() => import("./pages/About.jsx"));

@@ -7,3 +7,18 @@
     scroll-behavior: smooth;
   }
 }
+nav {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Semi-bold */
+}
+.Poppins-font {
+   font-family: 'Poppins', sans-serif;
+  font-weight: 600; /* Semi-bold */
+}
+.fontplayfair {
+    font-family: 'Playfair Display', serif;
+  font-weight: 700; /* Semi-bold */
+}
+p,li{
+   font-family: 'Poppins', sans-serif;
+}

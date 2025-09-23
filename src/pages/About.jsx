@@ -72,23 +72,23 @@ const About = () => {
         It now has the order-2 class for all screens and lg:order-2 to keep it on the right.
       */}
       <div className="order-2 lg:order-2 text-center lg:text-left">
-        <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
+        <h1 className="text-[50px]  whitespace-nowrap text-[#FAA533] fontplayfair">
          Your digital growth partner
         </h1>
-        <strong className='font-[500]'>Our Story</strong>
+        <strong className='font-[500] text-2xl Poppins-font'>Our Story</strong>
 
-        <p className="text-lg text-gray-700 mb-1">
+        <p className="">
         Headquartered in sunny Florida but digitally present everywhere, Digify America have built reputation by treating clients' growth as primary mission. What drives us is seeing businesses transform through strategic digital presence. Our leadership team built Digify America because we saw too many companies getting generic solutions that looked pretty but failed to deliver results.    </p>
-       <strong className='font-[500]'>Our Team</strong>
-        <p className='text-lg text-gray-700 mb-4'>
+       <strong className='font-[500] text-2xl Poppins-font'>Our Team</strong>
+        <p className=''>
         Behind every successful Digify project stands a diverse team of specialists who combine deep technical knowledge with creative vision:    </p>
-        <ul>
-          <li><strong className='font-[500]'>Digital Strategists: </strong>The big-picture thinkers who map your journey from where you are to where you want to be</li>
-          <li><strong className='font-[500]'>UX/UI Designers: </strong>Experience architects who create intuitive, engaging digital environments</li>
-          <li><strong className='font-[500]'>Full-Stack Developers: </strong>Code craftspeople who build robust, scalable technical solutions</li>
-          <li><strong className='font-[500]'>Content Creators:</strong>Storytellers who understand that words and images need to work as hard as your website</li>
-          <li><strong className='font-[500]'>SEO Specialists: </strong>Search experts, who know how to make it easy to find your brand.</li>
-          <li><strong className='font-[500]'>Analytics Pros:</strong>Data interpreters who translate numbers into actionable insights
+        <ul className='list-disc ml-10'>
+          <li><strong className='font-[500] Poppins-font'>Digital Strategists: </strong>The big-picture thinkers who map your journey from where you are to where you want to be</li>
+          <li><strong className='font-[500] Poppins-font'>UX/UI Designers: </strong>Experience architects who create intuitive, engaging digital environments</li>
+          <li><strong className='font-[500] Poppins-font'>Full-Stack Developers: </strong>Code craftspeople who build robust, scalable technical solutions</li>
+          <li><strong className='font-[500] Poppins-font'>Content Creators:</strong>Storytellers who understand that words and images need to work as hard as your website</li>
+          <li><strong className='font-[500] Poppins-font'>SEO Specialists: </strong>Search experts, who know how to make it easy to find your brand.</li>
+          <li><strong className='font-[500] Poppins-font'>Analytics Pros:</strong>Data interpreters who translate numbers into actionable insights
 What unites us is a shared passion for solving problems. We are the people who get excited about conversion rates, user flows, and elegant code and these elements translate directly to your business success.</li>
         </ul>
       </div>
@@ -102,20 +102,23 @@ What unites us is a shared passion for solving problems. We are the people who g
           
           
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
+            <h1 className="text-[50px]  whitespace-nowrap text-[#FAA533] fontplayfair">
              Founder - Roger Brown
             </h1>
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg  mb-8">
               Roger rides his bike the way others do yoga — as a form of meditation. When the wind rushes past him and the world gets loud, that’s exactly when he finds his peace.
               He is a magician when it comes to using motion, speed, and the lens to slow everything down. Riding, camping and photography are more than hobbies for him.
             </p>
-            <p className='text-lg text-gray-700 mb-8'>
+            <p className='text-lg  mb-8'>
               It is how he processes the world and sees beauty in the chaos. He's got the heart of an adventurer and the soul of a saint — grounded, thoughtful, and always seeking. He is also a proud dog dad to two adorable pups who are basically his shadows. They bring out the softer side of a guy who already has a golden heart.
             </p>
             <a
               href="https://www.linkedin.com/in/roger-brown-48390b14/"
-              className="inline-block bg-[#1c75bc] text-white font-semibold py-4 px-12 rounded-lg shadow-lg hover:bg-[#1c74bcce] transition duration-300"
-            >
+              className="bg-[#FAA533] text-white px-5 py-2 rounded-lg font-bold text-lg 
+                   shadow-[0_4px_0px_#c97f25] 
+                   transform transition-all duration-200 
+                   hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#0B6FA6] 
+                   active:translate-y-[2px] active:shadow-none" >
               Explore More
             </a>
             
@@ -139,25 +142,25 @@ What unites us is a shared passion for solving problems. We are the people who g
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           
           {/* Vision Card */}
-          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+          <div className="bg-[#FAA533] p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
             <div className="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mb-6 mx-auto">
               <Eye className="h-10 w-10 text-[#1c75bc]" />
             </div>
-            <h3 className="text-3xl font-[300] text-gray-900 mb-4 text-center">Our Vision</h3>
-            <p className="text-gray-600 text-center">To be the leading digital marketing agency, empowering businesses to achieve extraordinary growth in the digital world.
+            <h3 className="text-3xl Poppins-font font-[300] text-white mb-4 text-center ">Our Vision</h3>
+            <p className="text-white text-center">To be the leading digital marketing agency, empowering businesses to achieve extraordinary growth in the digital world.
 
 
               </p>
           </div>
           
           {/* Mission Card */}
-          <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+          <div className="bg-[#FAA533] p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
             <div className="flex items-center justify-center h-16 w-16 bg-green-100 text-green-600 rounded-full mb-6 mx-auto">
               {/* Mission Icon (Target) */}
             <Target className="h-10 w-10 text-[#1c75bc]" />
             </div>
-            <h3 className="text-3xl font-[300] text-gray-900 mb-4 text-center">Our Mission</h3>
-            <p className="text-gray-600 text-center">
+            <h3 className="text-3xl font-[300] Poppins-font text-white mb-4 text-center">Our Mission</h3>
+            <p className="text-white text-center">
 Our mission is to craft innovative and data-driven digital strategies that connect your brand with the right audience.
             </p>
           </div>
@@ -191,7 +194,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
                   key={idx}
                   className={`max-w-md px-6 py-8 rounded-lg shadow-md relative flex flex-col items-center text-center transition-all duration-300 ${
                     isActive
-                      ? 'bg-blue-700 text-white'
+                      ? 'bg-[#FFF5E1] text-black'
                       : 'bg-transparent text-gray-300'
                   }`}
                   style={{ height: 'auto' }}
@@ -203,7 +206,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
                       alt={item.author}
                       className="w-16 h-16 rounded-full mx-auto mb-2"
                     /> */}
-                    <h4 className={`font-semibold ${!isActive ? 'text-gray-500' : 'text-white'}`}>
+                    <h4 className={`font-semibold ${!isActive ? 'text-gray-500' : 'text-black'}`}>
                       {item.author}
                     </h4>
                     <p className={`text-sm ${!isActive ? 'text-gray-400' : 'text-blue-100'}`}>
@@ -211,7 +214,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
                     </p>
                   </div>
                   {isActive && (
-                    <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-6 h-6 bg-blue-700 rotate-45"></div>
+                    <div className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 w-6 h-6  rotate-45"></div>
                   )}
                 </SwiperSlide>
               );

@@ -13,10 +13,13 @@ import Wordpress from "../assets/partnerIcons/WordPress.png"
 const PartnerSection = () => {
   return (
     <>
-      <section className="py-16 px-4 bg-white text-center">
-      <h2 className="text-3xl md:text-4xl font-[300] mb-10">
+    
+      <section className="py-16 px-4 bg-[#ad9a9a35] text-center">
+        
+      <h2 className="relative text-center pt-10 text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533] whitespace-nowrap">
         Our partners:
       </h2>
+      <br /><br />
 
       <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-10 items-center">
         <img src={Html} alt="LiveRez" className="mx-auto h-12 md:h-30 object-contain" />

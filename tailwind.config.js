@@ -7,5 +7,20 @@ export default {
   theme: {
     extend: {},
   },
+   theme: {
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
+    },
+  },
+  theme: {
+    extend: {
+      fontFamily: {
+        playfair: ['"Playfair Display"', 'serif'],
+      }
+    }
+  },
+  
   plugins: [],
 }
