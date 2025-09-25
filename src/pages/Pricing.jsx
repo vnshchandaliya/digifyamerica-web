@@ -18,7 +18,7 @@ import FacebookTracking from '../assets/pricing-Icon/Facebook Tracking.png'
 import LogoDesign from '../assets/pricing-Icon/Logo Design.png'
 import BusinessCard from '../assets/pricing-Icon/Business Card.png'
 import BusinessOptimization from '../assets/pricing-Icon/Business Optimization.png'
-import './index.css';
+import "../index.css"; 
 
 const stepHeadings = [
   'Website Package',

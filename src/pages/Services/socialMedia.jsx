@@ -10,7 +10,7 @@ const SocialMedia = () => {
           
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-[50px] text-[#FAA533] fontplayfair ">
+             <h1 className="text-center text-[36px] whitespace-nowrap md:text-[60px] font-[300] mx-1 fontplayfair text-[#FAA533]">
               Social Media Marketing
             </h1>
             <p className="text-lg text-gray-700 mb-8">
@@ -37,7 +37,7 @@ const SocialMedia = () => {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[3.40rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -56,7 +56,7 @@ const SocialMedia = () => {
       {/* What We Offer Section */}
       <div className="bg-[#ad9a9a35] py-42 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+          <h2 className="text-center whitespace-nowrap text-[36px] md:text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -126,7 +126,7 @@ const SocialMedia = () => {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[2.40rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -145,7 +145,7 @@ const SocialMedia = () => {
       {/* Why Digify America? */}
       <div className="py-40 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+          <h2 className="text-center whitespace-nowrap text-[36px] md:text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
             Why Digify America?
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">

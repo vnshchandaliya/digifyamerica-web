@@ -12,7 +12,7 @@ const WebDevelopment = () => {
 
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-[50px]  whitespace-nowrap text-[#FAA533] fontplayfair leading-13">
+             <h1 className='text-center whitespace-nowrap  text-[36px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#FAA533]'>
               Web Design & <br /> Application Development
             </h1>
             <br />
@@ -49,7 +49,7 @@ const WebDevelopment = () => {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[3.30rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -70,7 +70,7 @@ const WebDevelopment = () => {
         <div className="container mx-auto max-w-7xl">
           {/* Fast, Functional & Built to Scale Section */}
           <div className="mb-16">
-            <h2 className='text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]'>
+            <h2 className='text-center whitespace-nowrap  text-[36px] md:text-[60px] font-[300] mx-15 fontplayfair text-[#FAA533]'>
               What We Offer
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
@@ -125,7 +125,7 @@ const WebDevelopment = () => {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[2.40rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -143,7 +143,7 @@ const WebDevelopment = () => {
       </h1>
           {/* Websites designed with the user in mind Section */}
           <div className="mb-16 py-39">
-            <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+            <h2 className="text-center whitespace-nowrap  text-[36px] md:text-[60px] font-[300] mx-1 fontplayfair text-[#FAA533]">
               Why Digify America?
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">

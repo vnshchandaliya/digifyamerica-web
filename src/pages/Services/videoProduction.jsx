@@ -11,8 +11,8 @@ const VideoProduction = () => {
           
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-[50px] text-[#FAA533] fontplayfair leading-13">
-              In a world that won’t sit still, video gets you noticed.
+            <h1 className="whitespace-nowrap text-[36px] md:text-[50px] text-[#FAA533] fontplayfair leading-13">
+              In a world that won’t sit <br /> still, video gets you noticed.
             </h1>
             <br />
             <p className="text-lg text-gray-700 mb-8">
@@ -42,7 +42,7 @@ const VideoProduction = () => {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[3.30rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -61,7 +61,7 @@ const VideoProduction = () => {
       {/* What We Offer Section */}
       <div className="bg-[#ad9a9a35] py-42 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+          <h2 className="text-center whitespace-nowrap text-[36px] md:text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -131,7 +131,7 @@ const VideoProduction = () => {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[2.40rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -150,7 +150,7 @@ const VideoProduction = () => {
       {/* Why Digify America? */}
       <div className="py-39 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+          <h2 className="text-center whitespace-nowrap text-[36px]  md:text-[60px] font-[300] mx-10 fontplayfair text-[#FAA533]">
             Why Digify America?
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-black text-center mb-8">
@@ -185,7 +185,7 @@ const VideoProduction = () => {
         <p className="max-w-3xl mx-auto text-lg mb-6">
           If your content plan doesn’t include video, you are almost invisible in the digital landscape. Let’s change that. You need video content that your audience wants to watch and your competitors wish they had.
         </p>
-        {/* <a
+        {/* <a 
           href="#"
           className="inline-block bg-white text-[#1c75bc] font-semibold py-4 px-12 rounded-full shadow-lg hover:bg-gray-100 transition duration-300"
         >

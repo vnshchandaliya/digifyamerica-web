@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
-import Preloader from "./components/Preloader.jsx";
+// import Preloader from "./components/Preloader.jsx";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
@@ -50,7 +50,7 @@ function App() {
   return (
     <>
 
-    <Preloader />
+    {/* <Preloader /> */}
       <ScrollToTop />
       <Navbar />
 

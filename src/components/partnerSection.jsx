@@ -16,7 +16,7 @@ const PartnerSection = () => {
     
       <section className="py-31 px-4 bg-[#ad9a9a35] text-center">
         
-      <h2 className="relative text-center pt-10 text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533] whitespace-nowrap">
+      <h2 className="relative text-center pt-10 text-[50px] font-[300] mx-19 fontplayfair text-[#FAA533] whitespace-nowrap">
         Our partners:
       </h2>
       <br /><br />

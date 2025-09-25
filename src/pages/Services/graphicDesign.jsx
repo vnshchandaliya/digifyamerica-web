@@ -8,23 +8,23 @@ const GraphicDesign = () => {
       {/* Hero Section */}
       <div className="container mx-auto max-w-7xl pt-16 pb-24 px-4 md:px-8 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-[50px] text-[#FAA533] fontplayfair leading-13">
-              Good design doesn’t just look nice but also work hard.
+            <h1 className=" whitespace-nowrap text-[36px] md:text-[50px] text-[#FAA533] fontplayfair leading-13">
+              Good design doesn’t <br /> just look nice but <br /> also work hard.
             </h1>
             <br />
             <p className="text-lg text-gray-700 mb-8">
-              If your logo was made in PowerPoint and your graphics are picked from stock photo album, it’s time 
+              If your logo was made in PowerPoint and your graphics are picked from stock photo album, it’s time
               to level up.<o className="border-2 border-[#FAA533] bg-[#FAA533] text-white uppercase whitespace-nowrap"
-               > Our teams create design systems</o> that are bold, clear, and unmistakably yours.
+              > Our teams create design systems</o> that are bold, clear, and unmistakably yours.
             </p>
             <p className='text-lg text-gray-700 mb-8'>
               Your Brand starts with a feeling and we make sure people feel it. Before a word is spoken, your brand is already telling a story. At Digify America, we specialize in <o className="text-[#FAA533] "> crafting powerful</o> visual identities that match your voice. It’s about timeless creative that connects, converts, and stays consistent from business cards to browser tabs.
             </p>
           </div>
-          
+
           {/* Image */}
           <div className="order-1 lg:order-2 flex justify-center">
             <img
@@ -35,13 +35,13 @@ const GraphicDesign = () => {
           </div>
         </div>
       </div>
- <h1 className='
+      <h1 className='
   absolute 
   text-gray-100 
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[3.30rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -60,7 +60,7 @@ const GraphicDesign = () => {
       {/* What We Offer Section */}
       <div className="bg-gray-50 py-44 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+          <h2 className="text-center whitespace-nowrap  text-[36px] md:text-[50px] font-[300] mx-19 fontplayfair text-[#FAA533]">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -115,13 +115,13 @@ const GraphicDesign = () => {
           </div>
         </div>
       </div>
-<h1 className='
+      <h1 className='
   absolute 
   text-gray-50 
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[2.40rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -135,12 +135,12 @@ const GraphicDesign = () => {
   // Large Screens (lg)
   lg:text-[7rem] 
 '>
-       Why Digify America?
+        Why Digify America?
       </h1>
       {/* Why Digify America? */}
       <div className="py-40 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+          <h2 className="text-center text-[36px] whitespace-nowrap md:text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
             Why Digify America?
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
@@ -169,14 +169,14 @@ const GraphicDesign = () => {
             </div>
           </div>
 
-           {/* Final CTA Section */}
+          {/* Final CTA Section */}
           <div className="text-center bg-[#FFF5E1] text-black p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
-           <h2 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
-          Ready to be a brand people remember?
-        </h2>
-        <p className="max-w-3xl mx-auto text-lg mb-6">
-          Let’s bring your brand to life with designs that boost business.
-        </p>
+            <h2 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
+              Ready to be a brand people remember?
+            </h2>
+            <p className="max-w-3xl mx-auto text-lg mb-6">
+              Let’s bring your brand to life with designs that boost business.
+            </p>
             <p className="max-w-3xl mx-auto text-lg mb-8">
               Your audience is searching. Let’s make sure they find you.
             </p>

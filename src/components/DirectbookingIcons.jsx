@@ -112,7 +112,7 @@ const DirectbookingIcons = () => {
           
   return (
     <>
-     <section ref={sectionRef} className="features-section py-16 px-4 text-center ">
+     <section ref={sectionRef}  className="features-section bg-[#ad9a9a35] py-32 px-4 text-center ">
       <h2 className="text-[28px] md:text-[60px] font-[600] fontplayfair  text-[#FAA533] mb-12">
         Direct Booking Website Features
       </h2>

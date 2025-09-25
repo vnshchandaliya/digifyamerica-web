@@ -72,7 +72,7 @@ const About = () => {
         It now has the order-2 class for all screens and lg:order-2 to keep it on the right.
       */}
       <div className="order-2 lg:order-2 text-center lg:text-left">
-        <h1 className="text-[50px]  whitespace-nowrap text-[#FAA533] fontplayfair">
+        <h1 className="text-[50px]   text-[#FAA533] fontplayfair">
          Your digital growth partner
         </h1>
         <strong className='font-[500] text-2xl Poppins-font'>Our Story</strong>
@@ -102,7 +102,7 @@ What unites us is a shared passion for solving problems. We are the people who g
           
           
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-[50px]  whitespace-nowrap text-[#FAA533] fontplayfair">
+            <h1 className="text-[50px]   text-[#FAA533] fontplayfair">
              Founder - Roger Brown
             </h1>
             <p className="text-lg  mb-8">
@@ -170,11 +170,11 @@ Our mission is to craft innovative and data-driven digital strategies that conne
     </section>
        <h1 className='
   absolute 
-  text-gray-50 
+  text-gray-100 
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[3.10rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -253,7 +253,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[3.50rem] 
   fontplayfair 
  mt-33
   left-1/2 

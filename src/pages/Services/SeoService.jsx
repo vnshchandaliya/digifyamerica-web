@@ -10,8 +10,8 @@ const SeoService = () => {
 
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-[50px] text-[#FAA533] fontplayfair leading-13">
-              Search Engine Optimization (SEO)
+            <h1 className='text-center whitespace-nowrap  text-[41px] font-[300] mx-0 fontplayfair text-[#FAA533]'>
+              Search Engine <br /> Optimization (SEO)
             </h1>
             <br />
             <p className="text-lg text-gray-700 mb-8">
@@ -68,7 +68,7 @@ const SeoService = () => {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[3.35rem] 
   fontplayfair 
  mt-20
   left-1/2 
@@ -86,7 +86,7 @@ const SeoService = () => {
           </h1>
           {/* What We Do Best */}
           <section className="mb-16 py-28">
-            <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+            <h2 className="text-center whitespace-nowrap  text-[60px] font-[300] mx-1 fontplayfair text-[#FAA533]">
               What We Offer
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -134,7 +134,7 @@ const SeoService = () => {
 
           {/* Why SEO with Digify America? */}
           <div className="bg-white p-8 md:p-12 rounded-xl shadow-lg mb-16">
-            <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+            <h2 className="text-center whitespace-nowrap  text-[40px] font-[300] mx-1 fontplayfair text-[#FAA533]">
               Why Digify America?
             </h2>
             <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">

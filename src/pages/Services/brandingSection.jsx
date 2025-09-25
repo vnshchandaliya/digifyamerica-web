@@ -10,8 +10,8 @@ const BrandingSection = () => {
           
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-[50px] text-[#FAA533] fontplayfair leading-13">
-              Your business is more than the logo, color palette, or the mission statement.
+            <h1 className=" whitespace-nowrap text-[36px] md:text-[50px] text-[#FAA533] fontplayfair leading-13">
+              Your business is more <br /> than the logo, color palette, <br /> or the mission statement.
             </h1>
             <br />
             <p className="text-lg text-gray-700 mb-8">
@@ -38,7 +38,7 @@ const BrandingSection = () => {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[3.30rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -57,7 +57,7 @@ const BrandingSection = () => {
       {/* What We Offer Section */}
       <div className="bg-[#ad9a9a35] py-42 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+          <h2 className="text-center whitespace-nowrap text-[36px] md:text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -118,7 +118,7 @@ const BrandingSection = () => {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[2.40rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -137,7 +137,7 @@ const BrandingSection = () => {
       {/* Why Digify America? */}
       <div className="py-39 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+          <h2 className="text-center whitespace-nowrap text-[36px] md:text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
             Why Digify America?
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
