@@ -10,9 +10,10 @@ const BrandingSection = () => {
           
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
+            <h1 className="text-[50px] text-[#FAA533] fontplayfair leading-13">
               Your business is more than the logo, color palette, or the mission statement.
             </h1>
+            <br />
             <p className="text-lg text-gray-700 mb-8">
               This is just the tip of the iceberg. What people feel about your business is your brand. Branding is how a company shows who they are so people remember them. Like how a superhero has a costume and catchphrase, companies have their own look and style. That’s branding.
             </p>
@@ -31,11 +32,32 @@ const BrandingSection = () => {
           </div>
         </div>
       </div>
-
+  <h1 className='
+  absolute 
+  text-gray-50 
+  font-bold 
+  uppercase 
+  // Mobile & Small Screens
+  text-[4rem] 
+  fontplayfair 
+ mt-33
+  left-1/2 
+  -translate-x-1/2 
+  -translate-y-1/2
+  whitespace-nowrap 
+  
+  // Medium Screens (md)
+  md:text-[10rem] 
+  
+  // Large Screens (lg)
+  lg:text-[9rem] 
+'>
+        What We Offer
+      </h1>
       {/* What We Offer Section */}
-      <div className="bg-gray-50 py-16 px-4 md:px-8">
+      <div className="bg-[#ad9a9a35] py-42 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-[300] text-black mb-6 text-center">
+          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -43,26 +65,26 @@ const BrandingSection = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="flex items-start gap-4">
-              <div className="bg-purple-100 p-3 rounded-full flex-shrink-0">
-                <Lightbulb className="text-[#1c75bc] h-6 w-6" />
+              <div className="bg-[#FAA533] p-3 rounded-full flex-shrink-0">
+                <Lightbulb className="text-[#fff] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-[400] text-gray-900">Brand Strategy & Positioning</h3>
+                <h3 className="text-xl font-[500] text-gray-900">Brand Strategy & Positioning</h3>
                 <p className="text-gray-700">We help you figure out your brand identity and how it is different from the sea of same services out there. This includes audience research, market positioning, and competitive analysis. In short: CLARITY.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="bg-purple-100 p-3 rounded-full flex-shrink-0">
-                <MessageSquare className="text-[#1c75bc] h-6 w-6" />
+              <div className="bg-[#FAA533] p-3 rounded-full flex-shrink-0">
+                <MessageSquare className="text-[#fff] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-[400] text-gray-900">Voice & Messaging Development</h3>
+                <h3 className="text-xl font-[500] text-gray-900">Voice & Messaging Development</h3>
                 <p className="text-gray-700">What does your brand sound like? Is it bold or calm or conversational? We craft tone and messaging guidelines that give your brand a recognizable voice, no matter who is writing.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="bg-purple-100 p-3 rounded-full flex-shrink-0">
-                <Palette className="text-[#1c75bc] h-6 w-6" />
+              <div className="bg-[#FAA533] p-3 rounded-full flex-shrink-0">
+                <Palette className="text-[#fff] h-6 w-6" />
               </div>
               <div>
                 <h3 className="text-xl font-[400] text-gray-900">Visual Identity Design</h3>
@@ -70,8 +92,8 @@ const BrandingSection = () => {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="bg-purple-100 p-3 rounded-full flex-shrink-0">
-                <FileText className="text-[#1c75bc] h-6 w-6" />
+              <div className="bg-[#FAA533] p-3 rounded-full flex-shrink-0">
+                <FileText className="text-[#fff] h-6 w-6" />
               </div>
               <div>
                 <h3 className="text-xl font-[400] text-gray-900">Brand Guidelines</h3>
@@ -79,22 +101,43 @@ const BrandingSection = () => {
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="bg-purple-100 p-3 rounded-full flex-shrink-0">
-                <RefreshCw className="text-[#1c75bc] h-6 w-6" />
+              <div className="bg-[#FAA533] p-3 rounded-full flex-shrink-0">
+                <RefreshCw className="text-[#fff] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-[400] text-gray-900">Brand Refresh Packages</h3>
-                <p className="text-[#1c75bc]">It’s time to get rid of old logo. We will evolve your brand without losing its roots, giving you a modern look that still feels like you.</p>
+                <h3 className="text-xl font-[500] text-gray-900">Brand Refresh Packages</h3>
+                <p className="text-gray-700">It’s time to get rid of old logo. We will evolve your brand without losing its roots, giving you a modern look that still feels like you.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+<h1 className='
+  absolute 
+  text-gray-100 
+  font-bold 
+  uppercase 
+  // Mobile & Small Screens
+  text-[4rem] 
+  fontplayfair 
+ mt-33
+  left-1/2 
+  -translate-x-1/2 
+  -translate-y-1/2
+  whitespace-nowrap 
+  
+  // Medium Screens (md)
+  md:text-[10rem] 
+  
+  // Large Screens (lg)
+  lg:text-[7rem] 
+'>
+       Why Digify America?
+      </h1>
       {/* Why Digify America? */}
-      <div className="py-16 px-4 md:px-8">
+      <div className="py-39 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl font-[300] text-gray-900 mb-6 text-center">
+          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
             Why Digify America?
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
@@ -102,28 +145,28 @@ const BrandingSection = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div className="flex items-start gap-3">
-              <CheckCircle className="text-[#1c75bc] h-6 w-6 flex-shrink-0 mt-1" />
+              <CheckCircle className="text-[#FAA533] h-6 w-6 flex-shrink-0 mt-1" />
               <p className="text-gray-700">We Lead with Strategy: Your branding is more than looking good. It’s about saying the right thing to the right people.</p>
             </div>
             <div className="flex items-start gap-3">
-              <CheckCircle className="text-[#1c75bc] h-6 w-6 flex-shrink-0 mt-1" />
+              <CheckCircle className="text-[#FAA533] h-6 w-6 flex-shrink-0 mt-1" />
               <p className="text-gray-700">We Listen Like Humans: Your brand has history, goals, and quirks. We don’t flatten that but amplify it.</p>
             </div>
             <div className="flex items-start gap-3">
-              <CheckCircle className="text-[#1c75bc] h-6 w-6 flex-shrink-0 mt-1" />
+              <CheckCircle className="text-[#FAA533] h-6 w-6 flex-shrink-0 mt-1" />
               <p className="text-gray-700">We Build to Scale: You can be a solo owner or a big team, we create brand systems that grow with you.</p>
             </div>
             <div className="flex items-start gap-3">
-              <CheckCircle className="text-[#1c75bc] h-6 w-6 flex-shrink-0 mt-1" />
+              <CheckCircle className="text-[#FAA533] h-6 w-6 flex-shrink-0 mt-1" />
               <p className="text-gray-700">We Keep It Cohesive: Visuals, tone, messaging, and experience, all working in harmony, not fighting for attention.</p>
             </div>
             <div className="flex items-start gap-3">
-              <CheckCircle className="text-[#1c75bc] h-6 w-6 flex-shrink-0 mt-1" />
-              <p className="text-[#1c75bc]">We keep it in budget: High-end branding without high-end pricing. Our services are investment to expand your business and not mere expense.</p>
+              <CheckCircle className="text-[#FAA533] h-6 w-6 flex-shrink-0 mt-1" />
+              <p className="text-gray-700">We keep it in budget: High-end branding without high-end pricing. Our services are investment to expand your business and not mere expense.</p>
             </div>
           </div>
-           <div className="text-center bg-[#1c75bc] text-white p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
-        <h2 className="text-3xl md:text-4xl font-[300] mb-4">
+           <div className="text-center bg-[#FFF5E1] text-black p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
+        <h2 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
           Let’s build a Brand that means something
         </h2>
         <p className="max-w-3xl mx-auto text-lg mb-6">

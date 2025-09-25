@@ -4,6 +4,21 @@ import ProgressBar from '../components/ProgressBar';
 import StepCard from '../components/StepCard';
 import NavigationButtons from '../components/NavigationButtons';
 import SubmissionPopup from '../components/SubmissionPopup';
+import BasicWebsite from '../assets/pricing-Icon/Basic Website.png'
+import eCommerce from '../assets/pricing-Icon/ecommerce.png'
+import NewWebsite from '../assets/pricing-Icon/New Website.png'
+import ReDesign from '../assets/pricing-Icon/Website Re-Design.png'
+import Blog from '../assets/pricing-Icon/Blog.png'
+import Portfolio from '../assets/pricing-Icon/Portfolio.png'
+import Event from '../assets/pricing-Icon/Event.png'
+import CalendarBooking from '../assets/pricing-Icon/Calendar Booking.png'
+import GoogleAnalytics from '../assets/pricing-Icon/Google Analytics.png'
+import MailingList from '../assets/pricing-Icon/Mailing List.png'
+import FacebookTracking from '../assets/pricing-Icon/Facebook Tracking.png'
+import LogoDesign from '../assets/pricing-Icon/Logo Design.png'
+import BusinessCard from '../assets/pricing-Icon/Business Card.png'
+import BusinessOptimization from '../assets/pricing-Icon/Business Optimization.png'
+import './index.css';
 
 const stepHeadings = [
   'Website Package',
@@ -29,28 +44,28 @@ const stepSubheadings = [
 
 const stepsData = {
   1: [
-    { img: 'https://img.icons8.com/ios-filled/100/000000/news.png', title: 'Basic Website', price: 300, desc: 'Includes Home, About, Services, Contact, and Blog.' },
-    { img: 'https://img.icons8.com/ios-filled/100/000000/shopping-cart.png', title: 'eCommerce Website', price: 1400, desc: 'The basic fee for an eCommerce WordPress website starts at $2,500. Includes online product sales, payment, & shipping systems. Additional pages include home, about, services, contact, and a blog.' },
+    { img: BasicWebsite, title: 'Basic Website', price: 300, desc: 'Includes Home, About, Services, Contact, and Blog.' },
+    { img: eCommerce, title: 'eCommerce Website', price: 1400, desc: 'The basic fee for an eCommerce WordPress website starts at $2,500. Includes online product sales, payment, & shipping systems. Additional pages include home, about, services, contact, and a blog.' },
   ],
   2: [
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/new-website-icon-color.png', title: 'New Website Design', price: 800, desc: 'A new branded design for your websites look and feel. Includes mockups for the home page and 2 interior pages.' },
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/redesign-icon.png', title: 'Website Re-Design', price: 400, desc: 'A revamp of your current websites look and feel. Ideal for modernizing older sites. Includes mockups for the home page and 2 interior pages.' },
+    { img: NewWebsite, title: 'New Website Design', price: 800, desc: 'A new branded design for your websites look and feel. Includes mockups for the home page and 2 interior pages.' },
+    { img: ReDesign , title: 'Website Re-Design', price: 400, desc: 'A revamp of your current websites look and feel. Ideal for modernizing older sites. Includes mockups for the home page and 2 interior pages.' },
   ],
   4: [
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/blog-icon.png', title: 'Blog', price: 200 },
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/portfolio-icon.png', title: 'Portfolio', price: 300 },
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/events-calendar-icon.png', title: 'Event', price: 501 },
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/booking-icon.png', title: 'Calendar Booking', price: 502 },
+    { img: Blog , title: 'Blog', price: 200 },
+    { img: Portfolio, title: 'Portfolio', price: 300 },
+    { img: Event, title: 'Event', price: 501 },
+    { img: CalendarBooking, title: 'Calendar Booking', price: 502 },
   ],
   5: [
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/analytics-icon.png', title: 'Google Analytics', price: 75 },
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/email-list-icon.png', title: 'Mailing List Integration', price: 200 },
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/facebook-icon.png', title: 'Facebook Tracking', price: 100 },
+    { img: GoogleAnalytics, title: 'Google Analytics', price: 75 },
+    { img: MailingList, title: 'Mailing List Integration', price: 200 },
+    { img: FacebookTracking , title: 'Facebook Tracking', price: 100 },
   ],
   6: [
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/Logo-Designb.png', title: 'Logo Design', price: 500 },
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/business-cards-icon.png', title: 'Business Card Design', price: 202 },
-    { img: 'https://singlerdesign.com/wp-content/uploads/2021/10/google-my-business-icon.png', title: 'Google My Business Optimization', price: 201 },
+    { img: LogoDesign, title: 'Logo Design', price: 500 },
+    { img: BusinessCard, title: 'Business Card Design', price: 202 },
+    { img: BusinessOptimization, title: 'Google My Business Optimization', price: 201 },
   ],
 };
 
@@ -245,19 +260,20 @@ function Pricing() {
       case 3:
         return (
           <div className="form-group w-full max-w-xl mx-auto text-center">
-            <label htmlFor="pageRange" className="text-xl font-semibold text-indigo-900 ">
+            <label htmlFor="pageRange" className="text-xl font-semibold text-black ">
               Select number of pages (Max 30):
             </label>
             <input
               type="range"
               id="pageRange"
               min="0"
+              
               max="30"
               value={pageCount}
               onChange={handlePageRangeChange}
               className="mt-5 w-full "
             />
-            <div className="range-info text-lg mt-2">{pageCount} Page{pageCount > 1 || pageCount === 0 ? 's' : ''} (${pageCount * 100})</div>
+            <div className="range-info text-lg mt-2 Poppins-font text-[#FAA533]">{pageCount} Page{pageCount > 1 || pageCount === 0 ? 's' : ''} (${pageCount * 100})</div>
           </div>
         );
       case 7:
@@ -300,8 +316,8 @@ function Pricing() {
     <div className="container max-w-screen-lg mx-auto p-5 pt-45">
       <ProgressBar currentStep={currentStep} totalSteps={totalSteps} totalPrice={totalPrice} />
       <div id="headings" className="text-center">
-        <h2 className="text-[34px] font-[300] text-[#000] mb-2">{stepHeadings[currentStep - 1]}</h2>
-        <p className="subheading text-lg text-gray-500 mb-10">{stepSubheadings[currentStep - 1]}</p>
+        <h2 className="text-[34px] Poppins-font text-[#FAA533] mb-2">{stepHeadings[currentStep - 1]}</h2>
+        <p className="subheading text-lg text-gray-900 mb-10">{stepSubheadings[currentStep - 1]}</p>
       </div>
       {renderStepContent()}
       <div className="mt-10 text-center">

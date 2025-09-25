@@ -1,5 +1,7 @@
 // src/components/NavigationButtons.jsx
 import React from 'react';
+import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaCheck } from "react-icons/fa6";
 
 const NavigationButtons = ({ onNext, onPrev, showPrev }) => {
   return (
@@ -7,16 +9,16 @@ const NavigationButtons = ({ onNext, onPrev, showPrev }) => {
       {showPrev && (
         <button
           onClick={onPrev}
-          className="bg-indigo-900 text-white border-none py-3 px-8 text-base rounded-lg cursor-pointer"
+          className="bg-[#FAA533] flex Poppins-font text-white border-none py-3 px-8 text-base rounded-lg cursor-pointer"
         >
-          ← PREVIOUS
+          <FaArrowLeftLong className='mt-1' /> &nbsp; PREVIOUS
         </button>
       )}
       <button
         onClick={onNext}
-        className="bg-indigo-900 text-white border-none py-3 px-8 text-base rounded-lg cursor-pointer"
+        className="bg-[#FAA533] flex Poppins-font text-white border-none py-3 px-8 text-base rounded-lg cursor-pointer uppercase"
       >
-        ✓ NEXT STEP
+         <FaCheck className='mt-1' /> &nbsp; next step
       </button>
     </div>
   );

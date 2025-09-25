@@ -56,14 +56,14 @@ const Blogs = () => {
     <>
       {/* Hero Section */}
       <section loading="lazy"
-        className="relative h-[90vh] bg-cover bg-center flex items-center justify-center text-white text-center overflow-hidden"
+        className="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-white text-center overflow-hidden"
         style={{
           backgroundImage: `url(${blogImage})`,
         }}
       >
         <div className="absolute inset-0 bg-[#000000c1] z-10"></div>
         <div className="relative z-20 max-w-4xl px-4">
-          <h1 className="text-3xl md:text-5xl font-light">Our Blogs</h1>
+          <h1 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">Our Blogs</h1>
         </div>
       </section>
 
@@ -85,10 +85,10 @@ const Blogs = () => {
                 className="h-48 w-full object-cover"
               />
               <div className="p-4">
-                <span className="inline-block bg-blue-100 text-blue-600 text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                <span className="inline-block bg-[#FFF5E1] text-[#FAA533] text-xs font-semibold px-3 py-1 rounded-full mb-3">
                   {blog.category}
                 </span>
-                <h3 className="text-lg font-bold mb-2">{blog.title}</h3>
+                <h3 className="text-lg font-bold mb-2 text-[#FAA533]">{blog.title}</h3>
                 <p className="text-gray-600 text-sm mb-3">{blog.desc}</p>
                 <p className="text-gray-400 text-xs">{blog.date}</p>
               </div>

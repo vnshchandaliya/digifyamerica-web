@@ -10,7 +10,7 @@ const SocialMedia = () => {
           
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-4xl md:text-5xl font-[300] text-black leading-tight mb-6">
+            <h1 className="text-[50px] text-[#FAA533] fontplayfair ">
               Social Media Marketing
             </h1>
             <p className="text-lg text-gray-700 mb-8">
@@ -31,11 +31,32 @@ const SocialMedia = () => {
           </div>
         </div>
       </div>
-
+      <h1 className='
+  absolute 
+  text-gray-50 
+  font-bold 
+  uppercase 
+  // Mobile & Small Screens
+  text-[4rem] 
+  fontplayfair 
+ mt-33
+  left-1/2 
+  -translate-x-1/2 
+  -translate-y-1/2
+  whitespace-nowrap 
+  
+  // Medium Screens (md)
+  md:text-[10rem] 
+  
+  // Large Screens (lg)
+  lg:text-[9rem] 
+'>
+        What We Offer
+      </h1>
       {/* What We Offer Section */}
-      <div className="bg-gray-50 py-16 px-4 md:px-8">
+      <div className="bg-[#ad9a9a35] py-42 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-[300] text-black mb-6 text-center">
+          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-10">
@@ -43,67 +64,88 @@ const SocialMedia = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="flex items-start gap-4">
-              <div className="bg-blue-100 p-3 rounded-full flex-shrink-0">
-                <MessageSquare className="text-blue-600 h-6 w-6" />
+              <div className="bg-[#FAA533] p-3 rounded-full flex-shrink-0">
+                <MessageSquare className="text-[#fff] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-[400] text-gray-900">Platform-Specific Strategy</h3>
+                <h3 className="text-xl font-[500] text-gray-900">Platform-Specific Strategy</h3>
                 <p className="text-gray-700">Every channel is a different maze. What works on Instagram dies on LinkedIn. We tailor strategies for each platform—Facebook, Instagram, LinkedIn, TikTok, Pinterest, and beyond.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="bg-blue-100 p-3 rounded-full flex-shrink-0">
-                <CalendarDays className="text-blue-600 h-6 w-6" />
+              <div className="bg-[#FAA533] p-3 rounded-full flex-shrink-0">
+                <CalendarDays className="text-[#fff] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-[400] text-gray-900">Content Calendar Creation</h3>
+                <h3 className="text-xl font-[500] text-gray-900">Content Calendar Creation</h3>
                 <p className="text-gray-700">Get rid of last-minute panic of “what should we post today?”. We build strategic, engaging, pre-approved content calendars that balance promos, personality, and performance.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="bg-blue-100 p-3 rounded-full flex-shrink-0">
-                <Edit className="text-blue-600 h-6 w-6" />
+              <div className="bg-[#FAA533] p-3 rounded-full flex-shrink-0">
+                <Edit className="text-[#fff] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-[400] text-gray-900">Visual & Copy Creation</h3>
+                <h3 className="text-xl font-[500] text-gray-900">Visual & Copy Creation</h3>
                 <p className="text-gray-700">To stand out in crowd you need scroll-stopping graphics with captions that sound like you. We build a brand tone that stays consistent post after post.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="bg-blue-100 p-3 rounded-full flex-shrink-0">
-                <Users className="text-blue-600 h-6 w-6" />
+              <div className="bg-[#FAA533] p-3 rounded-full flex-shrink-0">
+                <Users className="text-[#fff] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-[400] text-gray-900">Community Management</h3>
+                <h3 className="text-xl font-[500] text-gray-900">Community Management</h3>
                 <p className="text-gray-700">Replying to comments, handling DMs, dealing with trolls or spams – we handle it all. Your followers want connection and not scripted responses.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="bg-blue-100 p-3 rounded-full flex-shrink-0">
-                <TrendingUp className="text-blue-600 h-6 w-6" />
+              <div className="bg-[#FAA533] p-3 rounded-full flex-shrink-0">
+                <TrendingUp className="text-[#fff] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-[400] text-gray-900">Social Media Advertising</h3>
+                <h3 className="text-xl font-[500] text-gray-900">Social Media Advertising</h3>
                 <p className="text-gray-700">Boosted posts are not a strategy. We create paid campaigns that are targeted, data-backed, and optimized to drive clicks, leads, and conversions.</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
-              <div className="bg-blue-100 p-3 rounded-full flex-shrink-0">
-                <BarChart2 className="text-blue-600 h-6 w-6" />
+              <div className="bg-[#FAA533] p-3 rounded-full flex-shrink-0">
+                <BarChart2 className="text-[#fff] h-6 w-6" />
               </div>
               <div>
-                <h3 className="text-xl font-[400] text-gray-900">Insights & Reporting that makes sense</h3>
+                <h3 className="text-xl font-[500] text-gray-900">Insights & Reporting that makes sense</h3>
                 <p className="text-gray-700">We won’t spam you with complex reports. We share real numbers, what worked, what didn’t, and what will do next.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-
+<h1 className='
+  absolute 
+  text-gray-100 
+  font-bold 
+  uppercase 
+  // Mobile & Small Screens
+  text-[4rem] 
+  fontplayfair 
+ mt-33
+  left-1/2 
+  -translate-x-1/2 
+  -translate-y-1/2
+  whitespace-nowrap 
+  
+  // Medium Screens (md)
+  md:text-[10rem] 
+  
+  // Large Screens (lg)
+  lg:text-[7rem] 
+'>
+       Why Digify America?
+      </h1>
       {/* Why Digify America? */}
-      <div className="py-16 px-4 md:px-8">
+      <div className="py-40 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-3xl font-[300] text-black mb-6 text-center">
+          <h2 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
             Why Digify America?
           </h2>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
@@ -111,32 +153,32 @@ const SocialMedia = () => {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="flex items-start gap-3">
-              <CheckCircle className="text-blue-600 h-6 w-6 flex-shrink-0 mt-1" />
+              <CheckCircle className="text-[#FAA533] h-6 w-6 flex-shrink-0 mt-1" />
               <p className="text-gray-700">We Customize Everything: Your brand has a personality. We bring it out in every post, visual, and hashtag.</p>
             </div>
             <div className="flex items-start gap-3">
-              <CheckCircle className="text-blue-600 h-6 w-6 flex-shrink-0 mt-1" />
+              <CheckCircle className="text-[#FAA533] h-6 w-6 flex-shrink-0 mt-1" />
               <p className="text-gray-700">We Mix Creativity + Strategy: Your feed should look good and perform.</p>
             </div>
             <div className="flex items-start gap-3">
-              <CheckCircle className="text-blue-600 h-6 w-6 flex-shrink-0 mt-1" />
+              <CheckCircle className="text-[#FAA533] h-6 w-6 flex-shrink-0 mt-1" />
               <p className="text-gray-700">We Move Fast: Need a campaign ready by tomorrow? We have already started.</p>
             </div>
             <div className="flex items-start gap-3">
-              <CheckCircle className="text-blue-600 h-6 w-6 flex-shrink-0 mt-1" />
+              <CheckCircle className="text-[#FAA533] h-6 w-6 flex-shrink-0 mt-1" />
               <p className="text-gray-700">We Know Your Industry: We have worked with travel brands, small businesses, and startups—we know what works and why.</p>
             </div>
             <div className="flex items-start gap-3">
-              <CheckCircle className="text-blue-600 h-6 w-6 flex-shrink-0 mt-1" />
+              <CheckCircle className="text-[#FAA533] h-6 w-6 flex-shrink-0 mt-1" />
               <p className="text-gray-700">We Stay Accessible: You don’t need to send reminders to get a reply. We are here whenever you need us.</p>
             </div>
           </div>
-           <div className="text-center bg-blue-600 text-white p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
-        <h2 className="text-3xl md:text-4xl font-[300] mb-4">
+           <div className="text-center bg-[#FFF5E1] text-black p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
+        <h2 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
           Let’s Get Social—Strategically
         </h2>
         <p className="max-w-3xl mx-auto text-lg mb-6">
-          Social media is powerful growth tool. Let’s build you a custom social media strategy that connects, converts, and grows with your business.
+         <o className="border-2 border-[#FAA533] bg-[#FAA533] text-white uppercase whitespace-nowrap" >Social media is powerful growth tool.</o> Let’s build you a custom social media strategy that connects, converts, and grows with your business.
         </p>
         {/* <a
           href="#"

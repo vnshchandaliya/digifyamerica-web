@@ -8,7 +8,7 @@ const StepCard = ({ img, title, desc, price, onClick, isActive, isMulti }) => {
 
   return (
     <div
-      className={`card w-full sm:w-80 border-2 border-transparent text-center p-6 cursor-pointer rounded-lg transition-all duration-300 ease-in-out ${isActive ? 'bg-indigo-50 transform scale-105' : 'bg-transparent'}`}
+      className={`card w-full sm:w-80 border-2 border-transparent text-center p-6 cursor-pointer rounded-lg transition-all duration-300 ease-in-out ${isActive ? 'bg-[#FFF5E1] transform scale-105' : 'bg-transparent'}`}
       onClick={handleClick}
     >
       <img src={img} alt={title} className="h-20 mx-auto mb-5" />

@@ -168,7 +168,30 @@ Our mission is to craft innovative and data-driven digital strategies that conne
         </div>
       </div>
     </section>
-     <div className="w-full py-12 bg-white">
+       <h1 className='
+  absolute 
+  text-gray-50 
+  font-bold 
+  uppercase 
+  // Mobile & Small Screens
+  text-[4rem] 
+  fontplayfair 
+ mt-33
+  left-1/2 
+  -translate-x-1/2 
+  -translate-y-1/2
+  whitespace-nowrap 
+  
+  // Medium Screens (md)
+  md:text-[10rem] 
+  
+  // Large Screens (lg)
+  lg:text-[9rem] 
+'>
+ Our Testimonial
+</h1>
+     <div className="w-full py-22 bg-[#fff] pt-41">
+      <h1 className='text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]'>Hear From Those Who Trust Us</h1>
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
@@ -185,7 +208,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
               slideShadows: false,
             }}
             onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-            className="w-full max-w-6xl mx-auto"
+            className="w-full max-w-8xl mx-auto"
           >
             {testimonials.map((item, idx) => {
               const isActive = idx === activeIndex;
@@ -224,7 +247,28 @@ Our mission is to craft innovative and data-driven digital strategies that conne
           {/* Pagination Dots */}
           <div className="swiper-pagination mt-6 text-center"></div>
         </div>
-        
+         <h1 className='
+  absolute 
+  text-gray-50 
+  font-bold 
+  uppercase 
+  // Mobile & Small Screens
+  text-[4rem] 
+  fontplayfair 
+ mt-33
+  left-1/2 
+  -translate-x-1/2 
+  -translate-y-1/2
+  whitespace-nowrap 
+  
+  // Medium Screens (md)
+  md:text-[10rem] 
+  
+  // Large Screens (lg)
+  lg:text-[11rem] 
+'>
+  Our partners
+</h1>
     <PartnerSection />
     </>
   );

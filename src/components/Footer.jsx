@@ -95,7 +95,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 border-t-3 border-[#FAA533] pt-6 text-center text-sm text-black/80">
           <p>
-           2025 Copyright © & Powered by Digify America
+           2025 Copyright © & Powered by <a href="digifyamrica.com"> Digify America</a>
           </p>
           
         </div>
