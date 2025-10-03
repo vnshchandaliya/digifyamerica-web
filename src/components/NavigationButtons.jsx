@@ -9,14 +9,14 @@ const NavigationButtons = ({ onNext, onPrev, showPrev }) => {
       {showPrev && (
         <button
           onClick={onPrev}
-          className="bg-[#FAA533] flex Poppins-font text-white border-none py-3 px-8 text-base rounded-lg cursor-pointer"
+          className="bg-[#234C6A] flex Poppins-font text-white border-none py-3 px-8 text-base rounded-lg cursor-pointer"
         >
           <FaArrowLeftLong className='mt-1' /> &nbsp; PREVIOUS
         </button>
       )}
       <button
         onClick={onNext}
-        className="bg-[#FAA533] flex Poppins-font text-white border-none py-3 px-8 text-base rounded-lg cursor-pointer uppercase"
+        className="bg-[#234C6A] flex Poppins-font text-white border-none py-3 px-8 text-base rounded-lg cursor-pointer uppercase"
       >
          <FaCheck className='mt-1' /> &nbsp; next step
       </button>

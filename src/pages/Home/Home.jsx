@@ -8,12 +8,12 @@ import Seoimg from "../../assets/service-vector/seo.png"
 import graphicimg from "../../assets/service-vector/graphic.png"
 import smmimg from "../../assets/service-vector/socialMedia.png"
 import bradingimg from "../../assets/service-vector/brading.png"
-import videoimg from "../../assets/service-vector/Video files-rafiki.png"
+import videoimg from "../../assets/service-vector/videoPro3.png"
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
 import ServiceCard from "../../components/ServiceCard";
-import founderImage from "../../assets/service-vector/3270759.jpg";
+import founderImage from "../../assets/service-vector/hand-drawn-digital-natives-illustration.png";
 import DirectbookingIcons from '../../components/DirectbookingIcons';
 import projectOne from '../../assets/project-img/project1.jpg'
 import projectTwo from '../../assets/project-img/project2.jpg'
@@ -23,7 +23,6 @@ import projectFive from '../../assets/project-img/project5.jpg'
 import projectsix from '../../assets/project-img/project6.jpg'
 import projectsevan from '../../assets/project-img/project7.jpg'
 import Projects from '../Projects';
-
 
 
 const services = [
@@ -127,7 +126,7 @@ function Home() {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + totalPages) % totalPages);
   };
   return (
-    <>
+    <div className='bg-[#D2C1B6]'>
 
       <section className="relative w-full h-screen  overflow-hidden">
         {/* Background Video */}
@@ -146,13 +145,13 @@ function Home() {
 
 
         {/* Overlay (optional) */}
-        <div className="absolute top-0 bg-[#0000008d]  backdrop-blur-[2px] left-0 w-full h-full  bg-opacity-40"></div>
+        <div className="absolute top-0 bg-[#00000058]  backdrop-blur-[2px] left-0 w-full h-full  bg-opacity-40"></div>
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col justify-center items-center h-full px-4 pt-50 text-center text-[#FFF5E1]">
           <h1 className="text-3xl pt-4 fontplayfair sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight tracking-tight max-w-4xl">
-            Fueling <strong className='text-[#EF7722]'>Digital Growth</strong> with <br className="hidden sm:block" />
-            <strong className='text-[#EF7722]'>Bold Ideas</strong>  & Smart Data
+            Fueling <strong className='text-[#456882]'>Digital Growth</strong> with <br className="hidden sm:block" />
+            <strong className='text-[#456882]'>Bold Ideas</strong>  & Smart Data
           </h1>
           <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl font-light max-w-xl text-[#] ">
             DigifyAmerica isn’t just another digital marketing agency—we’re your growth partner in a hyperconnected world.
@@ -163,10 +162,10 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-[#EF7722] py-0 text-white text-center px-4 ">
+      <section className="bg-[#D2C1B6] py-0 text-[#1B3C53] text-center px-4 ">
         {/* Text Content */}
         <div className="max-w-3x2  mb-12 py-20">
-          <h2 className="text-[28px]  font-semibold sm:text-3xl md:text-4xl  mb-4 fontplayfair">
+          <h2 className="text-[28px]  font-semibold sm:text-3xl md:text-5xl  mb-4 fontplayfair">
             Everything your business needs, all under one roof. <br />
             {/* <span className=" font-sans font-semibold sm:text-3xl md:text-4xl">(or inside one tent)</span> */}
           </h2>
@@ -176,11 +175,11 @@ function Home() {
           </p>
           <Link
             to="/connect-with-us/"
-            className="bg-[#FAA533] text-white px-5 py-2 rounded-lg font-bold text-lg 
-                     shadow-[0_4px_0px_#c97f25] 
-                     transform transition-all duration-200 
-                     hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#0B6FA6] 
-                     active:translate-y-[2px] active:shadow-none"
+            className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg 
+             shadow-[0_4px_0px_#456882] 
+             transform transition-all duration-200 
+             hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#1B3C53] 
+             active:translate-y-[2px] active:shadow-none"
           >
             Connect with our experts
           </Link>
@@ -197,11 +196,11 @@ function Home() {
       </section>
       <h1 className='
   absolute 
-  text-gray-50 
+  text-gray-50
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[3rem] 
+  text-[2.60rem] 
   fontplayfair 
  mt-40
   left-1/2 
@@ -217,17 +216,17 @@ function Home() {
 '>
         Why Choose Us
       </h1>
-      <section className="bg-white px-4 md:px-8 pt-50">
+      <section className="bg-[#D2C1B6] px-4 md:px-8 pt-50">
         <div className="container mx-auto max-w-7xl pt-16 pb-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
 
-            <div className="order-2 lg:order-1 text-center lg:text-left">
-              <p className="text-[35px] text-[#FAA533] fontplayfair">Why Choose Us : Beyond regular marketing plan</p>
+            <div className="order-2 lg:order-1 text-center lg:text-left text-[#234C6A]">
+              <h1 className="text-[35px] text-[#1B3C53] fontplayfair">Why Choose Us : Beyond regular marketing plan</h1>
               {/* <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
               
                 </h1> */}
-              <p>In a world where everyone claims to be <o className='text-[#FAA533]'>"innovative"</o>  and <o className="text-[#FAA533]">"cutting-edge,"</o> what truly sets Digify America apart? It's not just what we do but how we do it. </p>
+              <p>In a world where everyone claims to be <o className='text-[#1B3C53] font-bold'>"innovative"</o>  and <o className=" font-bold text-[#1B3C53]">"cutting-edge,"</o> what truly sets Digify America apart? It's not just what we do but how we do it. </p>
               <br />
               <p className='font-bold Poppins-font'>Customization at Our Core</p>
               <p className=" ">
@@ -248,7 +247,7 @@ function Home() {
                 src={founderImage}
                 alt=""
                 loading="lazy"
-                className="w-[70vh] h-auto rounded-lg  object-cover"
+                className="w-[100vh] h-auto rounded-lg  object-cover"
               />
             </div>
           </div>
@@ -260,7 +259,7 @@ function Home() {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[2.8rem] 
+  text-[2.40rem] 
   fontplayfair 
  mt-25
   left-1/2 
@@ -283,7 +282,7 @@ function Home() {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[3rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -297,11 +296,11 @@ function Home() {
   // Large Screens (lg)
   lg:text-[11rem] 
 '>
-        Our Services
+       Services
       </h1>
 
       <section className="py-12 px-4 pt-45">
-        <h1 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">
+        <h1 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
           Our Services
         </h1>
         <br />
@@ -328,7 +327,7 @@ function Home() {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[4rem] 
+  text-[3rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -342,11 +341,11 @@ function Home() {
   // Large Screens (lg)
   lg:text-[11rem] 
 '>
-        My Projects
+        Projects
       </h1>
       <Projects />
 
-    </>
+    </div>
   );
 }
 

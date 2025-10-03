@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <>
       {/* Connect Section */}
-     <section className="bg-white py-20">
+     <section className="bg-[#D2C1B6] py-20">
   <div className="container mx-auto px-4">
     <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
       <h2 className="text-xl sm:text-4xl md:text-2xl Poppins-font text-[#2E2E2E]">
@@ -16,11 +16,11 @@ export default function Footer() {
       </h2>
        <Link
         to="/connect-with-us/"
-        className="bg-[#FAA533] text-white px-5 py-2 rounded-lg font-bold text-lg 
-                   shadow-[0_4px_0px_#c97f25] 
-                   transform transition-all duration-200 
-                   hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#0B6FA6] 
-                   active:translate-y-[2px] active:shadow-none"
+        className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg 
+             shadow-[0_4px_0px_#456882] 
+             transform transition-all duration-200 
+             hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#D2C1B6] 
+             active:translate-y-[2px] active:shadow-none"
       >
       Contact Our Team
       </Link>
@@ -36,11 +36,11 @@ export default function Footer() {
 
 
       {/* Footer */}
-      <footer className="bg-[#FFF5E1] text-black Poppins-font px-6 py-12">
+      <footer className="bg-[#1B3C53] text-white Poppins-font px-6 py-12">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
           {/* Column 1 */}
           <div>
-            <button className="mb-4 px-6 py-2 border border-black font-semibold hover:bg-[#FFF5E1] hover:text-black transition">
+            <button className="mb-4 px-6 py-2 border border-[#D2C1B6] font-semibold hover:bg-[#FFF5E1] hover:text-black transition">
               Give us a call: +1 786 224 2280
             </button>
             <p>contact@digifyamerica.com</p>
@@ -63,7 +63,7 @@ export default function Footer() {
               We're Hiring!
             </button> */}
             <h2 className="text-[22px]">Information</h2>
-             <ul className="mt-4 space-y-1 text-sm underline text-black/90">
+             <ul className="mt-4 space-y-1 text-sm underline text-white/90">
               <li><Link to="/privacy-policy/">Privacy Policy</Link></li>
               <li><Link to="/Terms-&-Conditions/">Terms & Conditions</Link></li>
               <li><Link to="/24/7-Support/">24/7 Support</Link></li>
@@ -93,7 +93,7 @@ export default function Footer() {
         </div>
 {/* <TrustpilotWidget/> */}
         {/* Bottom Bar */}
-        <div className="mt-12 border-t-3 border-[#FAA533] pt-6 text-center text-sm text-black/80">
+        <div className="mt-12 border-t-3 border-[#D2C1B6] pt-6 text-center text-sm text-white/80">
           <p>
            2025 Copyright © & Powered by <a href="digifyamrica.com"> Digify America</a>
           </p>

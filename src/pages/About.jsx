@@ -1,6 +1,6 @@
 import React from 'react';
 import { Eye, Target } from 'lucide-react';
-import planImage from "../assets/images/BusinessPlan.png"; 
+import planImage from "../assets/service-vector/digital growth.png"; 
 import founderImage from "../assets/Owner/Image.jpeg"; 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -51,28 +51,26 @@ const testimonials = [
 const About = () => {
           const [activeIndex, setActiveIndex] = useState(0);
   return (
-          <>
-     <section className="bg-white px-4 md:px-8 pt-20">
+          <div className='bg-[#D2C1B6]'>
+     <section className=" px-4 md:px-8 pt-20">
   <div className="container mx-auto max-w-7xl pt-16 pb-24">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-      
-      {/* This is the image div. 
-        It now has the order-1 class for all screens and lg:order-1 to keep it on the left. 
-      */}
-      <div className="order-1 lg:order-1 relative w-full lg:w-auto">
+       <div className="order-1 lg:order-1 relative w-full lg:w-auto">
         <img
         loading="lazy"
           src={planImage}
           alt=""
-          className="w-[70vh] h-auto rounded-lg  object-cover"
+          className="w-[100vh] h-auto mt-8 rounded-lg   object-cover"
         />
       </div>
+   
+     
       
       {/* This is the text div.
         It now has the order-2 class for all screens and lg:order-2 to keep it on the right.
       */}
-      <div className="order-2 lg:order-2 text-center lg:text-left">
-        <h1 className="text-[50px]   text-[#FAA533] fontplayfair">
+      <div className="order-2 lg:order-2 text-center lg:text-left text-[#234C6A]">
+        <h1 className="text-[29px] md:text-[50px]  text-[#1B3C53] fontplayfair">
          Your digital growth partner
         </h1>
         <strong className='font-[500] text-2xl Poppins-font'>Our Story</strong>
@@ -96,13 +94,13 @@ What unites us is a shared passion for solving problems. We are the people who g
     </div>
   </div>
 </section>
- <section className="bg-white px-4 md:px-8 pt-20">
+ <section className=" px-4 md:px-8 pt-20">
       <div className="container mx-auto max-w-7xl pt-16 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           
           
-          <div className="order-2 lg:order-1 text-center lg:text-left">
-            <h1 className="text-[50px]   text-[#FAA533] fontplayfair">
+          <div className="order-2 lg:order-1 text-center lg:text-left text-[#234C6A]">
+            <h1 className="text-[29px] md:text-[50px]  text-[#1B3C53] fontplayfair">
              Founder - Roger Brown
             </h1>
             <p className="text-lg  mb-8">
@@ -114,11 +112,11 @@ What unites us is a shared passion for solving problems. We are the people who g
             </p>
             <a
               href="https://www.linkedin.com/in/roger-brown-48390b14/"
-              className="bg-[#FAA533] text-white px-5 py-2 rounded-lg font-bold text-lg 
-                   shadow-[0_4px_0px_#c97f25] 
-                   transform transition-all duration-200 
-                   hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#0B6FA6] 
-                   active:translate-y-[2px] active:shadow-none" >
+              className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg mr-20
+             shadow-[0_4px_0px_#456882] 
+             transform transition-all duration-200 
+             hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#D2C1B6] 
+             active:translate-y-[2px] active:shadow-none" >
               Explore More
             </a>
             
@@ -137,16 +135,16 @@ What unites us is a shared passion for solving problems. We are the people who g
         </div>
       </div>
     </section>
-       <section className="bg-gray-100 py-16 px-4 md:px-8">
+       <section className=" py-16 px-4 md:px-8">
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           
           {/* Vision Card */}
-          <div className="bg-[#FAA533] p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+          <div className="bg-[#234C6A] p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
             <div className="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mb-6 mx-auto">
               <Eye className="h-10 w-10 text-[#1c75bc]" />
             </div>
-            <h3 className="text-3xl Poppins-font font-[300] text-white mb-4 text-center ">Our Vision</h3>
+            <h3 className="text-2xl md:text-3xl Poppins-font font-[300] text-white mb-4 text-center ">Our Vision</h3>
             <p className="text-white text-center">To be the leading digital marketing agency, empowering businesses to achieve extraordinary growth in the digital world.
 
 
@@ -154,12 +152,12 @@ What unites us is a shared passion for solving problems. We are the people who g
           </div>
           
           {/* Mission Card */}
-          <div className="bg-[#FAA533] p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+          <div className="bg-[#234C6A] p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
             <div className="flex items-center justify-center h-16 w-16 bg-green-100 text-green-600 rounded-full mb-6 mx-auto">
               {/* Mission Icon (Target) */}
             <Target className="h-10 w-10 text-[#1c75bc]" />
             </div>
-            <h3 className="text-3xl font-[300] Poppins-font text-white mb-4 text-center">Our Mission</h3>
+            <h3 className="text-2xl md:text-3xl font-[300] Poppins-font text-white mb-4 text-center">Our Mission</h3>
             <p className="text-white text-center">
 Our mission is to craft innovative and data-driven digital strategies that connect your brand with the right audience.
             </p>
@@ -174,7 +172,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[3.10rem] 
+  text-[2.30rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -190,8 +188,8 @@ Our mission is to craft innovative and data-driven digital strategies that conne
 '>
  Our Testimonial
 </h1>
-     <div className="w-full py-22 bg-[#fff] pt-41">
-      <h1 className='text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]'>Hear From Those Who Trust Us</h1>
+     <div className="w-full py-22  pt-41">
+      <h1 className='text-center  text-[27px] md:text-[60px] font-[300] mx-1 fontplayfair whitespace-nowrap text-[#1B3C53]'>Hear From Those Who Trust Us</h1>
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
@@ -217,8 +215,8 @@ Our mission is to craft innovative and data-driven digital strategies that conne
                   key={idx}
                   className={`max-w-md px-6 py-8 rounded-lg shadow-md relative flex flex-col items-center text-center transition-all duration-300 ${
                     isActive
-                      ? 'bg-[#FFF5E1] text-black'
-                      : 'bg-transparent text-gray-300'
+                      ? 'bg-[#234C6A] text-[#fff]'
+                      : 'bg-[#456882] text-[#D2C1B6]'
                   }`}
                   style={{ height: 'auto' }}
                 >
@@ -229,7 +227,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
                       alt={item.author}
                       className="w-16 h-16 rounded-full mx-auto mb-2"
                     /> */}
-                    <h4 className={`font-semibold ${!isActive ? 'text-gray-500' : 'text-black'}`}>
+                    <h4 className={`font-semibold ${!isActive ? 'text-white' : 'text-[#D2C1B6]'}`}>
                       {item.author}
                     </h4>
                     <p className={`text-sm ${!isActive ? 'text-gray-400' : 'text-blue-100'}`}>
@@ -253,7 +251,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[3.50rem] 
+  text-[3rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -270,7 +268,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
   Our partners
 </h1>
     <PartnerSection />
-    </>
+    </div>
   );
 };
 

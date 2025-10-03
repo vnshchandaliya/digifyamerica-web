@@ -273,16 +273,16 @@ function Pricing() {
               onChange={handlePageRangeChange}
               className="mt-5 w-full "
             />
-            <div className="range-info text-lg mt-2 Poppins-font text-[#FAA533]">{pageCount} Page{pageCount > 1 || pageCount === 0 ? 's' : ''} (${pageCount * 100})</div>
+            <div className="range-info text-lg mt-2 Poppins-font text-[#234C6A]">{pageCount} Page{pageCount > 1 || pageCount === 0 ? 's' : ''} (${pageCount * 100})</div>
           </div>
         );
       case 7:
         return (
           <div className="toggle-container flex justify-center mt-10">
-            <label className="toggle-label flex flex-col items-center text-lg font-semibold text-indigo-900">
+            <label className="toggle-label flex flex-col items-center text-lg font-semibold text-[#1B3C53]">
               <span>Delivery less than 30 days</span>
               <input type="checkbox" className="sr-only peer" checked={fastDelivery} onChange={handleToggleChange} />
-              <span className="toggle-slider w-16 h-8 bg-gray-300 rounded-full relative transition-all duration-300 before:content-[''] before:absolute before:top-1 before:left-1 before:w-6 before:h-6 before:bg-white before:rounded-full before:transition-transform before:duration-300 before:ease-in-out peer-checked:bg-indigo-900 peer-checked:before:transform peer-checked:before:translate-x-8" />
+              <span className="toggle-slider w-16 h-8 bg-gray-300 rounded-full relative transition-all duration-300 before:content-[''] before:absolute before:top-1 before:left-1 before:w-6 before:h-6 before:bg-white before:rounded-full before:transition-transform before:duration-300 before:ease-in-out peer-checked:bg-[#1B3C53] peer-checked:before:transform peer-checked:before:translate-x-8" />
             </label>
           </div>
         );
@@ -296,14 +296,14 @@ function Pricing() {
               placeholder="Email Address"
               value={contactInfo.email}
               onChange={(e) => setContactInfo({ ...contactInfo, email: e.target.value })}
-              className="p-3 text-base border border-gray-300 rounded-lg"
+              className="p-3 text-base border border-gray-900 rounded-lg"
             />
             <input
               type="tel"
               placeholder="Phone Number"
               value={contactInfo.phone}
               onChange={(e) => setContactInfo({ ...contactInfo, phone: e.target.value })}
-              className="p-3 text-base border border-gray-300 rounded-lg"
+              className="p-3 text-base border border-gray-900 rounded-lg"
             />
           </div>
         );
@@ -313,11 +313,13 @@ function Pricing() {
   };
 
   return (
-    <div className="container max-w-screen-lg mx-auto p-5 pt-45">
+    <section className='bg-[#D2C1B6]  text-[#234C6A]'>
+   
+    <div className="container   text-[#234C6A] max-w-screen-lg mx-auto p-5 pt-45">
       <ProgressBar currentStep={currentStep} totalSteps={totalSteps} totalPrice={totalPrice} />
       <div id="headings" className="text-center">
-        <h2 className="text-[34px] Poppins-font text-[#FAA533] mb-2">{stepHeadings[currentStep - 1]}</h2>
-        <p className="subheading text-lg text-gray-900 mb-10">{stepSubheadings[currentStep - 1]}</p>
+        <h2 className="text-[34px] Poppins-font text-[#1B3C53] mb-2">{stepHeadings[currentStep - 1]}</h2>
+        <p className="subheading text-lg text-[#456882] mb-10">{stepSubheadings[currentStep - 1]}</p>
       </div>
       {renderStepContent()}
       <div className="mt-10 text-center">
@@ -329,6 +331,7 @@ function Pricing() {
         onClose={handlePopupClose}
       />
     </div>
+     </section>
   );
 }
 

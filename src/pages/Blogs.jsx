@@ -53,7 +53,7 @@ const blogs = [
 
 const Blogs = () => {
   return (
-    <>
+    <section className="bg-[#D2C1B6]  text-[#234C6A] pt-30">
       {/* Hero Section */}
       <section loading="lazy"
         className="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-white text-center overflow-hidden"
@@ -63,19 +63,19 @@ const Blogs = () => {
       >
         <div className="absolute inset-0 bg-[#000000c1] z-10"></div>
         <div className="relative z-20 max-w-4xl px-4">
-          <h1 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533]">Our Blogs</h1>
+          <h1 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#D2C1B6]">Our Blogs</h1>
         </div>
       </section>
 
       {/* Blog Cards */}
-      <section className="py-10 px-6 bg-gray-50">
+      <section className="py-10 px-6 ">
        
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
           {blogs.map((blog) => (
             <Link
               key={blog.slug}
               to={`${blog.slug}`}
-              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition block"
+              className="bg-[#234C6A] rounded-lg shadow-md overflow-hidden hover:shadow-xl transition block"
             >
               <img
               
@@ -85,18 +85,18 @@ const Blogs = () => {
                 className="h-48 w-full object-cover"
               />
               <div className="p-4">
-                <span className="inline-block bg-[#FFF5E1] text-[#FAA533] text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                <span className="inline-block bg-[#FFF5E1] text-[#000] text-xs font-semibold px-3 py-1 rounded-full mb-3">
                   {blog.category}
                 </span>
-                <h3 className="text-lg font-bold mb-2 text-[#FAA533]">{blog.title}</h3>
-                <p className="text-gray-600 text-sm mb-3">{blog.desc}</p>
+                <h3 className="text-lg font-bold mb-2 text-[#D2C1B6]">{blog.title}</h3>
+                <p className="text-white text-sm mb-3">{blog.desc}</p>
                 <p className="text-gray-400 text-xs">{blog.date}</p>
               </div>
             </Link>
           ))}
         </div>
       </section>
-    </>
+    </section>
   );
 };
 

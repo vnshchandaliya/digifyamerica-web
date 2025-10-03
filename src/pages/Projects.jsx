@@ -7,64 +7,73 @@ import { Navigation, Autoplay } from 'swiper/modules'; // Pagination module is r
 import 'swiper/css';
 import 'swiper/css/navigation';
 // 'swiper/css/pagination' is removed
+import CoastalDream from '../assets/project-img/project1.jpg'
+import NewVillaOne from '../assets/project-img/project2.jpg'
+import NewVillaThree from '../assets/project-img/project4.jpg'
+import SawgrassPointe from '../assets/project-img/project5.jpg'
+import templateOne from '../assets/project-img/project6.jpg'
+import templateTwo from '../assets/project-img/project7.jpg'
+import newvillaTwo from '../assets/project-img/project3.jpg'
+
+
 
 const projects = [
   {
-    title: 'Property Project',
+    title: 'Coastal Dream Rentals',
     link: 'https://www.coastaldreamrentals.com/',
     tag: 'Villa Rental Website',
-    image: 'src/assets/project-img/project1.jpg',
+    image: CoastalDream,
     alt: 'Coastal Dream Rentals Website',
   },
   {
-    title: 'Property Project',
+    title: 'Seaview Sanctuary',
     link: 'https://newvilla1.mydesign.blog/',
-    tag: 'Villa Rental Website',
-    image: 'src/assets/project-img/project2.jpg',
+    tag: 'Single Villa Website',
+    image:NewVillaOne,
     alt: 'New Villa 1 Website',
   },
   {
-    title: 'Property Project',
+    title: 'Lakeside Eco cabins',
     link: 'https://newvilla3.mydesign.blog/',
-    tag: 'Villa Rental Landing page',
-    image: 'src/assets/project-img/project4.jpg',
+    tag: 'Single Villa Website',
+    image: NewVillaThree,
     alt: 'New Villa 3 Website',
   },
   {
-    title: 'Property Project',
+    title: 'My Sawgrass Pointe',
     link: 'https://mysawgrasspointe.com/',
-    tag: 'Villa Rental Website',
-    image: 'src/assets/project-img/project5.jpg',
+    tag: 'Single Villa Website',
+    image: SawgrassPointe,
     alt: 'My Sawgrass Pointe Website',
   },
   {
-    title: 'Property Project',
+    title: 'Template One',
     link: 'https://template1.mycreativewebsite.com/',
     tag: 'Villa Rental Website',
-    image: 'src/assets/project-img/project6.jpg',
-    alt: 'My Sawgrass Pointe Website',
+    image: templateOne,
+    alt: 'template1 Website',
   },
   {
-    title: 'Property Project',
+    title: 'Vacation Dreams',
     link: 'https://template2.mycreativewebsite.com/',
     tag: 'Villa Rental Website',
-    image: 'src/assets/project-img/project7.jpg',
+    image: templateTwo,
     alt: 'My Sawgrass Pointe Website',
   },
   {
-    title: 'Property Project',
+    title: 'Modern Riverside Lodge',
     link: 'https://newvilla2.mydesign.blog/',
-    tag: 'Villa Rental Website',
-    image: 'src/assets/project-img/project3.jpg',
+    tag: 'Single Villa Website',
+    image: newvillaTwo,
     alt: 'My Sawgrass Pointe Website',
   },
 ];
 
 const Projects = () => {
   return (
-    <div id="case" className="py-20 text-white bg-[#ad9a9a35]">
+    <div id="case" className="py-20 text-white ">
       <div className="container mx-auto px-4 mt-4">
-            <h2 className=" relative text-center pt-20 text-[60px] font-[300] mx-19 fontplayfair text-[#FAA533] whitespace-nowrap">My Projects</h2>
+            <h2 className=" relative text-center pt-20 text-[60px] font-[300] mx-1 fontplayfair text-[#1B3C53] whitespace-nowrap">My Projects</h2>
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between mb-16">
           
           {/* Title Section (unchanged) */}
@@ -104,11 +113,11 @@ const Projects = () => {
               >
                     
                 <div
-                  className="project-card bg-[#FFF5E1] p-6 rounded-2xl border border-white transition-all duration-300 hover:transform hover:-translate-y-2 hover:bg- hover:shadow-xl"
+                  className="project-card bg-[#234C6A] p-6 rounded-2xl border border-white transition-all duration-300 hover:transform hover:-translate-y-2 hover:bg- hover:shadow-xl"
                 >
-                  <div className="text-3xl font-bold mb-2 text-black">{project.title}</div>
-                  <div className="text-lg text-black mb-2">{project.tag}</div>
-                  <p className="text-[#ff9408] text-[20px] mb-4 truncate">{project.link}</p>
+                  <div className="text-3xl font-bold mb-2 text-white">{project.title}</div>
+                  <div className="text-lg text-white mb-2">{project.tag}</div>
+                  <p className="text-[#D2C1B6] text-[20px] mb-4 truncate">{project.link}</p>
                   <div className="overflow-hidden rounded-xl">
                     <img
                       src={project.image}
