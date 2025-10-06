@@ -172,7 +172,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[2.30rem] 
+  text-[2.4rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -189,7 +189,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
  Our Testimonial
 </h1>
      <div className="w-full py-22  pt-41">
-      <h1 className='text-center  text-[27px] md:text-[60px] font-[300] mx-1 fontplayfair whitespace-nowrap text-[#1B3C53]'>Hear From Those Who Trust Us</h1>
+      <h1 className='text-center  text-[25px] md:text-[60px] font-[300] mx-1 fontplayfair whitespace-nowrap text-[#1B3C53]'>Hear From Those Who Trust Us</h1>
           <Swiper
             effect={'coverflow'}
             grabCursor={true}
@@ -251,7 +251,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[3rem] 
+  text-[2.7rem] 
   fontplayfair 
  mt-33
   left-1/2 

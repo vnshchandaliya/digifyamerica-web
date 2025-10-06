@@ -68,7 +68,7 @@ const SeoService = () => {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[3rem] 
+  text-[2.7rem] 
   fontplayfair 
  mt-20
   left-1/2 

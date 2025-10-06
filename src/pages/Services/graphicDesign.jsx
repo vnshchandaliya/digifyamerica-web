@@ -41,7 +41,7 @@ const GraphicDesign = () => {
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[2.70rem] 
+  text-[2.7rem] 
   fontplayfair 
  mt-33
   left-1/2 
