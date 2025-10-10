@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const Connect = () => {
   const [formData, setFormData] = useState({
     fname: "",
@@ -91,9 +92,9 @@ const handleSubmit = async (e) => {
 '>
  Get in Touch
 </h1>
-      <div className="container mx-auto px-4 py-46 sm:px-6 lg:px-8 ">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-[29px] md:text-[50px] sm:text-3xl font-light fontplayfair text-[#1B3C53] leading-relaxed">
+      <div  className="container mx-auto px-4 py-46 sm:px-6 lg:px-8 ">
+        <div id="contact-form" className="max-w-3xl mx-auto text-center mb-12">
+          <p id="contact-form" className="text-[29px] md:text-[50px] sm:text-3xl font-light fontplayfair text-[#1B3C53] leading-relaxed">
             Tell us a little bit about your vacation rental business and one of our team of experts will be in touch shortly.
           </p>
         </div>
@@ -102,7 +103,7 @@ const handleSubmit = async (e) => {
         {formSubmitted ? (
           <ThankYouMessage />
         ) : (
-          <div className="bg-white mx-auto rounded-xl shadow-md overflow-hidden max-w-3xl p-6 sm:p-8">
+          <div id="contact-form" className="bg-white mx-auto rounded-xl shadow-md overflow-hidden max-w-3xl p-6 sm:p-8">
             <h2 className="text-2xl font-semibold Poppins-font    mb-6">How can we help you?</h2>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-8">

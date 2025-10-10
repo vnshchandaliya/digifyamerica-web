@@ -23,6 +23,7 @@ import projectFive from '../../assets/project-img/project5.jpg'
 import projectsix from '../../assets/project-img/project6.jpg'
 import projectsevan from '../../assets/project-img/project7.jpg'
 import Projects from '../Projects';
+import { HashLink } from 'react-router-hash-link';
 
 
 const services = [
@@ -173,8 +174,8 @@ function Home() {
             Reaching travelers at every stage of their journey takes more than<br /> an
             awesome website, it takes a complete digital ecosystem.
           </p>
-          <Link
-            to="/connect-with-us/"
+          <HashLink
+            to="/connect-with-us/#contact-form"
             className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg 
              shadow-[0_4px_0px_#456882] 
              transform transition-all duration-200 
@@ -182,7 +183,7 @@ function Home() {
              active:translate-y-[2px] active:shadow-none"
           >
             Connect with our experts
-          </Link>
+          </HashLink>
         </div>
 
         {/* Image */}

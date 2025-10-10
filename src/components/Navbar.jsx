@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo/dfm-Logo.png";
+import { HashLink } from 'react-router-hash-link'; 
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -119,12 +120,12 @@ export default function Navbar() {
 
             {/* Right side Desktop */}
             <div className="hidden md:flex flex-1 items-center justify-end space-x-6">
-              <Link
-                to="/connect-with-us/"
+              <HashLink
+                to="/connect-with-us/#contact-form"
                 className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg mr-20 shadow-[0_4px_0px_#456882] transform transition-all duration-200 hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#D2C1B6] active:translate-y-[2px] active:shadow-none"
               >
                 Contact Us
-              </Link>
+              </HashLink>
               <Link
                 to="/pricing/"
                 className="bg-[#234C6A] text-white px-5 py-2 rounded-lg 
@@ -181,7 +182,7 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link to="/pricing/" className="py-2" onClick={closeMobileMenu}>Pricing</Link>
+          {/* <Link to="/pricing/" className="py-2" onClick={closeMobileMenu}>Pricing</Link> */}
           <Link to="/blogs/" className="py-2" onClick={closeMobileMenu}>Blog</Link>
 
           <div className="mt-4 space-y-2 border-t border-gray-500 pt-4">
@@ -191,11 +192,17 @@ export default function Navbar() {
             <p className="flex items-center gap-2 text-sm">
               <Mail className="w-4 h-4" /> info@example.com
             </p>
-            <Link to="/connect-with-us/" className="block mt-3 bg-[#234C6A] text-white px-5 py-2 rounded-lg 
+            <HashLink to="/connect-with-us/#contact-form" className="block mt-3 bg-[#234C6A] text-white px-5 py-2 rounded-lg 
                 font-bold text-lg shadow-[0_4px_0px_#456882] transform transition-all 
                 duration-200 hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#D2C1B6] active:translate-y-[2px] 
                 active:shadow-none" onClick={closeMobileMenu}>
               Contact Us
+            </HashLink>
+            <Link to="/pricing/" className="block mt-3 bg-[#234C6A] text-white px-5 py-2 rounded-lg 
+                font-bold text-lg shadow-[0_4px_0px_#456882] transform transition-all 
+                duration-200 hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#D2C1B6] active:translate-y-[2px] 
+                active:shadow-none" onClick={closeMobileMenu}>
+             Free Estimate
             </Link>
           </div>
         </nav>

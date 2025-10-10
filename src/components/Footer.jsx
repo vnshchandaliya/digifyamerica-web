@@ -1,6 +1,7 @@
 import { FaFacebook, FaVimeo, FaLinkedin, FaGoogle, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
-// import TrustpilotWidget from "./TrustpilotWidget";
+import { HashLink } from 'react-router-hash-link'; 
+import TrustpilotWidget from "./TrustpilotWidget";
 const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.6639184723094!2d-86.42497132497604!3d30.38889990216947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88914355b8e4facd%3A0x3ed931f656e0623d!2s34990%20Emerald%20Coast%20Pkwy%20%23300%2C%20Destin%2C%20FL%2032541%2C%20USA!5e0!3m2!1sen!2sin!4v1755020767237!5m2!1sen!2sin" ;
 
 
@@ -14,8 +15,8 @@ export default function Footer() {
       <h2 className="text-xl sm:text-4xl md:text-2xl Poppins-font text-[#2E2E2E]">
         Connect with Us!
       </h2>
-       <Link
-        to="/connect-with-us/"
+       <HashLink
+        to="/connect-with-us/#contact-form"
         className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg 
              shadow-[0_4px_0px_#456882] 
              transform transition-all duration-200 
@@ -23,7 +24,7 @@ export default function Footer() {
              active:translate-y-[2px] active:shadow-none"
       >
       Contact Our Team
-      </Link>
+      </HashLink>
       {/* <Link
         to="/connect-with-us/"
         className="bg-[#1c75bc] text-[12px] text-white font-semibold uppercase tracking-wide px-8 py-4 rounded-md hover:bg-[#1c74bcce] transition duration-300"
@@ -43,7 +44,7 @@ export default function Footer() {
             <button className="mb-4 px-6 py-2 border border-[#D2C1B6] font-semibold hover:bg-[#FFF5E1] hover:text-black transition">
               Give us a call: +1 786 224 2280
             </button>
-            <p>contact@digifyamerica.com</p>
+            <p><a href="mailto:contact@digifyamerica.com">contact@digifyamerica.com</a> </p>
             <br />
             <p>
               34990 Emerald Coast Pkwy, Suite 300,<br />Destin, FL 32541
@@ -91,7 +92,10 @@ export default function Footer() {
           
           </div>
         </div>
-{/* <TrustpilotWidget/> */}
+ <div className="p-6">
+    
+      <TrustpilotWidget />
+    </div>
         {/* Bottom Bar */}
         <div className="mt-12 border-t-3 border-[#D2C1B6] pt-6 text-center text-sm text-white/80">
           <p>
