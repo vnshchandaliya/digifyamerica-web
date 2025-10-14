@@ -40,7 +40,7 @@ const stepSubheadings = [
 const stepsData = {
     1: [ // UI Step 1
         { img: BasicWebsite, title: 'Basic Website', price: 699, desc: 'Includes Home, About, Services, Contact, and Blog.' },
-        { img: eCommerce, title: 'eCommerce Website', price: 1400, desc: 'The basic fee for an eCommerce WordPress website starts at $2,500...' },
+        { img: eCommerce, title: 'eCommerce Website', price: 1399, desc: 'The basic fee for an eCommerce WordPress website starts at $2,500...' },
     ],
     4: [ // UI Step 3
         { img: Blog , title: 'Blog', price: 200 },

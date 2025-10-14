@@ -73,7 +73,7 @@ const Projects = () => {
   return (
     <div id="case" className="py-20 text-white ">
       <div className="container mx-auto px-4 mt-4">
-            <h2 className=" relative text-center pt-20 text-[60px] font-[300] mx-1 fontplayfair text-[#1B3C53] whitespace-nowrap">My Projects</h2>
+            <h2 className=" relative text-center pt-29 text-[60px] font-[300] mx-1 fontplayfair text-[#1B3C53] whitespace-nowrap">My Projects</h2>
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between mb-16">
           
           {/* Title Section (unchanged) */}

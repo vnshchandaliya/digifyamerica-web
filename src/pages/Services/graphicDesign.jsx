@@ -60,7 +60,7 @@ const GraphicDesign = () => {
       {/* What We Offer Section */}
       <div className=" py-44 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center whitespace-nowrap  text-[29px] md:text-[50px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
+          <h2 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg  text-center mb-10">
@@ -140,7 +140,7 @@ const GraphicDesign = () => {
       {/* Why Digify America? */}
       <div className="py-40 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center text-[36px] whitespace-nowrap text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+          <h2 className="text-center pt-5 whitespace-nowrap text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
             Why Digify America?
           </h2>
           <p className="max-w-4xl mx-auto text-lg  text-center mb-8">

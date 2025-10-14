@@ -51,7 +51,7 @@ const WebDevelopment = () => {
   // Mobile & Small Screens
   text-[2.50rem] 
   fontplayfair 
- mt-33
+ mt-30
   left-1/2 
   -translate-x-1/2 
   -translate-y-1/2
@@ -127,7 +127,7 @@ const WebDevelopment = () => {
   // Mobile & Small Screens
   text-[2rem] 
   fontplayfair 
- mt-33
+ mt-29
   left-1/2 
   -translate-x-1/2 
   -translate-y-1/2

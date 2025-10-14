@@ -61,7 +61,7 @@ const VideoProduction = () => {
       {/* What We Offer Section */}
       <div className="bg-[#ad9a9a35] py-42 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center whitespace-nowrap text-[29px] md:text-[50px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
+          <h2 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
             What We Offer
           </h2>
           <p className="max-w-4xl mx-auto text-lg  text-center mb-10">
@@ -150,7 +150,7 @@ const VideoProduction = () => {
       {/* Why Digify America? */}
       <div className="py-39 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center whitespace-nowrap text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+          <h2 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
             Why Digify America?
           </h2>
           <p className="max-w-4xl mx-auto text-lg  text-center mb-8">

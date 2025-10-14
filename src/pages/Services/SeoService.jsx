@@ -70,7 +70,7 @@ const SeoService = () => {
   // Mobile & Small Screens
   text-[2.7rem] 
   fontplayfair 
- mt-20
+ mt-19
   left-1/2 
   -translate-x-1/2 
   -translate-y-1/2
@@ -86,7 +86,7 @@ const SeoService = () => {
           </h1>
           {/* What We Do Best */}
           <section className="mb-16 py-28">
-            <h2 className="text-center whitespace-nowrap  text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+            <h2 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
               What We Offer
             </h2>
             <p className="max-w-4xl mx-auto text-lg  text-center mb-10">

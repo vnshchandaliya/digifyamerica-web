@@ -262,7 +262,7 @@ function Home() {
   // Mobile & Small Screens
   text-[2.40rem] 
   fontplayfair 
- mt-25
+ mt-21
   left-1/2 
   -translate-x-1/2 
   -translate-y-1/2
@@ -300,7 +300,7 @@ function Home() {
        Services
       </h1>
 
-      <section className="py-12 px-4 pt-45">
+      <section className="py-12 px-4 pt-49">
         <h1 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
           Our Services
         </h1>

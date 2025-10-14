@@ -188,7 +188,7 @@ Our mission is to craft innovative and data-driven digital strategies that conne
 '>
  Our Testimonial
 </h1>
-     <div className="w-full py-22  pt-41">
+     <div className="w-full py-22  pt-45">
       <h1 className='text-center  text-[25px] md:text-[60px] font-[300] mx-1 fontplayfair whitespace-nowrap text-[#1B3C53]'>Hear From Those Who Trust Us</h1>
           <Swiper
             effect={'coverflow'}
