@@ -2,51 +2,51 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import blogImage from "../assets/blog-img/blogs.jpg";
-import blogImage1 from "../assets/blog-img/blog1.jpg";
-import blogImage2 from "../assets/blog-img/pexels-mikhail-nilov-7988079.jpg";
-import blogImage3 from "../assets/blog-img/pexels-diva-plavalaguna-6937667.jpg";
-import blogImage4 from "../assets/blog-img/pexels-tobias-dziuba-319638-927629.jpg";
-import blogImage5 from "../assets/blog-img/pexels-mikhail-nilov-6981024.jpg";
+import blogImage1 from "../assets/blog-img/seo-7397379_1920.png";
+import blogImage2 from "../assets/blog-img/social-3408791_1920.jpg";
+import blogImage3 from "../assets/blog-img/business-man-3157759_1920.jpg";
+import blogImage4 from "../assets/blog-img/email-3249062_1920.png";
+import blogImage5 from "../assets/blog-img/social-media-7213158_1920.png";
 
 const blogs = [
   {
     slug: "/modern-seo-best-practices",
     category: "SEO",
-    title: "Modern SEO best practices for small and medium businesses",
-    desc: "If you are still stuffing keywords into invisible footers, writing blog posts for 'Google robots'...",
-    date: "August 7, 2025",
+    title: "On-page vs off-page SEO: What's the real difference? ",
+    desc: "Way too many people get stuck on this question. They treat on-page and off-page SEO like they are two completely different skill sets, when really, they are just two sides of the same coin. ",
+    date: "October 29, 2025",
     image: blogImage1,
   },
   {
-    slug: "/your-website-is-boring",
-    category: "Web Design",
-    title: "Your website is boring: Here’s how to fix that before visitors bounce",
-    desc: "Welcome to the hard truth: if your website doesn’t grab attention in three seconds or less...",
-    date: "August 7, 2025",
+    slug: "/social-media-campaigns",
+    category: "social media",
+    title: "The psychology behind viral social media campaigns ",
+    desc: "Some videos or memes explode across the internet leaving us wonder, why that one? Why do some posts rack up millions of views overnight while others simply vanish? The secret has less to do with algorithms and more to do with human psychology. ",
+ date: "October 29, 2025",
     image: blogImage2,
   },
   {
-    slug: "/psychology-of-branding",
-    category: "Branding",
-    title: "The Psychology of Branding: Why your logo is only 10% of the story",
-    desc: "Your logo is important because it’s a visual signature, a symbol, a badge...",
-    date: "August 7, 2025",
+    slug: "/optimize-ad-performance",
+    category: "ad performance",
+    title: "How to use data to optimize ad performance  ",
+    desc: "Data. It’s the word every marketer throws around, but few actually use effectively. The truth is, data is like a GPS for your marketing campaigns—without it, you are just driving around hoping you will end up somewhere profitable.  ",
+ date: "October 29, 2025",
     image: blogImage3,
   },
   {
-    slug: "/social-media-that-sells",
-    category: "Social Media",
-    title: "Social Media that sells: Here's how you can also turn Likes into Leads",
-    desc: "The vanity metrics are fun until you realize your 1,000 likes are not paying the bills...",
-    date: "August 7, 2025",
+    slug: "/email-subject",
+    category: "email",
+    title: "How to write email subject lines that get clicked",
+    desc: "People spend days perfecting their email copy, tweaking designs, A/B testing buttons and then slap on whatever subject line comes to mind first. That subject line is literally the only thing standing between your carefully crafted email and the trash folder. If it doesn't work, nothing else gets a chance to. ",
+ date: "October 29, 2025",
     image: blogImage4,
   },
   {
-    slug: "/digital-first-impressions",
-    category: "Web Design",
-    title: "Digital first impressions: What your homepage says about your business in 3 seconds or less",
-    desc: "Digital first impressions: What your homepage says about your business in 3 seconds or less...",
-    date: "August 7, 2025",
+    slug: "/brand-voice",
+    category: "branding",
+    title: "How to define your brand voice for social media ",
+    desc: "It's exhausting to read and even worse to be the person writing it. Here's the thing: your brand already has a voice. You need to figure out what it actually is instead of copying whatever seems to be working for everyone else.  ",
+ date: "October 29, 2025",
     image: blogImage5,
   },
 ];

@@ -77,10 +77,10 @@ function App() {
 
           {/* Blog Single Pages */}
           <Route path="/modern-seo-best-practices" element={<BlogOne />} />
-          <Route path="/your-website-is-boring" element={<BlogTwo />} />
-          <Route path="/psychology-of-branding" element={<BlogThree />} />
-          <Route path="/social-media-that-sells" element={<BlogFour />} />
-          <Route path="/digital-first-impressions" element={<BlogFive />} />
+          <Route path="/social-media-campaigns" element={<BlogTwo />} />
+          <Route path="/optimize-ad-performance" element={<BlogThree />} />
+          <Route path="/email-subject" element={<BlogFour />} />
+          <Route path="/brand-voice" element={<BlogFive />} />
 
           <Route path="/connect-with-us/" element={<Connect />} />
           <Route path="/privacy-policy/" element={<PrivacyPolicy />} />

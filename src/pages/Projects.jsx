@@ -20,7 +20,7 @@ import newvillaTwo from '../assets/project-img/project3.jpg'
 const projects = [
   {
     title: 'Coastal Dream Rentals',
-    // link: 'https://www.coastaldreamrentals.com/',
+    link: 'https://www.coastaldreamrentals.com/',
     // tag: 'Villa Rental Website',
     image: CoastalDream,
     alt: 'Coastal Dream Rentals Website',
@@ -28,42 +28,42 @@ const projects = [
   {
     image:NewVillaOne,
     title: 'Seaview Sanctuary',
-    // link: 'https://newvilla1.mydesign.blog/',
+    link: 'https://newvilla1.mydesign.blog/',
     // tag: 'Single Villa Website',
     alt: 'New Villa 1 Website',
   },
   {
     image: NewVillaThree,
     title: 'Lakeside Eco cabins',
-    // link: 'https://newvilla3.mydesign.blog/',
+    link: 'https://newvilla3.mydesign.blog/',
     // tag: 'Single Villa Website',
     alt: 'New Villa 3 Website',
   },
   {
     image: SawgrassPointe,
     title: 'My Sawgrass Pointe',
-    // link: 'https://mysawgrasspointe.com/',
+    link: 'https://mysawgrasspointe.com/',
     // tag: 'Single Villa Website',
     alt: 'My Sawgrass Pointe Website',
   },
   {
     image: templateOne,
     title: 'Villa One',
-    // link: 'https://template1.mycreativewebsite.com/',
+    link: 'https://template1.mycreativewebsite.com/',
     // tag: 'Villa Rental Website',
     alt: 'template1 Website',
   },
   {
     image: templateTwo,
     title: 'Vacation Dreams',
-    // link: 'https://template2.mycreativewebsite.com/',
+    link: 'https://template2.mycreativewebsite.com/',
     // tag: 'Villa Rental Website',
     alt: 'My Sawgrass Pointe Website',
   },
   {
     image: newvillaTwo,
     title: 'Modern Riverside Lodge',
-    // link: 'https://newvilla2.mydesign.blog/',
+    link: 'https://newvilla2.mydesign.blog/',
     // tag: 'Single Villa Website',
     alt: 'My Sawgrass Pointe Website',
   },
@@ -72,7 +72,7 @@ const projects = [
 const Projects = () => {
   return (
     <div id="case" className="py-20 text-white ">
-      <div className="container mx-auto px-4 mt-4">
+      <div className="container mx-auto px-4 mt-5">
             <h2 className=" relative text-center pt-29 text-[60px] font-[300] mx-1 fontplayfair text-[#1B3C53] whitespace-nowrap">My Projects</h2>
         <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between mb-16">
           
@@ -117,7 +117,7 @@ const Projects = () => {
                 >
                   <div className="text-3xl font-bold mb-2 text-white">{project.title}</div>
                   <div className="text-lg text-white mb-2">{project.tag}</div>
-                  <p className="text-[#D2C1B6] text-[20px] mb-4 truncate">{project.link}</p>
+                  {/* <p className="text-[#D2C1B6] text-[20px] mb-4 truncate">{project.link}</p> */}
                   <div className="overflow-hidden rounded-xl">
                     <img
                       src={project.image}

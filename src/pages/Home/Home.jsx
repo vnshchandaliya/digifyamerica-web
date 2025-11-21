@@ -30,32 +30,38 @@ const services = [
   {
     image: webdevimg,
     title: 'Web Development',
-    description: "Don't keep your website as a digital business card but your hardest-working employee."
+    description: "Don't keep your website as a digital business card but your hardest-working employee.",
+    link :"web-designing/"
   },
   {
     image: Seoimg,
     title: 'Search Engine Optimization (SEO)',
-    description: "Boost website visibility, drive organic traffic, and rank higher on search engine results pages."
+    description: "Boost website visibility, drive organic traffic, and rank higher on search engine results pages.",
+    link :  "search-engine-optimization/"
   },
   {
     image: graphicimg,
     title: 'Graphic & Logo Design',
-    description: "Your visual identity speaks before you do. Our design team creates:"
+    description: "Your visual identity speaks before you do. Our design team creates:",
+    link : "graphic-design/"
   },
   {
     image: smmimg,
     title: 'Social Media Marketing ',
-    description: "Social Media Marketing boosts brand visibility, engagement, and sales through targeted strategies."
+    description: "Social Media Marketing boosts brand visibility, engagement, and sales through targeted strategies.",
+    link :"social-media-marketing/"
   },
   {
     image: bradingimg,
     title: 'Branding',
-    description: "Empowering brands with bold strategies, digital innovation, and creative storytelling that drives lasting impactYour visual identity speaks before you do. Our design team creates:"
+    description: "Empowering brands with bold strategies, digital innovation, and creative storytelling that drives lasting impactYour visual identity speaks before you do. Our design team creates:" ,
+    link :"branding/"
   },
   {
     image: videoimg,
     title: 'Video production',
-    description: "Video production brings stories to life through creative filming, editing, and impactful visual storytelling techniques."
+    description: "Video production brings stories to life through creative filming, editing, and impactful visual storytelling techniques." ,
+    link: "video-production/"
   },
   // Add more services here
 ];
@@ -223,7 +229,7 @@ function Home() {
 
 
             <div className="order-2 lg:order-1 text-center lg:text-left text-[#234C6A]">
-              <h1 className="text-[35px] text-[#1B3C53] fontplayfair">Why Choose Us : Beyond regular marketing plan</h1>
+              <h1 className="text-[28px]  font-semibold sm:text-3xl md:text-5xl  mb-4 fontplayfair">Why Choose Us : Beyond regular marketing plan</h1>
               {/* <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
               
                 </h1> */}
@@ -311,13 +317,16 @@ function Home() {
           'grid-cols-1' for mobile, and 'md:grid-cols-2' for medium and larger screens.
         */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {services.map((service, index) => (
+            {services.map((service, index ) => (
+              <Link to ={service.link}>
               <ServiceCard
                 key={index}
+
                 image={service.image}
                 title={service.title}
                 description={service.description}
               />
+               </Link>
             ))}
           </div>
         </div>

@@ -11,7 +11,7 @@ export const blogPosts = [
     slug: 'modern-seo-best-practices',
 //     tag: 'SEO',
     image: blogImage1,
-    title: 'Modern SEO best practices for small and medium businesses',
+    title: 'On-page vs off-page SEO: Whats the real difference? ',
     shortDescription: 'If you are still stuffing keywords into invisible footers, writing blog posts for “Google robots”...',
     date: 'August 7, 2025',
   },
