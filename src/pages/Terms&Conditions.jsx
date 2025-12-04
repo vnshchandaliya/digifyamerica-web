@@ -1,8 +1,12 @@
 import React from 'react'
+import { Title, Meta } from "react-head";
 
 const TermsConditions = () => {
   return (
     <>
+    <Title>Terms & Conditions | Digify America</Title>
+<Meta name="description" content="Review our terms and conditions for using Digify America services, website, and digital products." />
+
     <div className="bg-gray-100 text-gray-800 min-h-screen p-4 md:p-8 font-sans">
      
       <div className="container mx-auto max-w-5xl pt-40">

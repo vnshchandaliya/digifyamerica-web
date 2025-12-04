@@ -113,9 +113,9 @@ const DirectbookingIcons = () => {
   return (
     <>
      <section ref={sectionRef}  className="features-section bg-[#D2C1B6] py-32 px-4 text-center ">
-      <h2 className="text-[28px] md:text-[60px] font-[600] fontplayfair  text-[#1B3C53] mb-12">
+      <h4 className="text-[28px] md:text-[60px] font-[600] fontplayfair  text-[#1B3C53] mb-12">
         Direct Booking Website Features
-      </h2>
+      </h4>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mx-auto">
         {features.map((item, idx) => (
           <div key={idx} className="feature">

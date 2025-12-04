@@ -1,8 +1,12 @@
-import React from 'react';
+import React from 'react'; import { Title, Meta } from "react-head";
 import { Bolt, Layout, Smartphone, MousePointer2, CheckCircle, BarChart2, MessageSquare, MapPin, Search, Rocket } from 'lucide-react';
 import heroImage from "../../assets/service-vector/seo.png"
 const SeoService = () => {
   return (
+    <>
+    <Title>SEO Services | Rank Higher on Google & Boost Traffic</Title>
+<Meta name="description" content="Expert SEO services to improve rankings, boost organic traffic, and increase online visibility using modern search engine techniques." />
+
     <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
       {/* Top Section: Text and Image in a grid */}
       <div className="container mx-auto max-w-7xl pt-16 pb-24 px-4 md:px-8">
@@ -62,7 +66,7 @@ const SeoService = () => {
               </div>
             </div>
           </div>
-          <h1 className='
+          <p className='
   absolute 
   text-gray-50 
   font-bold 
@@ -83,12 +87,12 @@ const SeoService = () => {
   lg:text-[8rem] 
 '>
             What We Offer
-          </h1>
+          </p>
           {/* What We Do Best */}
           <section className="mb-16 py-28">
-            <h2 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+            <h3 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
               What We Offer
-            </h2>
+            </h3>
             <p className="max-w-4xl mx-auto text-lg  text-center mb-10">
               At Digify America, our <o className="text-[#1B3C53] font-bold "> SEO services </o> help businesses of all sizes rise. We use methods that are effective and lasting. We focus on what works, skip what doesn’t, and tailor every move to your goals.
             </p>
@@ -134,9 +138,9 @@ const SeoService = () => {
 
           {/* Why SEO with Digify America? */}
           <div className="bg-[#D2C1B6] p-8 md:p-12 rounded-xl shadow-2xl mb-16">
-            <h2 className="text-center whitespace-nowrap  text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+            <h4 className="text-center whitespace-nowrap  text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
               Why Digify America?
-            </h2>
+            </h4>
             <p className="max-w-4xl mx-auto text-lg  text-center mb-8">
               We don’t sell rankings, we build sustainable growth. Here’s why clients pick us:
             </p>
@@ -168,9 +172,9 @@ const SeoService = () => {
 
           {/* Case Studies */}
           <div className="mb-16">
-            <h2 className="  text-[30px] font-[300] Poppins-font text-[#1B3C53] text-center">
+            <h5 className="  text-[30px] font-[300] Poppins-font text-[#1B3C53] text-center">
               Our Success Stories
-            </h2>
+            </h5>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-[#1B3C53] p-6 rounded-lg shadow-md border-t-4 border-[#1B3C53]">
                 <p className="italic text-white">"One of our vacation rental clients increased their bookings by **200% in just 10 months**."</p>
@@ -183,9 +187,9 @@ const SeoService = () => {
 
           {/* Final CTA Section */}
           <div className="text-center bg-[#1B3C53] text-white p-8 md:p-12 rounded-xl shadow-2xl">
-            <h2 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
+            <h6 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
               Are you ready to be found by the right people?
-            </h2>
+            </h6>
             <p className="max-w-3xl mx-auto text-lg mb-6">
               Your customers are searching for you right now. The question is: Will they find you, or will they find your competition? Every day you delay SEO is another day of lost opportunities.
             </p>
@@ -202,6 +206,7 @@ const SeoService = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

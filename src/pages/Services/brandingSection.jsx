@@ -1,8 +1,13 @@
-import React from 'react';
+import React from 'react'; 
 import { Palette, MessageSquare, Briefcase, FileText, RefreshCw, CheckCircle, Lightbulb, Star, Award, TrendingUp } from 'lucide-react';
 import heroImage from "../../assets/service-vector/brading.png"
+import { Title, Meta } from "react-head";
 const BrandingSection = () => {
   return (
+    <>
+    <Title>Branding Services | Build a Powerful Brand Identity – Digify America</Title>
+<Meta name="description" content="Professional branding services that help businesses create a strong, recognizable identity. Logos, brand strategy, guidelines & more." />
+
      <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
       {/* Hero Section */}
       <div className="container mx-auto max-w-7xl pt-16 pb-24 px-4 md:px-8">
@@ -32,7 +37,7 @@ const BrandingSection = () => {
           </div>
         </div>
       </div>
-  <h1 className='
+  <p className='
   absolute 
   text-gray-50 
   font-bold 
@@ -53,7 +58,7 @@ const BrandingSection = () => {
   lg:text-[9rem] 
 '>
         What We Offer
-      </h1>
+      </p>
       {/* What We Offer Section */}
       <div className="bg-[#ad9a9a35] py-42 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
@@ -112,7 +117,7 @@ const BrandingSection = () => {
           </div>
         </div>
       </div>
-<h1 className='
+<p className='
   absolute 
   text-gray-100 
   font-bold 
@@ -133,13 +138,13 @@ const BrandingSection = () => {
   lg:text-[7rem] 
 '>
        Why Digify America?
-      </h1>
+      </p>
       {/* Why Digify America? */}
       <div className="py-39 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+          <h3 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
             Why Digify America?
-          </h2>
+          </h3>
           <p className="max-w-4xl mx-auto text-lg text-gray-700 text-center mb-8">
             Here’s what makes us different from every freelancer or template-hawking design agency:
           </p>
@@ -166,9 +171,9 @@ const BrandingSection = () => {
             </div>
           </div>
            <div className="text-center bg-[#1B3C53] text-white p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
-        <h2 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
+        <h4 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
           Let’s build a Brand that means something
-        </h2>
+        </h4>
         <p className="max-w-3xl mx-auto text-lg mb-6">
           Your brand exists already, but are you shaping that, or letting it happen by accident? Let’s define, design, and deliver a brand that’s impossible to ignore and impossible to forget.
         </p>
@@ -185,6 +190,7 @@ const BrandingSection = () => {
       {/* Final CTA Section */}
      
     </section>
+    </>
   );
 };
 

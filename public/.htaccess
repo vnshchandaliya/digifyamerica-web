@@ -1,4 +1,25 @@
+# -----------------------------------------
+# 1️⃣ Enable HSTS (Strict HTTPS)
+# -----------------------------------------
+<IfModule mod_headers.c>
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# -----------------------------------------
+# 2️⃣ Enable Rewrite Engine
+# -----------------------------------------
 RewriteEngine On
+
+# -----------------------------------------
+# 3️⃣ Force HTTPS + WWW (Correct Safe Version)
+# -----------------------------------------
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\.digifyamerica\.com$ [NC]
+RewriteRule ^(.*)$ https://www.digifyamerica.com/$1 [L,R=301]
+
+# -----------------------------------------
+# 4️⃣ React/Vite SPA Routing
+# -----------------------------------------
 RewriteBase /
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f

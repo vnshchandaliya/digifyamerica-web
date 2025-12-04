@@ -1,8 +1,13 @@
-import React from 'react';
+import React from 'react'; import { Title, Meta } from "react-head";
 import blogImage3 from '../assets/blog-img/business-man-3157759_1920.jpg';
 
 const BlogThree = () => {
   return (
+    <>
+    <Title>How to Optimize Ad Performance | Paid Ads Strategy</Title>
+<Meta name="description" content="Step-by-step guide to improving your paid ads performance with better targeting, creatives, and copywriting." />
+
+    
     <section className="bg-[#D2C1B6] text-[#234C6A]">
       <div className="container mx-auto px-4 py-12 pt-34 ">
         {/* Inner container for max width and a clean look */}
@@ -153,6 +158,7 @@ const BlogThree = () => {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

@@ -1,5 +1,5 @@
 // src/components/StepCard.jsx
-import React from 'react';
+import React from 'react'; import { Title, Meta } from "react-head";
 
 const StepCard = ({ img, title, desc, price, onClick, isActive, isMulti }) => {
   const handleClick = () => {

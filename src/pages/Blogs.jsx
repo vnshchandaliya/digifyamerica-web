@@ -1,5 +1,6 @@
 // src/pages/Blogs.jsx
 import React from "react";
+import { Title, Meta } from "react-head";
 import { Link } from "react-router-dom";
 import blogImage from "../assets/blog-img/blogs.jpg";
 import blogImage1 from "../assets/blog-img/seo-7397379_1920.png";
@@ -53,6 +54,10 @@ const blogs = [
 
 const Blogs = () => {
   return (
+    <>
+    <Title>Blog | Digital Marketing Tips & Business Growth Insights</Title>
+<Meta name="description" content="Read expert articles on SEO, branding, design, advertising, social media strategies and digital marketing trends." />
+
     <section className="bg-[#D2C1B6]  text-[#234C6A] pt-30">
       {/* Hero Section */}
       <section loading="lazy"
@@ -97,6 +102,7 @@ const Blogs = () => {
         </div>
       </section>
     </section>
+    </>
   );
 };
 

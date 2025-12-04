@@ -8,7 +8,7 @@ import Seoimg from "../../assets/service-vector/seo.png"
 import graphicimg from "../../assets/service-vector/graphic.png"
 import smmimg from "../../assets/service-vector/socialMedia.png"
 import bradingimg from "../../assets/service-vector/brading.png"
-import videoimg from "../../assets/service-vector/videoPro3.png"
+import videoimg from "../../assets/service-vector/videoPro.png"
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa6";
 import { Link } from 'react-router-dom';
@@ -24,6 +24,7 @@ import projectsix from '../../assets/project-img/project6.jpg'
 import projectsevan from '../../assets/project-img/project7.jpg'
 import Projects from '../Projects';
 import { HashLink } from 'react-router-hash-link';
+import { Title, Meta } from "react-head";
 
 
 const services = [
@@ -45,22 +46,23 @@ const services = [
     description: "Your visual identity speaks before you do. Our design team creates:",
     link : "graphic-design/"
   },
+   {
+    image: bradingimg,
+    title: 'Branding',
+    description: "If you want them even more minimal, more professional, or more punchy, just tell me the vibe you want." ,
+    link :"branding/"
+  },
   {
     image: smmimg,
     title: 'Social Media Marketing ',
     description: "Social Media Marketing boosts brand visibility, engagement, and sales through targeted strategies.",
     link :"social-media-marketing/"
   },
-  {
-    image: bradingimg,
-    title: 'Branding',
-    description: "Empowering brands with bold strategies, digital innovation, and creative storytelling that drives lasting impactYour visual identity speaks before you do. Our design team creates:" ,
-    link :"branding/"
-  },
+ 
   {
     image: videoimg,
     title: 'Video production',
-    description: "Video production brings stories to life through creative filming, editing, and impactful visual storytelling techniques." ,
+    description: "Video production that brings your story to life with powerful visuals." ,
     link: "video-production/"
   },
   // Add more services here
@@ -133,6 +135,12 @@ function Home() {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + totalPages) % totalPages);
   };
   return (
+    <>
+    <Title>Digify America - Home</Title>
+      <Meta
+        name="description"
+        content="Digital marketing, branding, and web development services in the USA. Boost your business with Digify America."
+      />
     <div className='bg-[#D2C1B6]'>
 
       <section className="relative w-full h-screen  overflow-hidden">
@@ -201,7 +209,7 @@ function Home() {
         />
       </div> */}
       </section>
-      <h1 className='
+      <p className='
   absolute 
   text-gray-50
   font-bold 
@@ -222,14 +230,14 @@ function Home() {
   lg:text-[10rem] 
 '>
         Why Choose Us
-      </h1>
+      </p>
       <section className="bg-[#D2C1B6] px-4 md:px-8 pt-50">
         <div className="container mx-auto max-w-7xl pt-16 pb-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
 
             <div className="order-2 lg:order-1 text-center lg:text-left text-[#234C6A]">
-              <h1 className="text-[28px]  font-semibold sm:text-3xl md:text-5xl  mb-4 fontplayfair">Why Choose Us : Beyond regular marketing plan</h1>
+              <h3 className="text-[28px]  font-semibold sm:text-3xl md:text-5xl  mb-4 fontplayfair">Why Choose Us : Beyond regular marketing plan</h3>
               {/* <h1 className="text-4xl md:text-5xl font-[300] text-gray-900 leading-tight mb-6">
               
                 </h1> */}
@@ -260,7 +268,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <h1 className='
+      <p className='
   absolute 
   text-gray-50 
   font-bold 
@@ -281,9 +289,9 @@ function Home() {
   lg:text-[8rem] 
 '>
         Website Features
-      </h1>
+      </p>
       <DirectbookingIcons />
-      <h1 className='
+      <p className='
   absolute 
   text-gray-50 
   font-bold 
@@ -304,12 +312,12 @@ function Home() {
   lg:text-[11rem] 
 '>
        Services
-      </h1>
+      </p>
 
       <section className="py-12 px-4 pt-49">
-        <h1 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
+        <h5 className="text-center  text-[60px] font-[300] mx-19 fontplayfair text-[#1B3C53]">
           Our Services
-        </h1>
+        </h5>
         <br />
         <div className="container mx-auto">
           {/*
@@ -331,7 +339,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <h1 className='
+      <p className='
   absolute 
   text-gray-50 
   font-bold 
@@ -352,10 +360,11 @@ function Home() {
   lg:text-[11rem] 
 '>
         Projects
-      </h1>
+      </p>
       <Projects />
 
     </div>
+    </>
   );
 }
 

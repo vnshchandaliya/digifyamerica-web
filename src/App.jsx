@@ -14,7 +14,7 @@ const About = lazy(() => import("./pages/About.jsx"));
 const Blogs = lazy(() => import("./pages/Blogs.jsx"));
 const Connect = lazy(() => import("./pages/Contect.jsx"));
 
-const DigitalMarketing = lazy(() => import("./pages/Solutions/Digital-Marketing.jsx"));
+// const DigitalMarketing = lazy(() => import("./pages/Solutions/Digital-Marketing.jsx"));
 const Pricing = lazy(() => import("./pages/Pricing.jsx"));
 
 const BlogOne = lazy(() => import("./pages/modern-seo-best-practices.jsx"));
@@ -33,6 +33,8 @@ const VideoProduction = lazy(() => import("./pages/Services/videoProduction.jsx"
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy.jsx"));
 const TermsConditions = lazy(() => import("./pages/Terms&Conditions.jsx"));
 const Support = lazy(() => import("./pages/Support.jsx"));
+const FaqSection = lazy(() => import("./pages/Faq.jsx"));
+
 
 function App() {
   useEffect(() => {
@@ -69,7 +71,7 @@ function App() {
           <Route path="/video-production/" element={<VideoProduction />} />
 
           {/* Solutions */}
-          <Route path="/digital-marketing/" element={<DigitalMarketing />} />
+          {/* <Route path="/digital-marketing/" element={<DigitalMarketing />} /> */}
 
           {/* Other Pages */}
           <Route path="/pricing/" element={<Pricing />} />
@@ -86,6 +88,7 @@ function App() {
           <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
           <Route path="/terms-&-conditions/" element={<TermsConditions />} />
           <Route path="/24/7-support/" element={<Support />} />
+          <Route path="/faq" element={<FaqSection />}/>
         </Routes>
       </Suspense>
 

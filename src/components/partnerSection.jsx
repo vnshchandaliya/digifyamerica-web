@@ -16,9 +16,9 @@ const PartnerSection = () => {
     
       <section className="py-31 px-4  text-center">
         
-      <h2 className="relative text-center pt-18 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53] whitespace-nowrap">
+      <h5 className="relative text-center pt-18 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53] whitespace-nowrap">
         Our partners:
-      </h2>
+      </h5>
       <br /><br />
 
       <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-10 items-center">

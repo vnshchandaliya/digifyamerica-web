@@ -12,9 +12,9 @@ export default function Footer() {
       <section className="bg-[#D2C1B6] py-20">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center md:text-left">
-            <h2 className="text-xl sm:text-4xl md:text-2xl Poppins-font text-[#2E2E2E]">
+            <h1 className="text-xl sm:text-4xl md:text-2xl Poppins-font text-[#2E2E2E]">
               Connect with Us!
-            </h2>
+            </h1>
             <HashLink
               to="/connect-with-us/#contact-form"
               className="bg-[#234C6A] text-white px-5 py-2 rounded-lg font-bold text-lg 
@@ -38,14 +38,14 @@ export default function Footer() {
 
       {/* Footer */}
       <footer className="bg-[#1B3C53] text-white Poppins-font px-6 py-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-5 text-center md:text-left">
           {/* Column 1 */}
           <div>
-            <button className="mb-4 px-6 py-2 border border-[#D2C1B6] font-semibold hover:bg-[#FFF5E1] hover:text-black transition">
+           <a href="tel:+1 7862242280"> <button className="mb-4 px-6 py-2 border border-[#D2C1B6] font-semibold hover:bg-[#FFF5E1] hover:text-black transition">
               Give us a call: +1 786 224 2280
-            </button>
+            </button></a>
             <br />
-            <button className="mb-1 px-2 py-2  font-semibold ">
+            <button className="mb-1  py-2  font-semibold ">
 
               <a
                 href="https://wa.me/14482381683?text=Hello!%20I%20want%20to%20grow%20my%20business%20online.%20Please%20guide%20me."
@@ -62,12 +62,9 @@ export default function Footer() {
             <p>
               34990 Emerald Coast Pkwy, Suite 300,<br />Destin, FL 32541
             </p>
-            <div className="mt-4 flex  gap-5 text-[30px]">
+            <div className="mt-4 flex  gap-5 text-[30px] md:mx-0 mx-22">
               <a href="https://www.facebook.com/people/Digify-America/61574315640630/"><FaFacebook className="hover:text-blue-500 cursor-pointer" /></a>
-              {/* <FaVimeo className="hover:text-white cursor-pointer" />
-            <FaLinkedin className="hover:text-white cursor-pointer" />
-            <FaGoogle className="hover:text-white cursor-pointer" /> */}
-            
+                
               <a href="https://www.instagram.com/digifyamerica/"><FaInstagram className="hover:text- cursor-pointer" /></a>
               <a
                 href="https://wa.me/14482381683?text=Hello!%20I%20want%20to%20grow%20my%20business%20online.%20Please%20guide%20me."> <FaWhatsapp className="hover:text-green-500 cursor-pointer"/> </a>
@@ -79,34 +76,68 @@ export default function Footer() {
             {/* <button className="mb-4 px-6 py-2 border border-white font-semibold hover:bg-white hover:text-black transition">
               We're Hiring!
             </button> */}
-            <h2 className="text-[22px]">Information</h2>
+            <h2 className="text-[22px]">Services</h2>
+            <ul className="mt-4 space-y-1 text-sm underline text-white/90">
+              <li><Link to="/web-designing/">Websites Development</Link></li>
+              <li><Link to="/search-engine-optimization">Search Engine Optimization</Link></li>
+              <li><Link to="/graphic-design/">Graphic Design</Link></li>
+              <li><Link to="/social-media-marketing/">Social Media Marketing</Link></li>
+               <li><Link to="/branding/">Branding</Link></li>
+               <li><Link to="/video-production/">Video Production</Link></li>
+            </ul>
+          </div>
+           <div>
+            {/* <button className="mb-4 px-6 py-2 border border-white font-semibold hover:bg-white hover:text-black transition">
+              We're Hiring!
+            </button> */}
+            <h2 className="text-[22px]">Company</h2>
+            <ul className="mt-4 space-y-1 text-sm underline text-white/90">
+              <li><Link to="/about-us/">About</Link></li>
+              <li><Link to="/pricing/">Pricing</Link></li>
+              <li><Link to="/faq">FAQ</Link></li>
+              <li><Link to="/blogs">Blog</Link></li>
+              <li><Link to="/24/7-Support/">24/7 Support</Link></li>
+              <li><HashLink
+              to="/connect-with-us/#contact-form"
+              
+            >
+              Contact
+            </HashLink></li>
+            </ul>
+            
+          </div>
+          <div>
+            {/* <button className="mb-4 px-6 py-2 border border-white font-semibold hover:bg-white hover:text-black transition">
+              We're Hiring!
+            </button> */}
+            <h2 className="text-[22px]">Legal</h2>
             <ul className="mt-4 space-y-1 text-sm underline text-white/90">
               <li><Link to="/privacy-policy/">Privacy Policy</Link></li>
               <li><Link to="/Terms-&-Conditions/">Terms & Conditions</Link></li>
-              <li><Link to="/24/7-Support/">24/7 Support</Link></li>
-              {/* <li><a href="#">Travel Partners</a></li> */}
             </ul>
           </div>
 
           {/* Column 3 */}
           <div>
-            {/* <button className="mb-4 px-6 py-2 border border-white font-semibold hover:bg-white hover:text-black transition">
-              Sign Up
-            </button> */}
-            <div className="map-container">
-              <iframe
-                src={mapSrc}
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Google Maps Location"
-              ></iframe>
-            </div>
+  {/* Our Location Heading */}
+<div className="w-full text-left max-w-7xl mx-auto mt-10 px-6">
+  <h2 className="text-[24px] font-semibold text-white">Our Location</h2>
+</div>
 
-          </div>
+{/* Full Width Map */}
+<div className="w-full mt-4">
+  <iframe
+    src={mapSrc}
+    className="w-[100%] h-72 md:h-96 md:w-[400%] lg:h-[200px]"
+    style={{ border: 0 }}
+    allowFullScreen={true}
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Google Maps Location"
+  ></iframe>
+</div>
+
+</div>
         </div>
         <div className="p-6">
 

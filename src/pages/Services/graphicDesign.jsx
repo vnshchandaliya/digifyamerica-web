@@ -1,9 +1,12 @@
-import React from 'react';
+import React from 'react'; import { Title, Meta } from "react-head";
 import { Palette, Brush, Briefcase, FileText, Monitor, CheckCircle, Star, Sparkles } from 'lucide-react';
 import heroImage from "../../assets/service-vector/graphic.png"
 
 const GraphicDesign = () => {
   return (
+    <><Title>Graphic Design Services | Creative & Professional Designs</Title>
+<Meta name="description" content="High-quality graphic design services including social media posts, banners, logos, brochures, ads & marketing creatives." />
+
      <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
       {/* Hero Section */}
       <div className="container mx-auto max-w-7xl pt-16 pb-24 px-4 md:px-8 ">
@@ -17,7 +20,7 @@ const GraphicDesign = () => {
             <br />
             <p className="text-lg  mb-8">
               If your logo was made in PowerPoint and your graphics are picked from stock photo album, it’s time
-              to level up.<o className="border-2 border-[#1B3C53] bg-[#1B3C53] text-white uppercase whitespace-nowrap"
+              to level up.<o className="border-2 border-[#1B3C53] bg-[#1B3C53] text-white uppercase whitespace-wrap"
               > Our teams create design systems</o> that are bold, clear, and unmistakably yours.
             </p>
             <p className='text-lg  mb-8'>
@@ -35,13 +38,13 @@ const GraphicDesign = () => {
           </div>
         </div>
       </div>
-      <h1 className='
+      <p className='
   absolute 
   text-gray-100 
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[2.7rem] 
+  text-[2.5rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -56,7 +59,7 @@ const GraphicDesign = () => {
   lg:text-[9rem] 
 '>
         What We Offer
-      </h1>
+      </p>
       {/* What We Offer Section */}
       <div className=" py-44 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
@@ -115,13 +118,13 @@ const GraphicDesign = () => {
           </div>
         </div>
       </div>
-      <h1 className='
+      <p className='
   absolute 
   text-gray-50 
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[2.20rem] 
+  text-[1.82rem] 
   fontplayfair 
  mt-33
   left-1/2 
@@ -136,13 +139,13 @@ const GraphicDesign = () => {
   lg:text-[7rem] 
 '>
         Why Digify America?
-      </h1>
+      </p>
       {/* Why Digify America? */}
       <div className="py-40 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center pt-5 whitespace-nowrap text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+          <h3 className="text-center pt-5 whitespace-nowrap text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
             Why Digify America?
-          </h2>
+          </h3>
           <p className="max-w-4xl mx-auto text-lg  text-center mb-8">
             There’s no shortage of<o className="text-[#1B3C53] "> “designers”</o> online—but most will hand you a logo and disappear. We don’t vanish after the first draft. And we never, ever deliver anything that doesn’t represent your brand like a pro.
           </p>
@@ -171,9 +174,9 @@ const GraphicDesign = () => {
 
           {/* Final CTA Section */}
           <div className="text-center bg-[#1B3C53] text-white p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
-            <h2 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
+            <h4 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
               Ready to be a brand people remember?
-            </h2>
+            </h4>
             <p className="max-w-3xl mx-auto text-lg mb-6">
               Let’s bring your brand to life with designs that boost business.
             </p>
@@ -190,6 +193,7 @@ const GraphicDesign = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

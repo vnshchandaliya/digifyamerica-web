@@ -1,8 +1,14 @@
-import React from 'react';
+import React from 'react'; 
+import { Title, Meta } from "react-head";
 import blogImage2 from '../assets/blog-img/social-3408791_1920.jpg';
 
 const BlogTwo = () => {
   return (
+    <>
+    <Title>Top Performing Social Media Campaigns | Marketing Guide</Title>
+<Meta name="description" content="Discover how high-performing social media campaigns are built with strategy, creativity, and strong visuals." />
+
+   
     <section className="bg-[#D2C1B6] text-[#234C6A]">
       <div className="container mx-auto px-4 py-12 pt-34 ">
         {/* Inner container for max width and a clean look */}
@@ -131,6 +137,7 @@ const BlogTwo = () => {
         </div>
       </div>
     </section>
+     </>
   )
 }
 

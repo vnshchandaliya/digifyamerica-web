@@ -1,5 +1,5 @@
 // src/components/BlogCard.jsx
-import React from 'react';
+import React from 'react'; import { Title, Meta } from "react-head";
 import { Link } from 'react-router-dom';
 
 const BlogCard = ({ post }) => {

@@ -1,9 +1,14 @@
-import React from 'react';
+import React from 'react'; 
+import { Title, Meta } from "react-head";
 import { PlayCircle, Video, Film, MessageSquare, MonitorPlay, TrendingUp, CheckCircle, Lightbulb, Zap, Star } from 'lucide-react';
 import heroImage from "../../assets/service-vector/videoPro3.png"
 
 const VideoProduction = () => {
   return (
+    <>
+    <Title>Video Production Services | Professional Ads & Corporate Videos</Title>
+<Meta name="description" content="High-quality video production for ads, promos, social media, corporate videos, and brand storytelling." />
+
     <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
       {/* Hero Section */}
       <div className="container mx-auto max-w-7xl pt-16 pb-24 px-4 md:px-8">
@@ -36,7 +41,7 @@ const VideoProduction = () => {
           </div>
         </div>
       </div>
- <h1 className='
+ <p className='
   absolute 
   text-gray-100 
   font-bold 
@@ -57,7 +62,7 @@ const VideoProduction = () => {
   lg:text-[9rem] 
 '>
         What We Offer
-      </h1>
+      </p>
       {/* What We Offer Section */}
       <div className="bg-[#ad9a9a35] py-42 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
@@ -125,7 +130,7 @@ const VideoProduction = () => {
           </div>
         </div>
       </div>
-<h1 className='
+<p className='
   absolute 
   text-gray-100 
   font-bold 
@@ -146,13 +151,13 @@ const VideoProduction = () => {
   lg:text-[7rem] 
 '>
        Why Digify America?
-      </h1>
+      </p>
       {/* Why Digify America? */}
       <div className="py-39 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+          <h3 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
             Why Digify America?
-          </h2>
+          </h3>
           <p className="max-w-4xl mx-auto text-lg  text-center mb-8">
             Here’s how we are different:
           </p>
@@ -179,9 +184,9 @@ const VideoProduction = () => {
             </div>
           </div>
            <div className="text-center bg-[#1B3C53] text-white  p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
-        <h2 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
+        <h4 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
           Let’s Roll.
-        </h2>
+        </h4>
         <p className="max-w-3xl mx-auto text-lg mb-6">
           If your content plan doesn’t include video, you are almost invisible in the digital landscape. Let’s change that. You need video content that your audience wants to watch and your competitors wish they had.
         </p>
@@ -198,6 +203,7 @@ const VideoProduction = () => {
       {/* Final CTA Section */}
      
     </section>
+    </>
   );
 };
 

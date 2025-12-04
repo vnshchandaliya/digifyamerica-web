@@ -185,13 +185,13 @@ export default function Navbar() {
           {/* <Link to="/pricing/" className="py-2" onClick={closeMobileMenu}>Pricing</Link> */}
           <Link to="/blogs/" className="py-2" onClick={closeMobileMenu}>Blog</Link>
 
-          <div className="mt-4 space-y-2 border-t border-gray-500 pt-4">
-            <p className="flex items-center gap-2 text-sm">
-              <Phone className="w-4 h-4" /> +91 98765 43210
-            </p>
-            <p className="flex items-center gap-2 text-sm">
-              <Mail className="w-4 h-4" /> info@example.com
-            </p>
+          <div className="mt-4 space-y-2  border-gray-500 pt-4">
+           <a href="tel:+1 7862242280"> <p className="flex items-center gap-2 text-sm">
+              <Phone className="w-4 h-4" /> +1 786 224 2280
+            </p></a>
+           <a href="mailto:contact@digifyamerica.com"> <p className="flex items-center gap-2 text-sm">
+              <Mail className="w-4 h-4" /> contact@digifyamerica.com
+            </p></a>
             <HashLink to="/connect-with-us/#contact-form" className="block mt-3 bg-[#234C6A] text-white px-5 py-2 rounded-lg 
                 font-bold text-lg shadow-[0_4px_0px_#456882] transform transition-all 
                 duration-200 hover:translate-y-[-3px] hover:shadow-[0_6px_0px_#D2C1B6] active:translate-y-[2px] 

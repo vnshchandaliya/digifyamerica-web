@@ -1,8 +1,14 @@
-import React from 'react';
+import React from 'react'; 
+import { Title, Meta } from "react-head";
 // import blogImage1 from '../assets/blog-img/blog1.jpg'; // Removed as there is no image in the new content
 import blogImage1 from "../assets/blog-img/seo-7397379_1920.png";
 const BlogOne = () => {
   return (
+    <>
+    <Title>Modern SEO Best Practices | Improve Rankings in 2025</Title>
+<Meta name="description" content="Learn the latest SEO strategies, ranking factors, and optimization methods to grow organic traffic in 2025." />
+
+    
     <section className="bg-[#D2C1B6] text-[#234C6A]">
       <div className="container mx-auto px-4 py-12 pt-34 ">
         {/* Inner container for max width and a clean look */}
@@ -155,6 +161,7 @@ const BlogOne = () => {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

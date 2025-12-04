@@ -1,12 +1,12 @@
 // src/components/ProgressBar.jsx
-import React from 'react';
+import React from 'react'; import { Title, Meta } from "react-head";
 
 const ProgressBar = ({ currentStep, totalSteps, totalPrice }) => {
   const progressPercentage = ((currentStep - 1) / (totalSteps - 1)) * 100;
   const clampedProgress = Math.max(9, progressPercentage);
 
  return (
-    <div className="sticky-wrapper sticky top-31 z-20 p-2 sm:p-4 ml-11 md:ml-0">
+    <div className="sticky-wrapper sticky top-31 z-20 p-2 sm:p-4 ml-13 md:ml-0 pt-20 ">
       <div className="progress-bar-pricing bg-gray-200 h-8 rounded-full relative mb-10">
         <div
           className="progress-fill-pricing  bg-[#1B3C53] h-full rounded-full relative transition-all duration-1000 ease-in-out"

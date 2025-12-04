@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Title, Meta } from "react-head";
 import emailjs from "@emailjs/browser";
 // useNavigate hook ko import karein
 import { useNavigate } from 'react-router-dom'; 
@@ -56,7 +57,7 @@ const Connect = () => {
             <svg className="mx-auto h-16 w-16 text-green-500 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
-            <h2 className="text-3xl font-bold mb-3">Thank You!</h2>
+            <h1 className="text-3xl font-bold mb-3">Thank You!</h1>
             <p className="text-lg mb-4">We have received your message and will get back to you shortly.</p>
             <p className="text-sm text-gray-500">Redirecting to the home page in a moment...</p>
         </div>
@@ -65,6 +66,9 @@ const Connect = () => {
   // ---> UPDATED
 
   return (
+    <>
+    <Title>Contact Us | Digify America</Title>
+<Meta name="description" content="Need help? Contact Digify America for support, services, or project discussions. We’re available 24/7." />
     <div className="bg-[#D2C1B6] text-[#234C6A] min-h-screen font-sans antialiased">
       {/* Agar formSubmitted true hai toh modal dikhega, div ke andar nahi */}
       {formSubmitted && <ThankYouMessage />} 
@@ -89,9 +93,9 @@ const Connect = () => {
         </div>
       </section>
 
-      <h1 className='absolute text-gray-100 font-bold uppercase text-[3rem] fontplayfair mt-29 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap md:text-[10rem] lg:text-[11rem]'>
+      <h3 className='absolute text-gray-100 font-bold uppercase text-[3rem] fontplayfair mt-29 left-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap md:text-[10rem] lg:text-[11rem]'>
         Get in Touch
-      </h1>
+      </h3>
 
       <div className="container mx-auto px-4 py-46 sm:px-6 lg:px-8">
         <div id="contact-form" className="max-w-3xl mx-auto text-center mb-12">
@@ -103,7 +107,7 @@ const Connect = () => {
         {/* FormSubmitted true hone par form ab yahan nahi dikhega, bas content chalta rahega */}
         {!formSubmitted && (
           <div className="bg-white mx-auto rounded-xl shadow-md overflow-hidden max-w-3xl p-6 sm:p-8">
-            <h2 className="text-2xl font-semibold Poppins-font mb-6">How can we help you?</h2>
+            <h4 className="text-2xl font-semibold Poppins-font mb-6">How can we help you?</h4>
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 md:gap-x-8">
                 <div>
@@ -157,6 +161,7 @@ const Connect = () => {
         )}
       </div>
     </div>
+     </>
   );
 };
 

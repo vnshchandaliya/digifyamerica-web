@@ -1,8 +1,12 @@
-import React from 'react';
+import React from 'react'; import { Title, Meta } from "react-head";
 import blogImage5 from '../assets/blog-img/social-media-7213158_1920.png';
 
 const BlogFive = () => {
   return (
+    <>
+    <Title>How to Create a Strong Brand Voice | Branding Guide</Title>
+<Meta name="description" content="Understand how to define and maintain a consistent brand voice across websites, social media and marketing content." />
+
     <section className="bg-[#D2C1B6] text-[#234C6A]">
       <div className="container mx-auto px-4 py-12 pt-34 ">
         {/* Inner container for max width and a clean look */}
@@ -169,6 +173,7 @@ const BlogFive = () => {
         </div>
       </div>
     </section>
+    </> 
   )
 }
 

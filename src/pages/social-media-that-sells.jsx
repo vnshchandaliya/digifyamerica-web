@@ -1,8 +1,13 @@
-import React from 'react';
+import React from 'react'; 
+import { Title, Meta } from "react-head";
 import blogImage4 from '../assets/blog-img/email-3249062_1920.png';
 
 const BlogFour = () => {
   return (
+    <>
+   <Title>Best Email Subject Lines | Increase Open Rates</Title>
+<Meta name="description" content="Learn how to craft powerful email subject lines that boost open rates and improve email marketing results." />
+
     <section className="bg-[#D2C1B6] text-[#234C6A]">
       <div className="container mx-auto px-4 py-12 pt-34 ">
         {/* Inner container for max width and a clean look */}
@@ -175,6 +180,7 @@ const BlogFour = () => {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

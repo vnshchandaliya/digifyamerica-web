@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; import { Title, Meta } from "react-head";
 import { FaHeartbeat, FaHandshake, FaLightbulb } from 'react-icons/fa';
 
 // icons के लिए react-icons library को install करें:

@@ -1,10 +1,13 @@
-import React from 'react';
+import React from 'react'; import { Title, Meta } from "react-head";
 import { Bolt, Layout, Smartphone, MousePointer2 } from 'lucide-react';
 import heroImage from "../../assets/service-vector/webDev.png"
 import { Link } from 'react-router-dom';
 
 const WebDevelopment = () => {
   return (
+    <>
+    <Title>Website Development | Fast, Responsive & Modern Websites</Title>
+<Meta name="description" content="We build responsive, SEO-friendly, and high-performance websites that convert more customers." />
     <section className="bg-[#D2C1B6] pt-30 text-[#234C6A]">
       {/* Top Section: Text and Image in a grid */}
       <div className="container mx-auto max-w-7xl pt-16 pb-24 px-4 md:px-8">
@@ -12,7 +15,7 @@ const WebDevelopment = () => {
 
           {/* Main Content Area */}
           <div className="order-2 lg:order-1 text-center lg:text-left ">
-             <h1 className='text-center whitespace-nowrap  text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]'>
+             <h1 className='text-center whitespace-nowrap  text-[27px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]'>
               Web Design & <br /> Application Development
             </h1>
             <br />
@@ -43,7 +46,7 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <h1 className='
+      <p className='
   absolute 
   text-gray-50 
   font-bold 
@@ -64,7 +67,7 @@ const WebDevelopment = () => {
   lg:text-[9rem] 
 '>
         What We Offer
-      </h1>
+      </p>
       {/* Other Sections */}
       <div className=" py-42 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
@@ -119,13 +122,13 @@ const WebDevelopment = () => {
               </div>
             </div>
           </div>
-<h1 className='
+<p className='
   absolute 
   text-gray-50 
   font-bold 
   uppercase 
   // Mobile & Small Screens
-  text-[2rem] 
+  text-[1.82rem] 
   fontplayfair 
  mt-29
   left-1/2 
@@ -140,12 +143,12 @@ const WebDevelopment = () => {
   lg:text-[8rem] 
 '>
        Why Digify America?
-      </h1>
+      </p>
           {/* Websites designed with the user in mind Section */}
           <div className="mb-16 py-39">
-            <h2 className="text-center whitespace-nowrap  text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+            <h3 className="text-center whitespace-nowrap  text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
               Why Digify America?
-            </h2>
+            </h3>
             <p className="max-w-4xl mx-auto text-lg  text-center mb-8">
               People don’t read websites. They scan them, scroll them, and leave if they can’t 
               figure out where to click. We make sure they don’t leave. <o className="text-[#1B3C53] font-bold "> Our UX/UI design philosophy</o>  is built on 
@@ -180,9 +183,9 @@ const WebDevelopment = () => {
 
           {/* Final CTA Section */}
           <div className="text-center bg-[#1B3C53] text-[#fff] p-8 md:p-12 rounded-xl shadow-2xl">
-            <h2 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
+            <h4 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
               Are you ready to build something better?
-            </h2>
+            </h4>
             <p className="max-w-3xl mx-auto text-lg mb-6">
               If your current website is slowing you down, confusing your visitors, or boring, we can fix that. Digify America brings the technical muscle, creative flair, and strategic clarity needed to turn your online presence into your most valuable business asset.
             </p>
@@ -193,6 +196,7 @@ const WebDevelopment = () => {
         </div>
       </div>
     </section>
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Title, Meta } from "react-head";
 import ProgressBar from '../components/ProgressBar';
 import StepCard from '../components/StepCard';
 import NavigationButtons from '../components/NavigationButtons';
@@ -15,26 +16,26 @@ import FacebookTracking from '../assets/pricing-Icon/Facebook Tracking.png'
 import LogoDesign from '../assets/pricing-Icon/Logo Design.png'
 import BusinessCard from '../assets/pricing-Icon/Business Card.png'
 import BusinessOptimization from '../assets/pricing-Icon/Business Optimization.png'
-import "../index.css"; 
+import "../index.css";
 
 const stepHeadings = [
     'Website Package',
-    '# of Website Pages', 
-    'Features', 
-    'Integrations', 
-    'Additional Work', 
-    'Delivery Timeline', 
-    'Final cost', 
+    '# of Website Pages',
+    'Features',
+    'Integrations',
+    'Additional Work',
+    'Delivery Timeline',
+    'Final cost',
 ];
 
 const stepSubheadings = [
     'Select Basic or eCommerce options.',
-    'How many non-product, non-blog pages do you estimate you will need.', 
-    'Select the features you would like to include.', 
-    'Select the integrations you would like to include.', 
-    'Any final tweaks or enhancements?', 
-    'Option for fast delivery.', 
-    'Confirm your project and contact details.', 
+    'How many non-product, non-blog pages do you estimate you will need. ie contact page, services page, about page, etc. (5 pages included)',
+    'Select the features you would like to include.',
+    'Select the integrations you would like to include.',
+    'Any final tweaks or enhancements?',
+    'Option for fast delivery.',
+    'Confirm your project and contact details.',
 ];
 
 const stepsData = {
@@ -43,26 +44,26 @@ const stepsData = {
         { img: eCommerce, title: 'eCommerce Website', price: 1399, desc: 'The basic fee for an eCommerce WordPress website starts at $2,500...' },
     ],
     4: [ // UI Step 3
-        { img: Blog , title: 'Blog', price: 200 },
+        { img: Blog, title: 'Blog', price: 200 },
         { img: CalendarBooking, title: 'Calendar Booking', price: 300 },
         { img: Portfolio, title: 'Portfolio', price: 200 },
-        { img: Event, title: 'Event', price: 200 }, 
+        { img: Event, title: 'Event', price: 200 },
     ],
     5: [ // UI Step 4
         { img: GoogleAnalytics, title: 'Google Analytics', price: 100 },
         { img: MailingList, title: 'Mailing List Integration', price: 100 },
-        { img: FacebookTracking , title: 'Facebook Tracking', price: 100 },
+        { img: FacebookTracking, title: 'Facebook Tracking', price: 100 },
     ],
     6: [ // UI Step 5
         { img: LogoDesign, title: 'Logo Design', price: 500 },
-        { img: BusinessCard, title: 'Business Card Design', price: 200 }, 
+        { img: BusinessCard, title: 'Business Card Design', price: 200 },
         { img: BusinessOptimization, title: 'Google My Business Optimization', price: 200 },
     ],
 };
 
-const totalSteps = 7; 
-const multiSelectSteps = [4, 5, 6]; 
-const skipErrorSteps = [3, 4, 5, 6]; 
+const totalSteps = 7;
+const multiSelectSteps = [4, 5, 6];
+const skipErrorSteps = [3, 4, 5, 6];
 
 function Pricing() {
     const [currentStep, setCurrentStep] = useState(1);
@@ -77,15 +78,15 @@ function Pricing() {
     // --- Price Calculation Logic ---
     useEffect(() => {
         let newTotal = 0;
-        
+
         Object.keys(selectedOptions).forEach(step => {
             const stepInt = parseInt(step);
             const selection = selectedOptions[step];
 
-            if (stepInt === 1 || stepInt === 7) { 
+            if (stepInt === 1 || stepInt === 7) {
                 newTotal += selection || 0;
             }
-            
+
             if (multiSelectSteps.includes(stepInt)) {
                 const itemsData = stepsData[stepInt];
                 if (Array.isArray(selection) && itemsData) {
@@ -103,7 +104,7 @@ function Pricing() {
     }, [selectedOptions, pageCount]);
 
     // --- Handlers ---
-    
+
     const handleCardClick = (stepDataKey, card) => {
         if (multiSelectSteps.includes(stepDataKey)) {
             setSelectedOptions(prev => {
@@ -132,7 +133,7 @@ function Pricing() {
         setFastDelivery(isChecked);
         setSelectedOptions(prev => ({ ...prev, 7: isChecked ? 500 : 0 }));
     };
-    
+
     // ... (sendDataToGoogleSheet and handlePopupClose functions remain the same) ...
     const sendDataToGoogleSheet = async (data) => {
         const scriptUrl = 'https://script.google.com/macros/s/AKfycbyL-H6UCMSAfONeRWweYYJhvDvbB6hCmF0-b0v0tWRHt86QvLh-ObTIbtRVSRN5y8S4Ww/exec';
@@ -156,7 +157,7 @@ function Pricing() {
         const currentSelection = selectedOptions[currentSelectionKey];
 
         if (skipErrorSteps.includes(currentStep)) isValid = true;
-        else if (currentStep === 2) isValid = pageCount > 0;
+        else if (currentStep === 2) isValid = true;
         else if (currentStep === totalSteps) isValid = contactInfo.email.trim() !== '' && contactInfo.phone.trim() !== '';
         else isValid = currentSelection !== undefined && (Array.isArray(currentSelection) ? currentSelection.length > 0 : true);
 
@@ -199,7 +200,7 @@ function Pricing() {
     const handlePrev = () => {
         if (currentStep > 1) {
             const stepToLeave = currentStep;
-            
+
             // 1. Determine the data key for the step we are leaving.
             let keyToClear;
             if (stepToLeave === 2) {
@@ -220,7 +221,7 @@ function Pricing() {
                 if (stepToLeave === 6) {
                     setFastDelivery(false);
                 }
-                
+
                 // Remove the selection data from the state object.
                 setSelectedOptions(prev => {
                     const newOptions = { ...prev };
@@ -234,16 +235,16 @@ function Pricing() {
             setErrorMsg('');
         }
     };
-    
+
     // --- Render Content ---
     const renderStepContent = () => {
         // ... (renderStepContent function remains the same as your previous code) ...
         switch (currentStep) {
-            case 1: 
-            case 3: 
-            case 4: 
-            case 5: 
-                const stepDataKey = currentStep === 1 ? 1 : currentStep + 1; 
+            case 1:
+            case 3:
+            case 4:
+            case 5:
+                const stepDataKey = currentStep === 1 ? 1 : currentStep + 1;
                 const currentStepData = stepsData[stepDataKey];
                 if (!currentStepData) return <p className="text-red-500 text-center">Error: Missing data.</p>;
                 const gridClasses = { 1: "flex flex-wrap justify-center gap-5 mt-5", 3: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5", 4: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5", 5: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-5" };
@@ -286,21 +287,27 @@ function Pricing() {
     };
 
     return (
-        <section className='bg-[#D2C1B6] min-h-screen text-[#234C6A]'> 
-            <div className="container text-[#234C6A] max-w-screen-lg mx-auto p-5 pt-20 ">
-                <ProgressBar currentStep={currentStep} totalSteps={totalSteps} totalPrice={totalPrice} />
-                <div id="headings" className="text-center">
-                    <h2 className="text-[34px] Poppins-font text-[#1B3C53] mb-2">{stepHeadings[currentStep - 1]}</h2>
-                    <p className="subheading text-lg text-[#456882] mb-10">{stepSubheadings[currentStep - 1]}</p>
+        <>
+            <Title>Pricing | Affordable Digital Marketing & Branding Plans</Title>
+            <Meta name="description" content="Explore transparent and affordable pricing plans for branding, marketing, SEO, video production, and web development services." />
+
+
+            <section className='bg-[#D2C1B6] min-h-screen text-[#234C6A]'>
+                <div className="container text-[#234C6A] max-w-screen-lg mx-auto p-5 pt-20 ">
+                    <ProgressBar currentStep={currentStep} totalSteps={totalSteps} totalPrice={totalPrice} />
+                    <div id="headings" className="text-center">
+                        <h1 className="text-[34px] Poppins-font text-[#1B3C53] mb-2 md:pt-1 pt-10">{stepHeadings[currentStep - 1]}</h1>
+                        <p className="subheading text-lg text-[#456882] mb-10">{stepSubheadings[currentStep - 1]}</p>
+                    </div>
+                    {renderStepContent()}
+                    <div className="mt-10 text-center">
+                        {errorMsg && <p className="text-red-500">{errorMsg}</p>}
+                    </div>
+                    <NavigationButtons onNext={handleNext} onPrev={handlePrev} showPrev={currentStep > 1} />
+                    <SubmissionPopup isOpen={isPopupOpen} onClose={handlePopupClose} />
                 </div>
-                {renderStepContent()}
-                <div className="mt-10 text-center">
-                    {errorMsg && <p className="text-red-500">{errorMsg}</p>}
-                </div>
-                <NavigationButtons onNext={handleNext} onPrev={handlePrev} showPrev={currentStep > 1} />
-                <SubmissionPopup isOpen={isPopupOpen} onClose={handlePopupClose} />
-            </div>
-        </section>
+            </section>
+        </>
     );
 }
 

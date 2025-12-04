@@ -1,8 +1,12 @@
-import React from 'react';
+import React from 'react'; import { Title, Meta } from "react-head";
 import { CheckCircle, MessageSquare, CalendarDays, Edit, Users, TrendingUp, BarChart2, Star, Sparkles } from 'lucide-react';
 import heroImage from "../../assets/service-vector/socialMedia.png"
 const SocialMedia = () => {
   return (
+    <>
+    <Title>Social Media Marketing | Grow Your Brand Organically</Title>
+<Meta name="description" content="Increase your reach and engagement with our social media marketing services for Facebook, Instagram, LinkedIn, YouTube & more." />
+
   <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
       {/* Hero Section */}
       <div className="container mx-auto max-w-7xl pt-16 pb-24 px-4 md:px-8">
@@ -31,7 +35,7 @@ const SocialMedia = () => {
           </div>
         </div>
       </div>
-      <h1 className='
+      <p className='
   absolute 
   text-gray-50 
   font-bold 
@@ -52,7 +56,7 @@ const SocialMedia = () => {
   lg:text-[9rem] 
 '>
         What We Offer
-      </h1>
+      </p>
       {/* What We Offer Section */}
       <div className=" py-42 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
@@ -120,7 +124,7 @@ const SocialMedia = () => {
           </div>
         </div>
       </div>
-<h1 className='
+<p className='
   absolute 
   text-gray-100 
   font-bold 
@@ -141,13 +145,13 @@ const SocialMedia = () => {
   lg:text-[7rem] 
 '>
        Why Digify America?
-      </h1>
+      </p>
       {/* Why Digify America? */}
       <div className="py-40 px-4 md:px-8">
         <div className="container mx-auto max-w-7xl">
-          <h2 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
+          <h3 className="text-center whitespace-nowrap pt-5 text-[29px] md:text-[50px] font-[300] mx-1 fontplayfair text-[#1B3C53]">
             Why Digify America?
-          </h2>
+          </h3>
           <p className="max-w-4xl mx-auto text-lg  text-center mb-8">
             Anyone can toss up content. But very few agencies take the time to actually understand your business, your voice, and your goals. Here’s how we are different:
           </p>
@@ -174,9 +178,9 @@ const SocialMedia = () => {
             </div>
           </div>
            <div className="text-center bg-[#1B3C53] text-white p-8 md:p-12 mt-30 rounded-xl shadow-2xl">
-        <h2 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
+        <h4 className="text-3xl md:text-4xl font-[300] Poppins-font mb-4">
           Let’s Get Social—Strategically
-        </h2>
+        </h4>
         <p className="max-w-3xl mx-auto text-lg mb-6">
          <o className="border-2 border-[#D2C1B6] bg-[#D2C1B6] text-black uppercase " >Social media is powerful growth tool.</o> Let’s build you a custom social media strategy that connects, converts, and grows with your business.
         </p>
@@ -193,6 +197,7 @@ const SocialMedia = () => {
       {/* Final CTA Section */}
      
     </section>
+    </>
   );
 };
 

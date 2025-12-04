@@ -1,7 +1,13 @@
-import React from 'react';
+import React from 'react'; 
+import { Title, Meta } from "react-head";
 
 const PrivacyPolicy = () => {
   return (
+    <>
+    <Title>Privacy Policy | Digify America</Title>
+<Meta name="description" content="Read our privacy policy to understand how Digify America collects, uses, and protects your personal information." />
+
+   
     <div className="bg-gray-100 text-gray-800 min-h-screen p-4 md:p-8 font-sans">
       
       <div className="container mx-auto max-w-5xl pt-40">
@@ -209,6 +215,7 @@ const PrivacyPolicy = () => {
         </main>
       </div>
     </div>
+     </>
   );
 };
 
