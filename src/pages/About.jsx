@@ -1,4 +1,5 @@
-import React from 'react'; 
+import React from 'react';
+import { Helmet } from "react-helmet-async"; 
 import { Eye, Target } from 'lucide-react';
 import planImage from "../assets/service-vector/digital growth.png";
 import founderImage from "../assets/Owner/Image.jpeg";
@@ -9,7 +10,7 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { useState } from 'react';
 import PartnerSection from '../components/partnerSection';
-import { Title, Meta } from "react-head";
+
 
 const testimonials = [
   {
@@ -53,8 +54,8 @@ const About = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   return (
     <>
-      <Title>About Us - Digify America</Title>
-      <Meta
+      <title>About Us - Digify America</title>
+      <meta
         name="description"
         content="Learn more about Digify America's mission, vision and services we provide to help businesses grow online."
       />

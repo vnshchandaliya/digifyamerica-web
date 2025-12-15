@@ -1,4 +1,4 @@
-// import React from 'react'; import { Title, Meta } from "react-head";
+// import React from 'react';import { Helmet } from "react-helmet-async"; 
 // import { Routes, Route } from 'react-router-dom';
 // import Home from './pages/Home/Home.jsx';
 // import Connect from './pages/Contect.jsx';

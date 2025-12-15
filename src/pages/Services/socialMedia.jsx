@@ -1,11 +1,15 @@
-import React from 'react'; import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
 import { CheckCircle, MessageSquare, CalendarDays, Edit, Users, TrendingUp, BarChart2, Star, Sparkles } from 'lucide-react';
 import heroImage from "../../assets/service-vector/socialMedia.png"
+
 const SocialMedia = () => {
   return (
     <>
-    <Title>Social Media Marketing | Grow Your Brand Organically</Title>
-<Meta name="description" content="Increase your reach and engagement with our social media marketing services for Facebook, Instagram, LinkedIn, YouTube & more." />
+<Helmet>
+    <title>Social Media Marketing | Grow Your Brand Organically</title>
+<meta name="description" content="Increase your reach and engagement with our social media marketing services for Facebook, Instagram, LinkedIn, YouTube & more." />
+
+</Helmet>
 
   <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
       {/* Hero Section */}

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { Helmet } from "react-helmet-async";
 import Navbar from "../../components/Navbar";
-import headervideo from "../../assets/video/HeaderVideo - Made with Clipchamp.mp4";
-import herovideo from "../../assets/video/HeaderVideo.webm";
+import headervideo from "../../assets/video/HeaderVideo - Made with Clipchamp (1).mp4";
+import heroVideo from "../../assets/video/HeaderVideo.webm";
 import webdevimg from "../../assets/service-vector/webDev.png"
-// import ssimg from "../../assets/service-vector/5666022-removebg-preview"
+
 import Seoimg from "../../assets/service-vector/seo.png"
 import graphicimg from "../../assets/service-vector/graphic.png"
 import smmimg from "../../assets/service-vector/socialMedia.png"
@@ -24,7 +25,7 @@ import projectsix from '../../assets/project-img/project6.jpg'
 import projectsevan from '../../assets/project-img/project7.jpg'
 import Projects from '../Projects';
 import { HashLink } from 'react-router-hash-link';
-import { Title, Meta } from "react-head";
+
 
 
 const services = [
@@ -136,11 +137,14 @@ function Home() {
   };
   return (
     <>
-    <Title>Digify America - Home</Title>
-      <Meta
+    <Helmet>
+     <title>DigifyAmerica - Home</title>
+      <meta
         name="description"
         content="Digital marketing, branding, and web development services in the USA. Boost your business with Digify America."
       />
+
+    </Helmet>
     <div className='bg-[#D2C1B6]'>
 
       <section className="relative w-full h-screen  overflow-hidden">
@@ -155,12 +159,12 @@ function Home() {
           className="absolute top-28 left-0 w-full h-full object-cover"
         >
           <source loading="lazy" src={headervideo} type="video/mp4" />
-          <source loading="lazy" src={herovideo} type="video/webm" />
+          <source loading="lazy" src={heroVideo} type="video/webm" />
         </video>
 
 
         {/* Overlay (optional) */}
-        <div className="absolute top-0 bg-[#00000058]  backdrop-blur-[2px] left-0 w-full h-full  bg-opacity-40"></div>
+        <div className="absolute top-0 bg-[#00000058]  backdrop-blur-[4px] left-0 w-full h-full  bg-opacity-40"></div>
 
         {/* Hero Content */}
         <div className="relative z-10 flex flex-col justify-center items-center h-full px-4 pt-50 text-center text-[#FFF5E1]">

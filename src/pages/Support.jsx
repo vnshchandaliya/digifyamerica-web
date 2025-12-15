@@ -1,11 +1,15 @@
 import React from 'react'
-import { Title, Meta } from "react-head";
+import { Helmet } from "react-helmet-async"; 
+
 
 const Support = () => {
   return (
     <>
-      <Title>24/7 Support | Digify America Customer Assistance</Title>
-      <Meta name="description" content="Get 24/7 customer support for all your service needs including branding, marketing, SEO, and web development." />
+    <Helmet>
+      <title>24/7 Support | Digify America Customer Assistance</title>
+      <meta name="description" content="Get 24/7 customer support for all your service needs including branding, marketing, SEO, and web development." />
+
+    </Helmet>
 
       <div className="bg-gray-100 text-gray-800 min-h-screen p-4 md:p-8 font-sans">
 

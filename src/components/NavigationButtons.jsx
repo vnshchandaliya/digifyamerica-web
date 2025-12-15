@@ -1,5 +1,5 @@
 // src/components/NavigationButtons.jsx
-import React from 'react'; import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { FaCheck } from "react-icons/fa6";
 

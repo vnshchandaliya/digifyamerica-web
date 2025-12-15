@@ -1,11 +1,15 @@
-import React from 'react'; import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
 import { Palette, Brush, Briefcase, FileText, Monitor, CheckCircle, Star, Sparkles } from 'lucide-react';
 import heroImage from "../../assets/service-vector/graphic.png"
 
 const GraphicDesign = () => {
   return (
-    <><Title>Graphic Design Services | Creative & Professional Designs</Title>
-<Meta name="description" content="High-quality graphic design services including social media posts, banners, logos, brochures, ads & marketing creatives." />
+    <>
+    <Helmet>
+    <title>Graphic Design Services | Creative & Professional Designs</title>
+<meta name="description" content="High-quality graphic design services including social media posts, banners, logos, brochures, ads & marketing creatives." />
+
+    </Helmet>
 
      <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
       {/* Hero Section */}

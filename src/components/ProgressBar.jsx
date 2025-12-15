@@ -1,5 +1,5 @@
 // src/components/ProgressBar.jsx
-import React from 'react'; import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
 
 const ProgressBar = ({ currentStep, totalSteps, totalPrice }) => {
   const progressPercentage = ((currentStep - 1) / (totalSteps - 1)) * 100;

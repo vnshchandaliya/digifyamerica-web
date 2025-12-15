@@ -1,6 +1,8 @@
+import React, { useState, useEffect } from "react";
+
 import { FaFacebook, FaVimeo, FaLinkedin, FaGoogle, FaInstagram ,  FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 import TrustpilotWidget from "./TrustpilotWidget";
 const mapSrc = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3441.6639184723094!2d-86.42497132497604!3d30.38889990216947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88914355b8e4facd%3A0x3ed931f656e0623d!2s34990%20Emerald%20Coast%20Pkwy%20%23300%2C%20Destin%2C%20FL%2032541%2C%20USA!5e0!3m2!1sen!2sin!4v1755020767237!5m2!1sen!2sin";
 

@@ -1,8 +1,8 @@
-import React from 'react'; import { Title, Meta } from "react-head";
+import React from 'react';
 import { FaHeartbeat, FaHandshake, FaLightbulb } from 'react-icons/fa';
 
-// icons के लिए react-icons library को install करें:
-// npm install react-icons
+
+
 
 const ClientCenter = () => {
   return (

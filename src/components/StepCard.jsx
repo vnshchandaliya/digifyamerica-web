@@ -1,5 +1,5 @@
 // src/components/StepCard.jsx
-import React from 'react'; import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
 
 const StepCard = ({ img, title, desc, price, onClick, isActive, isMulti }) => {
   const handleClick = () => {

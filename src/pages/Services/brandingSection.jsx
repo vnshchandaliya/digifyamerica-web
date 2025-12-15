@@ -1,12 +1,15 @@
-import React from 'react'; 
+import React from 'react';import { Helmet } from "react-helmet-async"; 
 import { Palette, MessageSquare, Briefcase, FileText, RefreshCw, CheckCircle, Lightbulb, Star, Award, TrendingUp } from 'lucide-react';
 import heroImage from "../../assets/service-vector/brading.png"
-import { Title, Meta } from "react-head";
+
 const BrandingSection = () => {
   return (
     <>
-    <Title>Branding Services | Build a Powerful Brand Identity – Digify America</Title>
-<Meta name="description" content="Professional branding services that help businesses create a strong, recognizable identity. Logos, brand strategy, guidelines & more." />
+    <Helmet>
+    <title>Branding Services | Build a Powerful Brand Identity – Digify America</title>
+<meta name="description" content="Professional branding services that help businesses create a strong, recognizable identity. Logos, brand strategy, guidelines & more." />
+
+    </Helmet>
 
      <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
       {/* Hero Section */}

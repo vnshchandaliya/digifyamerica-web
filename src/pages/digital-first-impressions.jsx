@@ -1,11 +1,15 @@
-import React from 'react'; import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
+
 import blogImage5 from '../assets/blog-img/social-media-7213158_1920.png';
 
 const BlogFive = () => {
   return (
     <>
-    <Title>How to Create a Strong Brand Voice | Branding Guide</Title>
-<Meta name="description" content="Understand how to define and maintain a consistent brand voice across websites, social media and marketing content." />
+    <Helmet>
+    <title>How to Create a Strong Brand Voice | Branding Guide</title>
+<meta name="description" content="Understand how to define and maintain a consistent brand voice across websites, social media and marketing content." />
+
+    </Helmet>
 
     <section className="bg-[#D2C1B6] text-[#234C6A]">
       <div className="container mx-auto px-4 py-12 pt-34 ">

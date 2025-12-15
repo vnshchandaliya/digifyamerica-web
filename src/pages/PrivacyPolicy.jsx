@@ -1,11 +1,15 @@
-import React from 'react'; 
-import { Title, Meta } from "react-head";
+import React from 'react';
+import { Helmet } from "react-helmet-async"; 
+
 
 const PrivacyPolicy = () => {
   return (
     <>
-    <Title>Privacy Policy | Digify America</Title>
-<Meta name="description" content="Read our privacy policy to understand how Digify America collects, uses, and protects your personal information." />
+    <Helmet>
+
+    </Helmet>
+    <title>Privacy Policy | Digify America</title>
+<meta name="description" content="Read our privacy policy to understand how Digify America collects, uses, and protects your personal information." />
 
    
     <div className="bg-gray-100 text-gray-800 min-h-screen p-4 md:p-8 font-sans">

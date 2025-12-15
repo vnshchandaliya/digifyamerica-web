@@ -1,4 +1,5 @@
-import React from 'react'; import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
+
 import { Bolt, Layout, Smartphone, MousePointer2 } from 'lucide-react';
 import heroImage from "../../assets/service-vector/webDev.png"
 import { Link } from 'react-router-dom';
@@ -6,8 +7,11 @@ import { Link } from 'react-router-dom';
 const WebDevelopment = () => {
   return (
     <>
-    <Title>Website Development | Fast, Responsive & Modern Websites</Title>
-<Meta name="description" content="We build responsive, SEO-friendly, and high-performance websites that convert more customers." />
+    <Helmet>
+    <title>Website Development | Fast, Responsive & Modern Websites</title>
+<meta name="description" content="We build responsive, SEO-friendly, and high-performance websites that convert more customers." />
+
+    </Helmet>
     <section className="bg-[#D2C1B6] pt-30 text-[#234C6A]">
       {/* Top Section: Text and Image in a grid */}
       <div className="container mx-auto max-w-7xl pt-16 pb-24 px-4 md:px-8">

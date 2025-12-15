@@ -1,11 +1,15 @@
-import React from 'react'; import { Title, Meta } from "react-head";
+import React from 'react';
+import { Helmet } from "react-helmet-async"; 
 import blogImage3 from '../assets/blog-img/business-man-3157759_1920.jpg';
 
 const BlogThree = () => {
   return (
     <>
-    <Title>How to Optimize Ad Performance | Paid Ads Strategy</Title>
-<Meta name="description" content="Step-by-step guide to improving your paid ads performance with better targeting, creatives, and copywriting." />
+    <Helmet>
+    <title>How to Optimize Ad Performance | Paid Ads Strategy</title>
+<meta name="description" content="Step-by-step guide to improving your paid ads performance with better targeting, creatives, and copywriting." />
+
+    </Helmet>
 
     
     <section className="bg-[#D2C1B6] text-[#234C6A]">

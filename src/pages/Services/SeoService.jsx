@@ -1,11 +1,15 @@
-import React from 'react'; import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
+
 import { Bolt, Layout, Smartphone, MousePointer2, CheckCircle, BarChart2, MessageSquare, MapPin, Search, Rocket } from 'lucide-react';
 import heroImage from "../../assets/service-vector/seo.png"
 const SeoService = () => {
   return (
     <>
-    <Title>SEO Services | Rank Higher on Google & Boost Traffic</Title>
-<Meta name="description" content="Expert SEO services to improve rankings, boost organic traffic, and increase online visibility using modern search engine techniques." />
+    <Helmet>
+    <title>SEO Services | Rank Higher on Google & Boost Traffic</title>
+<meta name="description" content="Expert SEO services to improve rankings, boost organic traffic, and increase online visibility using modern search engine techniques." />
+
+    </Helmet>
 
     <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
       {/* Top Section: Text and Image in a grid */}

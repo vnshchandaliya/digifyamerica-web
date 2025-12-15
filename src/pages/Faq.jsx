@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Title, Meta } from "react-head";
 
+import { Helmet } from "react-helmet-async";
 import { ChevronDown } from "lucide-react";
 import blogImage from "../assets/blog-img/blogs.jpg";
 
@@ -86,8 +86,11 @@ const FaqSection = () => {
 
   return (
     <>
-    <Title>FAQ | Common Questions Answered</Title>
-<Meta name="description" content="Find answers to common questions about our services, pricing, support, and processes." />
+    <Helmet>
+    <title>FAQ | Common Questions Answered</title>
+<meta name="description" content="Find answers to common questions about our services, pricing, support, and processes." />
+
+    </Helmet>
     <section className="bg-[#D2C1B6] text-[#234C6A]">
 
       {/* HERO SECTION */}

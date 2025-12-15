@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Title, Meta } from "react-head";
+import { Helmet } from "react-helmet-async";
+
 import emailjs from "@emailjs/browser";
 // useNavigate hook ko import karein
 import { useNavigate } from 'react-router-dom'; 
@@ -67,8 +68,11 @@ const Connect = () => {
 
   return (
     <>
-    <Title>Contact Us | Digify America</Title>
-<Meta name="description" content="Need help? Contact Digify America for support, services, or project discussions. We’re available 24/7." />
+    <Helmet>
+
+    <title>Contact Us | Digify America</title>
+<meta name="description" content="Need help? Contact Digify America for support, services, or project discussions. We’re available 24/7." />
+    </Helmet>
     <div className="bg-[#D2C1B6] text-[#234C6A] min-h-screen font-sans antialiased">
       {/* Agar formSubmitted true hai toh modal dikhega, div ke andar nahi */}
       {formSubmitted && <ThankYouMessage />} 

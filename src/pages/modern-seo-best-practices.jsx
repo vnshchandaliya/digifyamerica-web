@@ -1,12 +1,15 @@
-import React from 'react'; 
-import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
+
 // import blogImage1 from '../assets/blog-img/blog1.jpg'; // Removed as there is no image in the new content
 import blogImage1 from "../assets/blog-img/seo-7397379_1920.png";
 const BlogOne = () => {
   return (
     <>
-    <Title>Modern SEO Best Practices | Improve Rankings in 2025</Title>
-<Meta name="description" content="Learn the latest SEO strategies, ranking factors, and optimization methods to grow organic traffic in 2025." />
+    <Helmet>
+    <title>Modern SEO Best Practices | Improve Rankings in 2025</title>
+<meta name="description" content="Learn the latest SEO strategies, ranking factors, and optimization methods to grow organic traffic in 2025." />
+
+    </Helmet>
 
     
     <section className="bg-[#D2C1B6] text-[#234C6A]">

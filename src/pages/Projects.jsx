@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';import { Helmet } from "react-helmet-async"; 
 // Import Swiper React components and modules
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules'; // Pagination module is removed

@@ -1,12 +1,15 @@
-import React from 'react'; 
-import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
+
 import blogImage2 from '../assets/blog-img/social-3408791_1920.jpg';
 
 const BlogTwo = () => {
   return (
     <>
-    <Title>Top Performing Social Media Campaigns | Marketing Guide</Title>
-<Meta name="description" content="Discover how high-performing social media campaigns are built with strategy, creativity, and strong visuals." />
+    <Helmet>
+    <title>Top Performing Social Media Campaigns | Marketing Guide</title>
+<meta name="description" content="Discover how high-performing social media campaigns are built with strategy, creativity, and strong visuals." />
+
+    </Helmet>
 
    
     <section className="bg-[#D2C1B6] text-[#234C6A]">

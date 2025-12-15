@@ -1,11 +1,14 @@
 import React from 'react'
-import { Title, Meta } from "react-head";
 
+import { Helmet } from "react-helmet-async";
 const TermsConditions = () => {
   return (
     <>
-    <Title>Terms & Conditions | Digify America</Title>
-<Meta name="description" content="Review our terms and conditions for using Digify America services, website, and digital products." />
+    <Helmet>
+    <title>Terms & Conditions | Digify America</title>
+<meta name="description" content="Review our terms and conditions for using Digify America services, website, and digital products." />
+
+    </Helmet>
 
     <div className="bg-gray-100 text-gray-800 min-h-screen p-4 md:p-8 font-sans">
      

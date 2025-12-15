@@ -1,4 +1,4 @@
-import React from 'react'; import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
 
 
 const ServiceCard = ({ image, title, description }) => {

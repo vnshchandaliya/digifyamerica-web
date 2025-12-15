@@ -1,13 +1,16 @@
-import React from 'react'; 
-import { Title, Meta } from "react-head";
+import React from 'react';import { Helmet } from "react-helmet-async"; 
+
 import { PlayCircle, Video, Film, MessageSquare, MonitorPlay, TrendingUp, CheckCircle, Lightbulb, Zap, Star } from 'lucide-react';
-import heroImage from "../../assets/service-vector/videoPro3.png"
+import heroImage from "../../assets/service-vector/videoPro.png"
 
 const VideoProduction = () => {
   return (
     <>
-    <Title>Video Production Services | Professional Ads & Corporate Videos</Title>
-<Meta name="description" content="High-quality video production for ads, promos, social media, corporate videos, and brand storytelling." />
+    <Helmet>
+    <title>Video Production Services | Professional Ads & Corporate Videos</title>
+<meta name="description" content="High-quality video production for ads, promos, social media, corporate videos, and brand storytelling." />
+
+    </Helmet>
 
     <section className="bg-[#D2C1B6] pt-30 text-[#234C6A] ">
       {/* Hero Section */}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Title, Meta } from "react-head";
+
 import ProgressBar from '../components/ProgressBar';
 import StepCard from '../components/StepCard';
 import NavigationButtons from '../components/NavigationButtons';
@@ -17,6 +17,7 @@ import LogoDesign from '../assets/pricing-Icon/Logo Design.png'
 import BusinessCard from '../assets/pricing-Icon/Business Card.png'
 import BusinessOptimization from '../assets/pricing-Icon/Business Optimization.png'
 import "../index.css";
+import { Helmet } from 'react-helmet-async';
 
 const stepHeadings = [
     'Website Package',
@@ -288,8 +289,11 @@ function Pricing() {
 
     return (
         <>
-            <Title>Pricing | Affordable Digital Marketing & Branding Plans</Title>
-            <Meta name="description" content="Explore transparent and affordable pricing plans for branding, marketing, SEO, video production, and web development services." />
+        <Helmet>
+            <title>Pricing | Affordable Digital Marketing & Branding Plans</title>
+            <meta name="description" content="Explore transparent and affordable pricing plans for branding, marketing, SEO, video production, and web development services." />
+
+        </Helmet>
 
 
             <section className='bg-[#D2C1B6] min-h-screen text-[#234C6A]'>
