@@ -14,6 +14,7 @@ import SawgrassPointe from '../assets/project-img/project5.jpg'
 import templateOne from '../assets/project-img/project6.jpg'
 import templateTwo from '../assets/project-img/project7.jpg'
 import newvillaTwo from '../assets/project-img/project3.jpg'
+import newvilla from '../assets/project-img/project8.png'
 
 
 
@@ -66,6 +67,13 @@ const projects = [
     link: 'https://newvilla2.mydesign.blog/',
     // tag: 'Single Villa Website',
     alt: 'My Sawgrass Pointe Website',
+  },
+   {
+    image: newvilla,
+    title: 'Beach Property',
+    link: 'https://newvilla2.mydesign.blog/',
+    // tag: 'Single Villa Website',
+    alt: 'Beach Property',
   },
 ];
 
