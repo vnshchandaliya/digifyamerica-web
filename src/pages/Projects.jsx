@@ -71,7 +71,7 @@ const projects = [
    {
     image: newvilla,
     title: 'Beach Property',
-    link: 'https://newvilla2.mydesign.blog/',
+    link: 'https://newvilla8.mydesign.blog/',
     // tag: 'Single Villa Website',
     alt: 'Beach Property',
   },
